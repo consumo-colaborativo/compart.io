@@ -1,10 +1,13 @@
 consumo-colaborativo
 ====================
 
-# Objectivo
+# Objetivos
 
-De que va esto de consumo colaborativo?
 
-Va de consumir colaborativamente.
+# Principios
+- Éste es un proyecto abierto, libre y sin ánimo de lucro.
+- El proyecto acepta donaciones.
+- otra cosa nueva
+
 
 
