@@ -23,3 +23,5 @@ Dejo por aquí algunas apreciaciones o inferencias sobre la experiencia con el g
 - Hay ciertos **temas populares**, como ropa, animales (mascotas), mobiliario, libros o comida. Podría ser interesante como posible filtrado o categorización.
 - También se publican mensajes relacionados con **noticias** de divulgación o **eventos** relacionados con el consumo colaborativo. 
 - Hay también muchos mensajes de **agradecimientos**. Pienso que sería genial poder, mediante alguna acción, darle las gracias a alguien.
+- Una idea que me parece muy práctica es que cada uno, en su **perfil**, pueda indicar por un lado, qué cosas está buscando o necesita, y por otro lado, que cosas tiene para ofrecer y regalar a alguien.
+- Para más adelante, el préstamo también es algo que sería de gran utilidad. La posibilidad de prestar a alguien ciertos objetos en lugar de regalarlos, por ejemplo un proyector, un libro, ...etc. Además, podría quedar reflejado en el perfil personal, esto es, qué cosas tengo prestadas, a quién y de quién son. ¡Ya no perderemos el rastro de ese libro o disco que una vez prestamos a no me acuerdo quién!
