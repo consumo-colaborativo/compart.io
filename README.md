@@ -20,7 +20,7 @@ Este desarrollo quiere ofrecer una plataforma digital ágil y sencilla enfocada 
 # Punto de partida
 Dejo por aquí algunas apreciaciones o inferencias sobre la experiencia con el grupo de consumo colaborativo de Facebook para de ahí, comentarlas, tomar ideas de funcionalidades y definir prioridades para comenzar con lo más básico.
 - A la hora de **insertar un mensaje**, es interesante ofrecer la posibilidad de **adjuntar una imagen** e indicar **localización**, para así, poder posteriormente filtrar por ubicación.
-- Hay ciertos **temas populares**, como ropa, animales (mascotas), mobiliario, libros o comida. Podría ser interesante como posible filtrado o categorización.
+- Hay ciertos **temas populares**, como ropa, animales (mascotas), mobiliario, libros o comida; también servicios. Podría ser interesante como posible filtrado o categorización.
 - También se publican mensajes relacionados con **noticias** de divulgación o **eventos** relacionados con el consumo colaborativo. 
 - Hay también muchos mensajes de **agradecimientos**. Pienso que sería genial poder, mediante alguna acción, darle las gracias a alguien.
 - También el tema de a quién decido entregar algo ha traído muchas discusiones. En mi opinión, los **comentarios públicos** sobre un mensaje publicado es algo que por un lado refleja la actividad del grupo, pero por otro, trae en ocasiones la polémica. Los acuerdos (cuando decido a quién entrego algo y donde quedo con la persona) suelen llegar por **mensajes privados**.
