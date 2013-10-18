@@ -16,6 +16,10 @@ Este desarrollo quiere ofrecer una plataforma digital ágil y sencilla enfocada 
 - Éste es un proyecto abierto, libre (con licencia GPL) y sin ánimo de lucro.
 - El proyecto acepta donaciones para asegurar el buen funcionamiento, mantenimiento y desarrollo de la iniciativa.
 - ...
+ 
+## Otras iniciativas
+- [etruekko](https://github.com/wadobo/etruekko)
+- [nolotiro](https://github.com/alabs/nolotiro)
 
 # Punto de partida
 Dejo por aquí algunas apreciaciones o inferencias sobre la experiencia con el grupo de consumo colaborativo de Facebook para de ahí, comentarlas, tomar ideas de funcionalidades y definir prioridades para comenzar con lo más básico.
