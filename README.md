@@ -16,10 +16,6 @@ Este desarrollo quiere ofrecer una plataforma digital ágil y sencilla enfocada 
 - Éste es un proyecto abierto, libre (con licencia GPL) y sin ánimo de lucro.
 - El proyecto acepta donaciones para asegurar el buen funcionamiento, mantenimiento y desarrollo de la iniciativa.
 - ...
- 
-## Otras iniciativas
-- [etruekko](https://github.com/wadobo/etruekko)
-- [nolotiro](https://github.com/alabs/nolotiro)
 
 # Punto de partida
 Dejo por aquí algunas apreciaciones o inferencias sobre la experiencia con el grupo de consumo colaborativo de Facebook para de ahí, comentarlas, tomar ideas de funcionalidades y definir prioridades para comenzar con lo más básico.
@@ -35,3 +31,11 @@ Dejo por aquí algunas apreciaciones o inferencias sobre la experiencia con el g
 - ¿**Alertas**? Sería interesante si en mi perfil indico que estoy buscando una bicicleta, si alguien publica una bicicleta para dar, me llegase un aviso.
 - Sobre el **registro de usuarios**, hay quien no tiene perfil en Facebook, por lo que sería genial abrir el grupo a todas las personas.
 - Mantener la presencia en Facebook también resulta interesante en la divulgación del proyecto. Aquí sería idóneo investigar formas de **integración con Facebook** (*Open Graph*, *likes*, ...)
+
+# Proyectos de Referencia
+
+Podemos aprender mucho de proyectos que ya existen en otros países y que promueven el consumo colaborativo:
+- [Obsso Collaborative Thinking App](http://obsso.com/) solo disponible para móviles, permite cambiar cosas.
+- [StreetBank](http://www.streetbank.com/splash) find and share anything in your neighbourhood. El vídeo lo explica muy bien, añade la idea de prestar cosas.
+- [Freegle](http://www.ilovefreegle.org/) tiene aplicación Facebook asociada. Habría que analizar bien como funciona.
+- [Lynxup](http://www.lynxup.com/) permite login con facebook o google. lynxup is a simple way of finding free stuff in your area, and a great way to get rid of old stuff you no longer need.
