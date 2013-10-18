@@ -19,6 +19,7 @@ Este desarrollo quiere ofrecer una plataforma digital ágil y sencilla enfocada 
 
 # Punto de partida
 Dejo por aquí algunas apreciaciones o inferencias sobre la experiencia con el grupo de consumo colaborativo de Facebook para de ahí, comentarlas, tomar ideas de funcionalidades y definir prioridades para comenzar con lo más básico.
+- Mejorar la **búsqueda** de objetos/necesidades parece el punto central.
 - A la hora de **insertar un mensaje**, es interesante ofrecer la posibilidad de **adjuntar una imagen** e indicar **localización**, para así, poder posteriormente filtrar por ubicación.
 - Hay ciertos **temas populares**, como ropa, animales (mascotas), mobiliario, libros o comida; también servicios. Podría ser interesante como posible filtrado o categorización.
 - También se publican mensajes relacionados con **noticias** de divulgación o **eventos** relacionados con el consumo colaborativo. 
@@ -28,3 +29,5 @@ Dejo por aquí algunas apreciaciones o inferencias sobre la experiencia con el g
 - Para más adelante, el **préstamo** también es algo que sería de gran utilidad. La posibilidad de prestar a alguien ciertos objetos en lugar de regalarlos, por ejemplo un proyector, un libro, ...etc. Además, podría quedar reflejado en el perfil personal, esto es, qué cosas tengo prestadas, a quién y de quién son. ¡Ya no perderemos el rastro de ese libro o disco que una vez prestamos a no me acuerdo quién!
 - También es interesante ofrecer la posibilidad de "denunciar" un mensaje por su contenido (ha habido casos de gente ofreciendo seguros y préstamos).
 - ¿**Alertas**? Sería interesante si en mi perfil indico que estoy buscando una bicicleta, si alguien publica una bicicleta para dar, me llegase un aviso.
+- Sobre el **registro de usuarios**, hay quien no tiene perfil en Facebook, por lo que sería genial abrir el grupo a todas las personas.
+- Mantener la presencia en Facebook también resulta interesante en la divulgación del proyecto. Aquí sería idóneo investigar formas de **integración con Facebook** (*Open Graph*, *likes*, ...)
