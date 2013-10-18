@@ -13,8 +13,8 @@ Este desarrollo quiere ofrecer una plataforma digital ágil y sencilla enfocada 
  
 
 # Principios
-- Éste es un proyecto abierto, libre y sin ánimo de lucro.
-- El proyecto acepta donaciones.
+- Éste es un proyecto abierto, libre (con licencia GPL) y sin ánimo de lucro.
+- El proyecto acepta donaciones para asegurar el buen funcionamiento, mantenimiento y desarrollo de la iniciativa.
 - ...
 
 # Punto de partida
