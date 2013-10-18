@@ -5,7 +5,7 @@ Este documento sirve de guía de desarrollo para la plataforma digital del proye
 
 La idea se inició alrededor de Junio de 2012 mediante la creación de un [grupo de Consumo Colaborativo en Facebook](https://www.facebook.com/groups/310342205721740/) bajo el lema "No compres; pide. No tires; regala", como un proyecto web piloto de consumo colaborativo abierto, libre y gratuito. Hasta la fecha, el grupo cuenta con más de 8500 miembros.
 
-Este desarrollo quiere ofrecer una plataforma digital ágil y sencilla enfocada a la comunicación, donación y petición de bienes y necesidades.
+Este desarrollo quiere ofrecer una plataforma digital ágil y sencilla enfocada a la comunicación, donación y petición de bienes y necesidades en el marco del consumo colaborativo.
 
 
 # Objetivos
