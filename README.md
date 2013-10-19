@@ -45,3 +45,11 @@ Podemos aprender mucho de proyectos que ya existen en otros países y que promue
 - [Peerby](http://peerby.com) tiene conexión con Facebook. Parte de la geolocalización para publicar peticiones y hacerte llegar aquéllas que se publiquen por personas en tu vecindad. Visualiza los anuncions como el listado de twitter, falta información más visual.
 - [Telodoy](http://http://www.telodoy.net/) doy, necesito y cambio, por país y provincia. Muchos anuncios, diseño pobre.
 - [Circle](http://discovercircle.com/) sólo App móvil, De todas las que he usado o conocido, a nivel de diseño es la que más me ha gustado. Parte de la localización en la que estés. Para iOS y Android. Está pensada para enterarse de que ocurre a tu alrededor en todo momento: problemas con tráfico, etc. Quizás demasiado genérica, el diseño muy chulo.
+- Google Mine es un proyecto en desarrollo que se rumoreó en [este post](http://googlesystem.blogspot.com.es/2013/06/google-mine.html), que también citó el blog consumocolaborativo.com en este artículo titulado *lo que mejoraría de [Google Mine](http://www.consumocolaborativo.com/2013/06/25/lo-que-mejoraria-de-google-mine/), en el que además cita otros proyectos relacionados.
+- [mine](http://getmine.com/) A directory of people and purchases. Parece estar en standby "Sign Ups Closed".
+- [Fribi](http://www.fribi.com/) Your social marketplace. Tiene login con Facebook y te pide permiso para publicar en tu Facebook. Tienen un [video](https://vimeo.com/40324408) explicativo.
+- [NeighborGoods](http://neighborgoods.net/) Parece enfocado a compartir objetos y, según leo, ofrecen un sistema de inventario con recordatorios.
+- [Bondsy](https://www.bondsy.com/) Una app para iOS. Parece tener un diseño más cuidado que otros proyectos que hemos citado.
+- [Yerdle](https://www.yerdle.com/) "Give and get free stuff". Otra app para iOS.
+- [Gnibble](http://gnibble.com/?locale=en) Un proyecto alemán para compartir y dar. Integran Google Map para visualmente localizar objetos y mostrar información de la distancia de un objeto de ti. Parece que también los usuarios tienen valoraciones (estrellas), un panel para ver sus objetos prestados y alquilados, y una lista de necesidades. Los objetos tienen información del número de veces que han sido prestados (¡curioso!).
+- 
