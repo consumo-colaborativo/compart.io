@@ -41,5 +41,6 @@ Podemos aprender mucho de proyectos que ya existen en otros países y que promue
 - [Lynxup](http://www.lynxup.com/) permite login con facebook o google. lynxup is a simple way of finding free stuff in your area, and a great way to get rid of old stuff you no longer need.
 - [Nolotiro](https://github.com/alabs/nolotiro) "es un sitio web donde regalar y buscar cosas gratis de segunda mano". De este proyecto surgió [segundamanita.com](http://www.segundamanita.com), enfocado a niños y bebés, y [ropadona.com](http://www.ropadona.com), orientado a ropa.
 - [etruekko](https://github.com/wadobo/etruekko) es una red de comunidades para intercambiar objetos y servicios.
-- [Sharetribe](https://www.sharetribe.com/) Let your community sell, rent, swap and share goods and services online.
+- [Sharetribe](https://www.sharetribe.com/) Let your community sell, rent, swap and share goods and services online. Aquí el [código fuente](https://github.com/sharetribe/sharetribe)
 - [Peerby](http://peerby.com) tiene conexión con Facebook. Parte de la geolocalización para publicar peticiones y hacerte llegar aquéllas que se publiquen por personas en tu vecindad.
+- [Reciclalia](http://www.reciclalia.com/) 
