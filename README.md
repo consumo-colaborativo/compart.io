@@ -44,3 +44,4 @@ Podemos aprender mucho de proyectos que ya existen en otros países y que promue
 - [Sharetribe](https://www.sharetribe.com/) Let your community sell, rent, swap and share goods and services online. Aquí el [código fuente](https://github.com/sharetribe/sharetribe)
 - [Peerby](http://peerby.com) tiene conexión con Facebook. Parte de la geolocalización para publicar peticiones y hacerte llegar aquéllas que se publiquen por personas en tu vecindad.
 - [Telodoy](http://http://www.telodoy.net/) doy, necesito y cambio, por país y provincia.
+- [Circle](http://discovercircle.com/) De todas las que he usado o conocido, a nivel de diseño es la que más me ha gustado. Parte de la localización en la que estés.
