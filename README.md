@@ -52,4 +52,3 @@ Podemos aprender mucho de proyectos que ya existen en otros países y que promue
 - [Bondsy](https://www.bondsy.com/) Una app para iOS. Parece tener un diseño más cuidado que otros proyectos que hemos citado.
 - [Yerdle](https://www.yerdle.com/) "Give and get free stuff". Otra app para iOS.
 - [Gnibble](http://gnibble.com/?locale=en) Un proyecto alemán para compartir y dar. Integran Google Map para visualmente localizar objetos y mostrar información de la distancia de un objeto de ti. Parece que también los usuarios tienen valoraciones (estrellas), un panel para ver sus objetos prestados y alquilados, y una lista de necesidades. Los objetos tienen información del número de veces que han sido prestados (¡curioso!).
-- 
