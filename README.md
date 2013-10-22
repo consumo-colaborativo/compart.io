@@ -32,6 +32,8 @@ Dejo por aquí algunas apreciaciones o inferencias sobre la experiencia con el g
 - Sobre el **registro de usuarios**, hay quien no tiene perfil en Facebook, por lo que sería genial abrir el grupo a todas las personas.
 - Mantener la presencia en Facebook también resulta interesante en la divulgación del proyecto. Aquí sería idóneo investigar formas de **integración con Facebook** (*Open Graph*, *likes*, ...)
 
+- Otro elemento diferenciador con respecto al resto de proyectos: en lugar de centrarlo en torno a los objetos que se ofertan centrarlo en torno a las personas que dan y piden cosas.
+
 # Proyectos de Referencia
 
 Podemos aprender mucho de proyectos que ya existen en otros países y que promueven el consumo colaborativo:
