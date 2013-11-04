@@ -68,3 +68,9 @@ Aquí comentamos algunas de las tecnologías a emplear en el proyecto:
 - [Wookmark](http://www.wookmark.com/jquery-plugin) Otra implementación jquery para la implementación de *cards*.
 - [Salvattore](http://salvattore.com) Una alternativa más, con proyecto en github y actualizado.
 
+### Frameworks CSS
+- [Bootstrap](http://getbootstrap.com)
+- [Zurb Foundation](foundation.zurb.com)
+ 
+
+## Backend
