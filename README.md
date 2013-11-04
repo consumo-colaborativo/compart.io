@@ -57,3 +57,14 @@ Podemos aprender mucho de proyectos que ya existen en otros países y que promue
 - [imixme](http://imixme.com) Por lo que sé, es un proyecto que se ha desarrollado recientemente desde Málaga. Se definen como una red comercial para regalar objetos, cambiar o recibir dinero ya sea por venderlo o por alquilarlo durante un tiempo. Además los usuarios podrán decir qué cosas necesitan, qué cosas les hace falta y imixme buscará usuarios que tengan cosas que ambos necesiten para que los 2 puedan salir beneficiados.
 - [Favorece](http://favorece.net/) Es un proyecto que parece ya abandonado. Para pedir y ofrecer cosas y servicios o favores.
 - [Gitflow](https://github.com/GiftFlow/giftflow) La web del proyecto no va, pero está el código publicado en github. "*GiftFlow is an open-source web platform that makes it easy for communities to give and share their extra resources*".
+
+
+# Tecnologías
+Aquí comentamos algunas de las tecnologías a emplear en el proyecto:
+
+## Frontend / Interfaz / UX
+### Estructura de *cards* / *tarjetas*
+- [Masonry](http://masonry.desandro.com/) Una librería Javascript para implementar una estructura en *cards* tipo [Pinterest](https://www.pinterest.com).
+- [Wookmark](http://www.wookmark.com/jquery-plugin) Otra implementación jquery para la implementación de *cards*.
+- [Salvattore](http://salvattore.com) Una alternativa más, con proyecto en github y actualizado.
+
