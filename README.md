@@ -57,3 +57,13 @@ Podemos aprender mucho de proyectos que ya existen en otros países y que promue
 - [imixme](http://imixme.com) Por lo que sé, es un proyecto que se ha desarrollado recientemente desde Málaga. Se definen como una red comercial para regalar objetos, cambiar o recibir dinero ya sea por venderlo o por alquilarlo durante un tiempo. Además los usuarios podrán decir qué cosas necesitan, qué cosas les hace falta y imixme buscará usuarios que tengan cosas que ambos necesiten para que los 2 puedan salir beneficiados.
 - [Favorece](http://favorece.net/) Es un proyecto que parece ya abandonado. Para pedir y ofrecer cosas y servicios o favores.
 - [Gitflow](https://github.com/GiftFlow/giftflow) La web del proyecto no va, pero está el código publicado en github. "*GiftFlow is an open-source web platform that makes it easy for communities to give and share their extra resources*".
+
+# ¿Cómo contribuir al desarrollo del proyecto?
+
+- Usar el modelo de trabajo [GitHub Flow](http://zachholman.com/talk/how-github-uses-github-to-build-github/). Las reglas básicas de GitHub Flow son:
+ - Anything in the master branch is deployable
+ - To work on something new, create a descriptively named branch off of master (ie: new-oauth2-scopes)
+ - Commit to that branch locally and regularly push your work to the same named branch on the server
+ - When you need feedback or help, or you think the branch is ready for merging, open a pull request
+ - After someone else has reviewed and signed off on the feature, you can merge it into master
+ - Once it is merged and pushed to ‘master’, you can and should deploy immediately
