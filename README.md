@@ -74,3 +74,4 @@ Aquí comentamos algunas de las tecnologías a emplear en el proyecto:
  
 
 ## Backend
+- [Symfony](http://symfony.com)
