@@ -1,4 +1,4 @@
-consumo-colaborativo
+compart.io
 ====================
 # Introducción
 Este documento sirve de guía de desarrollo para la plataforma digital del proyecto social de consumo colaborativo.
