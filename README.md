@@ -10,6 +10,7 @@ Este desarrollo quiere ofrecer una plataforma digital ágil y sencilla enfocada 
 
 # Objetivos
 1. Mejorar la experiencia de usuario del proyecto piloto del grupo de consumo colaborativo de Facebook.
+2. Investigar en formas de interacción social en torno al consumo colaborativo (reputación, organización,...).
  
 
 # Principios
