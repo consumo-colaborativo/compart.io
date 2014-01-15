@@ -59,6 +59,13 @@ Podemos aprender mucho de proyectos que ya existen en otros países y que promue
 - [Favorece](http://favorece.net/) Es un proyecto que parece ya abandonado. Para pedir y ofrecer cosas y servicios o favores.
 - [Gitflow](https://github.com/GiftFlow/giftflow) La web del proyecto no va, pero está el código publicado en github. "*GiftFlow is an open-source web platform that makes it easy for communities to give and share their extra resources*".
 
+# Evaluación de ShareTribe
+
+Conclusiones sobre la evaluación de ShareTribe y las razones por las cuales hemos decidido no basarnos en su código y desarrollar una una plataforma nueva:
+- Se necesitan añadir bastantes funcionalidades nuevas: sistema de categorías, extender la información mostrada en las "Cards", implementar un sistema de control basado en estadísticas de usuario (nivel de satisfacción), implementar un funcionamiento en tiempo real (necesita de recarga de página), etc.
+- Un primer intento de instalación del código disponible en GitHub da bastantes problemas y no se completa con éxito.
+- Comunidad reducida: se trata de una herramienta de código abierto cuyo modelo de negocio se basa en ofrecer servicios de customización de interfaz. Sus esfuerzos están más enfocados a mantener estos servicios que a crear una comunidad de desarrolladores alrededor. Es difícil que los programadores se sientan motivados a aportar a un proyecto del cual luego se beneficiarán económicamente sólo los mantenedores. 
+
 # ¿Cómo contribuir al desarrollo del proyecto?
 
 - Usar el modelo de trabajo [GitHub Flow](http://zachholman.com/talk/how-github-uses-github-to-build-github/). Las reglas básicas de GitHub Flow son:
