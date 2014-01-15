@@ -79,3 +79,21 @@ Conclusiones sobre la evaluación de ShareTribe y las razones por las cuales hem
  - When you need feedback or help, or you think the branch is ready for merging, open a pull request
  - After someone else has reviewed and signed off on the feature, you can merge it into master
  - Once it is merged and pushed to ‘master’, you can and should deploy immediately
+
+# Tecnologías Front & Back-end
+
+Cuando estamos hablando de en qué tecnología vamos a hacer el proyecto tenemos claro que la mayor parte será en HTML5, CSS3 y Javascript, lenguajes de front-end y que se ejecuta en el lado del cliente. Cuanto más podamos hacer en el lado del cliente mejor, más rápido, mejos nos costará el hosting y más aprovecharán los usuarios esos pedazos de procesadores cuad-core e i7 que tendrán bajo sus dedos.
+
+Lo que quedaba por decidir es la tecnología que íbamos a usar del lado del servidor.
+
+Node JS para mí es una nueva era en las tecnologías de servidor y que deja atrás a sus competidores por lo siguiente:
+
+- No hay que aprender otro lenguaje. Sólo aprender a programar bien en JavaScript y usar una serie de librerías y funciones que se ejecutarán en el lado del servidor.
+- Podremos reutilizar código hecho para el front-end para el back-end.
+- Favorece usar bases de datos como redis o mongodb, mucho más simples y más pensadas para aplicaciones web (también podemos usar mysql)
+- Mejoraremos la velocidad de los procesos del servidor al usar un lenguaje de programación no bloqueante y que nos permitirá escribir código "asíncrono". Pensad los beneficios que tiene esto a nivel de front-end pues lo mismo para el back-end. Es el punto fuerte de Node.
+- Mejoraremos enormemente la escalabilidad de la carga del servidor. Una máquina con apache suele petar alrededor de las 400 conexiones. La misma máquina con Node sobre los 3000.
+- Además de una mucho mejor escalabilidad vertical es mucho más fácil escalarlo horizontalmete ya que sólo se ejecuta un proceso por procesador o núcleo.
+- Mejora de la seguridad puesto que, además del punto anterior para ataques DDOS, tiene una superficie de ataque/fallo muy reducida. No hay apache con 35 módulos que nadie sabe configurar y propensos a tener vulnerabilidades. Solo node y con 15 lineas de código tienes un servidor que va a toda leche.
+
+Pensad que Javascript es el único lenguaje pensado, diseñado y creado para ejecutar aplicaciones web... como un tal Andreesen dijo hace ya casi 25 años "Al final sólo nos quedará el navegador".
