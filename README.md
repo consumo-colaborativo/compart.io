@@ -15,8 +15,8 @@ Este desarrollo quiere ofrecer una plataforma digital ágil y sencilla enfocada 
 
 # Principios
 - Éste es un proyecto abierto, libre (con licencia GPL) y sin ánimo de lucro.
-- El proyecto acepta donaciones para asegurar el buen funcionamiento, mantenimiento y desarrollo de la iniciativa.
-- ...
+- El proyecto acepta donaciones para asegurar el buen funcionamiento, mantenimiento y desarrollo de la iniciativa, siempre y cuando no alteren la naturaleza colectiva, desinteresada y abierta. 
+- El [equipo inicial de mantenedores de compart.io](https://github.com/consumo-colaborativo?tab=members) está formado por Álvaro Saco, Toni Castillo, Delphine Gimbert, Javier Jiménez y Magda Sánchez. Una vez lanzemos la primera versión de Compart.io liberaremos el código incluyendo toda la documentación necesaria y las formas posibles de contribuir.   
 
 # Punto de partida
 Dejo por aquí algunas apreciaciones o inferencias sobre la experiencia con el grupo de consumo colaborativo de Facebook para de ahí, comentarlas, tomar ideas de funcionalidades y definir prioridades para comenzar con lo más básico.
@@ -66,7 +66,11 @@ Conclusiones sobre la evaluación de ShareTribe y las razones por las cuales hem
 - Un primer intento de instalación del código disponible en GitHub da bastantes problemas y no se completa con éxito.
 - Comunidad reducida: se trata de una herramienta de código abierto cuyo modelo de negocio se basa en ofrecer servicios de customización de interfaz. Sus esfuerzos están más enfocados a mantener estos servicios que a crear una comunidad de desarrolladores alrededor. Es difícil que los programadores se sientan motivados a aportar a un proyecto del cual luego se beneficiarán económicamente sólo los mantenedores. 
 
-# ¿Cómo contribuir al desarrollo del proyecto?
+# ¿Cómo contribuir al proyecto?
+
+¡Estamos deseando que puedas unirte a Compart.io! Como en todo proyecto libre para poder abrirlo a aportaciones, primero tenemos que desarrollar una versión básica y documentarla adecuadamente. Mientras tanto puedes seguir y aportar a las discusiones que mantenemos en las "Issues" del proyecto sobre las decisiones técnicas y de diseño que vamos tomando, ¡tu opinión es muy valiosa! 
+
+# ¿Qué modelo de trabajo usamos?
 
 - Usar el modelo de trabajo [GitHub Flow](http://zachholman.com/talk/how-github-uses-github-to-build-github/). Las reglas básicas de GitHub Flow son:
  - Anything in the master branch is deployable
