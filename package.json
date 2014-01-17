@@ -1,0 +1,33 @@
+{
+	"name": "compart.io",
+
+	"version": "0.0.1",
+
+	"description": "A place to get & share",
+
+	"author": {
+		"name": "compart.io",
+		"email": "no@email.yet"
+	},
+
+	"website":{
+		"url": "compart.io"
+	},
+	
+	"repository": {
+                "type": "git",
+                "url": "git://github.com/consumo-colaborativo/compart.io.git"
+  },
+  
+	"private": true,
+	
+  "dependencies": {
+		"express": "3.0.6",
+		"stylus": "0.31.0",
+		"jade": "0.27.7"
+	},
+	"engines": {
+		"node": "0.8.14",
+		"npm":  "1.1.65"
+	}
+}
