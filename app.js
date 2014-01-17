@@ -17,7 +17,7 @@ compart.io Express Web Server
 		app.use(express.static(__dirname + '/app/public'));
 		});
 
-require('./server/router')(app);
+require('./app/server/router')(app);
 
 /**
  * Creamos un servidor HTTP que contenga a la aplicación.
