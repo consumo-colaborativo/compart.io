@@ -1,2 +1,5 @@
 # excluimos de los commits los módulos de node
 node_modules/
+
+# excluimos los ficheros terminados en caracteres ~ que va dejando el editor vi
+*~
