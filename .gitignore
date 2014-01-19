@@ -1,0 +1,2 @@
+# excluimos de los commits los módulos de node
+node_modules/
