@@ -1,0 +1,26 @@
+extends layout
+
+block content
+
+    .container
+      p <a href="https://www.facebook.com/groups/310342205721740/?fref=ts" target="_blank"><img src="img/consumocolaborativo_logo.jpg" alt="cc_logo"></a><hr />
+      h1 Hola Mundo Colaborativo!<hr />
+      <br /><br />
+
+      form(method="post")#landing-email-form.well.span5
+        p Por favor introduce tu email y te mantendremos informada
+        input(type="text", name="email", id='email-tf').span5.required
+        button(type="submit")#submit.btn.btn-primary Mandar
+        div.alert.alert-error.hide
+        button(data-dismiss="alert").close
+      .footer.span12
+        hr
+        p &reg; 2014 Compart.io &middot; Consumo Colaborativo &middot; Join us! <a href="https://github.com/consumo-colaborativo" target="_blank"><img src="img/github.png" alt="github"></a> <!-- &middot; <a href="http://creativecommons.org/licenses/by-sa/3.0/es/" target="_blank"><img src="img/cclogo.png" alt="creative commons"></a> -->
+
+
+block scripts
+
+      script(src='/vendor/jquery.min.js')
+      script(src='/js/vendor/jquery.form.js')
+      script(src='/js/views/landing.js')
+      script(src='/js/form-validators/EmailValidator.js')
