@@ -1,5 +1,7 @@
 compart.io
 ====================
+compart.io es un proyecto llevado por voluntarios - gratuitamente y de código libre.
+
 # Introducción
 Este documento sirve de guía de desarrollo para la plataforma digital del proyecto social de consumo colaborativo.
 
