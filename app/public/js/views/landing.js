@@ -1,20 +1,27 @@
+
+
 $(document).ready(function(){
 
+    var ev = new EmailValidator();
 
-	// Manejador del email de registro     
+	$("#landing-email-form").ajaxForm({
 
-       var ev = new EmailValidator();
+		url : "/mandar-mailo",
 
-	$('#landing-email-form').ajaxForm({
-		url: '/mandar-email',
 		beforeSubmit : function(formData, jqForm, options){
+
 			if (ev.validateEmail($('email-tf').val())){
+				
 				ev.hiddenEmailAlert();
 				return true;
+
 			} else{
+
 				ev.showEmailalert("<b> Error! </b> Por favor introduzca un email correcto");
 				return false;
-			},
+			}
+		},
+
 		success: function(responseText, status, xhr, $form){
 			ev.showEmailSuccess("Gracias por apuntarte, tendrás noticias nuestras");
 		},
@@ -22,7 +29,7 @@ $(document).ready(function(){
 		error: function(){
 			ev.showEmailAlert("Los sentimos ha ocurrido un error, intentalo de nuevo más tarde");
 		}
-		})
-	})
+	});
+});
 
 

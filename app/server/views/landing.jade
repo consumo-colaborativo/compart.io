@@ -2,7 +2,7 @@ extends layout
 
 block content
 
-    .container
+    #contenedor.container
       p <a href="https://www.facebook.com/groups/310342205721740/?fref=ts" target="_blank"><img src="img/consumocolaborativo_logo.jpg" alt="cc_logo"></a><hr />
       h1 Hola Mundo Colaborativo!<hr />
       <br /><br />
@@ -20,7 +20,8 @@ block content
 
 block scripts
 
-      script(src='/vendor/jquery.min.js')
-      script(src='/js/vendor/jquery.form.js')
+      script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js')
+      script(src='/vendor/jquery.form.js')
       script(src='/js/views/landing.js')
+      //script(src='/js/views/prueba.js')
       script(src='/js/form-validators/EmailValidator.js')
