@@ -3,3 +3,6 @@ node_modules/
 
 # excluimos los ficheros terminados en caracteres ~ que va dejando el editor vi
 *~
+
+# Excluimos DS_Store
+DS_Store
