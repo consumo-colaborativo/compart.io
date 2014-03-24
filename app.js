@@ -4,6 +4,7 @@ compart.io Express Web Server
 
   var express = require('express');
   var http = require('http');
+  var stylus = require('stylus');
   var app = express();
 
 	app.configure(function(){
@@ -15,7 +16,7 @@ compart.io Express Web Server
 		app.use(express.bodyParser());
 		app.use(express.methodOverride());
 		app.use(express.static(__dirname + '/app/public'));
-		});
+		});	
 
 require('./app/server/router')(app);
 

@@ -1,0 +1,2087 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'stylus' ]
+2 info using npm@1.3.24
+3 info using node@v0.10.25
+4 verbose cache add [ 'stylus', null ]
+5 verbose cache add name=undefined spec="stylus" args=["stylus",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'stylus',
+6 verbose parsed url   path: 'stylus',
+6 verbose parsed url   href: 'stylus' }
+7 silly lockFile 27c0f414-stylus stylus
+8 verbose lock stylus /Users/alvarosaco/.npm/27c0f414-stylus.lock
+9 silly lockFile 27c0f414-stylus stylus
+10 silly lockFile 27c0f414-stylus stylus
+11 verbose addNamed [ 'stylus', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 5140332e-stylus stylus@
+14 verbose lock stylus@ /Users/alvarosaco/.npm/5140332e-stylus.lock
+15 silly addNameRange { name: 'stylus', range: '*', hasData: false }
+16 verbose url raw stylus
+17 verbose url resolving [ 'https://registry.npmjs.org/', './stylus' ]
+18 verbose url resolved https://registry.npmjs.org/stylus
+19 info trying registry request attempt 1 at 18:22:11
+20 verbose etag "98XJHWO7L6MZ7LXSYDZP5L5B0"
+21 http GET https://registry.npmjs.org/stylus
+22 http 304 https://registry.npmjs.org/stylus
+23 silly registry.get cb [ 304,
+23 silly registry.get   { date: 'Mon, 24 Mar 2014 17:22:12 GMT',
+23 silly registry.get     server: 'Apache',
+23 silly registry.get     via: '1.1 varnish',
+23 silly registry.get     'last-modified': 'Mon, 24 Mar 2014 17:22:13 GMT',
+23 silly registry.get     'cache-control': 'max-age=1',
+23 silly registry.get     etag: '"98XJHWO7L6MZ7LXSYDZP5L5B0"',
+23 silly registry.get     'x-served-by': 'cache-lcy1123-LCY',
+23 silly registry.get     'x-cache': 'HIT',
+23 silly registry.get     'x-cache-hits': '1',
+23 silly registry.get     'x-timer': 'S1395681732.501805782,VS0,VE568',
+23 silly registry.get     vary: 'Accept',
+23 silly registry.get     'content-length': '0',
+23 silly registry.get     'keep-alive': 'timeout=10, max=50',
+23 silly registry.get     connection: 'Keep-Alive' } ]
+24 verbose etag stylus from cache
+25 silly addNameRange number 2 { name: 'stylus', range: '*', hasData: true }
+26 silly addNameRange versions [ 'stylus',
+26 silly addNameRange   [ '0.0.1',
+26 silly addNameRange     '0.0.2',
+26 silly addNameRange     '0.1.0',
+26 silly addNameRange     '0.2.0',
+26 silly addNameRange     '0.2.1',
+26 silly addNameRange     '0.3.0',
+26 silly addNameRange     '0.3.1',
+26 silly addNameRange     '0.4.0',
+26 silly addNameRange     '0.4.1',
+26 silly addNameRange     '0.5.0',
+26 silly addNameRange     '0.5.1',
+26 silly addNameRange     '0.5.2',
+26 silly addNameRange     '0.5.3',
+26 silly addNameRange     '0.6.0',
+26 silly addNameRange     '0.6.2',
+26 silly addNameRange     '0.6.3',
+26 silly addNameRange     '0.6.4',
+26 silly addNameRange     '0.6.5',
+26 silly addNameRange     '0.6.6',
+26 silly addNameRange     '0.6.7',
+26 silly addNameRange     '0.7.0',
+26 silly addNameRange     '0.7.1',
+26 silly addNameRange     '0.7.2',
+26 silly addNameRange     '0.7.3',
+26 silly addNameRange     '0.7.4',
+26 silly addNameRange     '0.8.0',
+26 silly addNameRange     '0.9.0',
+26 silly addNameRange     '0.9.1',
+26 silly addNameRange     '0.9.2',
+26 silly addNameRange     '0.10.0',
+26 silly addNameRange     '0.11.0',
+26 silly addNameRange     '0.11.1',
+26 silly addNameRange     '0.11.2',
+26 silly addNameRange     '0.11.3',
+26 silly addNameRange     '0.11.4',
+26 silly addNameRange     '0.11.5',
+26 silly addNameRange     '0.11.6',
+26 silly addNameRange     '0.11.7',
+26 silly addNameRange     '0.11.8',
+26 silly addNameRange     '0.11.9',
+26 silly addNameRange     '0.11.10',
+26 silly addNameRange     '0.11.11',
+26 silly addNameRange     '0.11.12',
+26 silly addNameRange     '0.12.0',
+26 silly addNameRange     '0.12.1',
+26 silly addNameRange     '0.12.2',
+26 silly addNameRange     '0.12.3',
+26 silly addNameRange     '0.12.4',
+26 silly addNameRange     '0.13.0',
+26 silly addNameRange     '0.13.1',
+26 silly addNameRange     '0.13.2',
+26 silly addNameRange     '0.13.3',
+26 silly addNameRange     '0.13.4',
+26 silly addNameRange     '0.13.5',
+26 silly addNameRange     '0.13.6',
+26 silly addNameRange     '0.13.7',
+26 silly addNameRange     '0.13.8',
+26 silly addNameRange     '0.13.9',
+26 silly addNameRange     '0.14.0',
+26 silly addNameRange     '0.15.0',
+26 silly addNameRange     '0.15.1',
+26 silly addNameRange     '0.15.2',
+26 silly addNameRange     '0.15.3',
+26 silly addNameRange     '0.15.4',
+26 silly addNameRange     '0.16.0',
+26 silly addNameRange     '0.17.0',
+26 silly addNameRange     '0.18.0',
+26 silly addNameRange     '0.19.0',
+26 silly addNameRange     '0.19.1',
+26 silly addNameRange     '0.19.2',
+26 silly addNameRange     '0.19.3',
+26 silly addNameRange     '0.19.4',
+26 silly addNameRange     '0.19.5',
+26 silly addNameRange     '0.19.6',
+26 silly addNameRange     '0.19.7',
+26 silly addNameRange     '0.19.8',
+26 silly addNameRange     '0.20.0',
+26 silly addNameRange     '0.20.1',
+26 silly addNameRange     '0.21.0',
+26 silly addNameRange     '0.21.1',
+26 silly addNameRange     '0.21.2',
+26 silly addNameRange     '0.22.0',
+26 silly addNameRange     '0.22.1',
+26 silly addNameRange     '0.22.2',
+26 silly addNameRange     '0.22.3',
+26 silly addNameRange     '0.22.4',
+26 silly addNameRange     '0.22.5',
+26 silly addNameRange     '0.22.6',
+26 silly addNameRange     '0.23.0',
+26 silly addNameRange     '0.24.0',
+26 silly addNameRange     '0.25.0',
+26 silly addNameRange     '0.26.0',
+26 silly addNameRange     '0.26.1',
+26 silly addNameRange     '0.27.0',
+26 silly addNameRange     '0.27.1',
+26 silly addNameRange     '0.27.2',
+26 silly addNameRange     '0.28.0',
+26 silly addNameRange     '0.28.1',
+26 silly addNameRange     '0.28.2',
+26 silly addNameRange     '0.29.0',
+26 silly addNameRange     '0.30.0',
+26 silly addNameRange     '0.30.1',
+26 silly addNameRange     '0.31.0',
+26 silly addNameRange     '0.32.0',
+26 silly addNameRange     '0.32.1',
+26 silly addNameRange     '0.33.0',
+26 silly addNameRange     '0.33.1',
+26 silly addNameRange     '0.34.0',
+26 silly addNameRange     '0.34.1',
+26 silly addNameRange     '0.35.0',
+26 silly addNameRange     '0.35.1',
+26 silly addNameRange     '0.36.0',
+26 silly addNameRange     '0.36.1',
+26 silly addNameRange     '0.37.0',
+26 silly addNameRange     '0.38.0',
+26 silly addNameRange     '0.39.0',
+26 silly addNameRange     '0.39.1',
+26 silly addNameRange     '0.39.2',
+26 silly addNameRange     '0.39.3',
+26 silly addNameRange     '0.39.4',
+26 silly addNameRange     '0.40.0',
+26 silly addNameRange     '0.40.1',
+26 silly addNameRange     '0.40.2',
+26 silly addNameRange     '0.40.3',
+26 silly addNameRange     '0.41.0',
+26 silly addNameRange     '0.41.1',
+26 silly addNameRange     '0.41.2',
+26 silly addNameRange     '0.41.3',
+26 silly addNameRange     '0.42.0',
+26 silly addNameRange     '0.42.1',
+26 silly addNameRange     '0.42.2',
+26 silly addNameRange     '0.42.3' ] ]
+27 verbose addNamed [ 'stylus', '0.42.3' ]
+28 verbose addNamed [ '0.42.3', '0.42.3' ]
+29 silly lockFile fb5b2923-stylus-0-42-3 stylus@0.42.3
+30 verbose lock stylus@0.42.3 /Users/alvarosaco/.npm/fb5b2923-stylus-0-42-3.lock
+31 silly lockFile fe235b6f-mjs-org-stylus-stylus-0-42-3-tgz https://registry.npmjs.org/stylus/-/stylus-0.42.3.tgz
+32 verbose lock https://registry.npmjs.org/stylus/-/stylus-0.42.3.tgz /Users/alvarosaco/.npm/fe235b6f-mjs-org-stylus-stylus-0-42-3-tgz.lock
+33 verbose addRemoteTarball [ 'https://registry.npmjs.org/stylus/-/stylus-0.42.3.tgz',
+33 verbose addRemoteTarball   '23e8b3e71eb7f60bc4a657de498c8feb9c366c32' ]
+34 info retry fetch attempt 1 at 18:22:13
+35 verbose fetch to= /Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681733371-0.5928765996359289/tmp.tgz
+36 http GET https://registry.npmjs.org/stylus/-/stylus-0.42.3.tgz
+37 http 200 https://registry.npmjs.org/stylus/-/stylus-0.42.3.tgz
+38 verbose tar unpack /Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681733371-0.5928765996359289/tmp.tgz
+39 silly lockFile eb1c0755-33371-0-5928765996359289-package tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681733371-0.5928765996359289/package
+40 verbose lock tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681733371-0.5928765996359289/package /Users/alvarosaco/.npm/eb1c0755-33371-0-5928765996359289-package.lock
+41 silly lockFile 3a046f50-33371-0-5928765996359289-tmp-tgz tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681733371-0.5928765996359289/tmp.tgz
+42 verbose lock tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681733371-0.5928765996359289/tmp.tgz /Users/alvarosaco/.npm/3a046f50-33371-0-5928765996359289-tmp-tgz.lock
+43 silly gunzTarPerm modes [ '755', '644' ]
+44 silly gunzTarPerm extractEntry package.json
+45 silly gunzTarPerm extractEntry LICENSE
+46 silly gunzTarPerm extractEntry bm.js
+47 silly gunzTarPerm extractEntry index.js
+48 silly gunzTarPerm extractEntry Readme.md
+49 silly gunzTarPerm extractEntry bin/stylus
+50 silly gunzTarPerm extractEntry lib/browserify.js
+51 silly gunzTarPerm extractEntry lib/utils.js
+52 silly gunzTarPerm extractEntry lib/errors.js
+53 silly gunzTarPerm extractEntry lib/units.js
+54 silly gunzTarPerm extractEntry lib/lexer.js
+55 silly gunzTarPerm extractEntry lib/middleware.js
+56 silly gunzTarPerm extractEntry lib/token.js
+57 silly gunzTarPerm extractEntry lib/colors.js
+58 silly gunzTarPerm extractEntry lib/renderer.js
+59 silly gunzTarPerm extractEntry lib/stylus.js
+60 silly gunzTarPerm extractEntry lib/parser.js
+61 silly gunzTarPerm extractEntry lib/stack/frame.js
+62 silly gunzTarPerm extractEntry lib/stack/index.js
+63 silly gunzTarPerm extractEntry lib/stack/scope.js
+64 silly gunzTarPerm extractEntry lib/nodes/arguments.js
+65 silly gunzTarPerm extractEntry lib/nodes/if.js
+66 silly gunzTarPerm extractEntry lib/nodes/import.js
+67 silly gunzTarPerm extractEntry lib/nodes/index.js
+68 silly gunzTarPerm extractEntry lib/nodes/ident.js
+69 silly gunzTarPerm extractEntry lib/nodes/keyframes.js
+70 silly gunzTarPerm extractEntry lib/nodes/literal.js
+71 silly gunzTarPerm extractEntry lib/nodes/media.js
+72 silly gunzTarPerm extractEntry lib/nodes/member.js
+73 silly gunzTarPerm extractEntry lib/nodes/mozdocument.js
+74 silly gunzTarPerm extractEntry lib/nodes/hsla.js
+75 silly gunzTarPerm extractEntry lib/nodes/node.js
+76 silly gunzTarPerm extractEntry lib/nodes/group.js
+77 silly gunzTarPerm extractEntry lib/nodes/null.js
+78 silly gunzTarPerm extractEntry lib/nodes/function.js
+79 silly gunzTarPerm extractEntry lib/nodes/object.js
+80 silly gunzTarPerm extractEntry lib/nodes/fontface.js
+81 silly gunzTarPerm extractEntry lib/nodes/page.js
+82 silly gunzTarPerm extractEntry lib/nodes/extend.js
+83 silly gunzTarPerm extractEntry lib/nodes/params.js
+84 silly gunzTarPerm extractEntry lib/nodes/expression.js
+85 silly gunzTarPerm extractEntry lib/nodes/property.js
+86 silly gunzTarPerm extractEntry lib/nodes/each.js
+87 silly gunzTarPerm extractEntry lib/nodes/return.js
+88 silly gunzTarPerm extractEntry lib/nodes/comment.js
+89 silly gunzTarPerm extractEntry lib/nodes/rgba.js
+90 silly gunzTarPerm extractEntry lib/nodes/charset.js
+91 silly gunzTarPerm extractEntry lib/nodes/root.js
+92 silly gunzTarPerm extractEntry lib/nodes/call.js
+93 silly gunzTarPerm extractEntry lib/nodes/selector.js
+94 silly gunzTarPerm extractEntry lib/nodes/boolean.js
+95 silly gunzTarPerm extractEntry lib/nodes/string.js
+96 silly gunzTarPerm extractEntry lib/nodes/block.js
+97 silly gunzTarPerm extractEntry lib/nodes/ternary.js
+98 silly gunzTarPerm extractEntry lib/nodes/binop.js
+99 silly gunzTarPerm extractEntry lib/nodes/unaryop.js
+100 silly gunzTarPerm extractEntry lib/nodes/atblock.js
+101 silly gunzTarPerm extractEntry lib/nodes/unit.js
+102 silly gunzTarPerm extractEntry lib/nodes/jsliteral.js
+103 silly gunzTarPerm extractEntry lib/functions/image.js
+104 silly gunzTarPerm extractEntry lib/functions/index.js
+105 silly gunzTarPerm extractEntry lib/functions/resolver.js
+106 silly gunzTarPerm extractEntry lib/functions/url.js
+107 silly gunzTarPerm extractEntry lib/functions/index.styl
+108 silly gunzTarPerm extractEntry lib/convert/css.js
+109 silly gunzTarPerm extractEntry lib/visitor/compiler.js
+110 silly gunzTarPerm extractEntry lib/visitor/evaluator.js
+111 silly gunzTarPerm extractEntry lib/visitor/index.js
+112 silly gunzTarPerm extractEntry lib/visitor/normalizer.js
+113 silly lockFile eb1c0755-33371-0-5928765996359289-package tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681733371-0.5928765996359289/package
+114 silly lockFile eb1c0755-33371-0-5928765996359289-package tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681733371-0.5928765996359289/package
+115 silly lockFile 3a046f50-33371-0-5928765996359289-tmp-tgz tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681733371-0.5928765996359289/tmp.tgz
+116 silly lockFile 3a046f50-33371-0-5928765996359289-tmp-tgz tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681733371-0.5928765996359289/tmp.tgz
+117 verbose tar pack [ '/Users/alvarosaco/.npm/stylus/0.42.3/package.tgz',
+117 verbose tar pack   '/Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681733371-0.5928765996359289/package' ]
+118 verbose tarball /Users/alvarosaco/.npm/stylus/0.42.3/package.tgz
+119 verbose folder /Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681733371-0.5928765996359289/package
+120 silly lockFile eb1c0755-33371-0-5928765996359289-package tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681733371-0.5928765996359289/package
+121 verbose lock tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681733371-0.5928765996359289/package /Users/alvarosaco/.npm/eb1c0755-33371-0-5928765996359289-package.lock
+122 silly lockFile fe0f25ec-co-npm-stylus-0-42-3-package-tgz tar:///Users/alvarosaco/.npm/stylus/0.42.3/package.tgz
+123 verbose lock tar:///Users/alvarosaco/.npm/stylus/0.42.3/package.tgz /Users/alvarosaco/.npm/fe0f25ec-co-npm-stylus-0-42-3-package-tgz.lock
+124 silly lockFile eb1c0755-33371-0-5928765996359289-package tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681733371-0.5928765996359289/package
+125 silly lockFile eb1c0755-33371-0-5928765996359289-package tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681733371-0.5928765996359289/package
+126 silly lockFile fe0f25ec-co-npm-stylus-0-42-3-package-tgz tar:///Users/alvarosaco/.npm/stylus/0.42.3/package.tgz
+127 silly lockFile fe0f25ec-co-npm-stylus-0-42-3-package-tgz tar:///Users/alvarosaco/.npm/stylus/0.42.3/package.tgz
+128 silly lockFile 612fc873-rosaco-npm-stylus-0-42-3-package /Users/alvarosaco/.npm/stylus/0.42.3/package
+129 verbose lock /Users/alvarosaco/.npm/stylus/0.42.3/package /Users/alvarosaco/.npm/612fc873-rosaco-npm-stylus-0-42-3-package.lock
+130 silly lockFile 612fc873-rosaco-npm-stylus-0-42-3-package /Users/alvarosaco/.npm/stylus/0.42.3/package
+131 silly lockFile 612fc873-rosaco-npm-stylus-0-42-3-package /Users/alvarosaco/.npm/stylus/0.42.3/package
+132 verbose tar unpack /Users/alvarosaco/.npm/stylus/0.42.3/package.tgz
+133 silly lockFile 64f6b9b8-rosaco-npm-stylus-0-42-3-package tar:///Users/alvarosaco/.npm/stylus/0.42.3/package
+134 verbose lock tar:///Users/alvarosaco/.npm/stylus/0.42.3/package /Users/alvarosaco/.npm/64f6b9b8-rosaco-npm-stylus-0-42-3-package.lock
+135 silly lockFile fe0f25ec-co-npm-stylus-0-42-3-package-tgz tar:///Users/alvarosaco/.npm/stylus/0.42.3/package.tgz
+136 verbose lock tar:///Users/alvarosaco/.npm/stylus/0.42.3/package.tgz /Users/alvarosaco/.npm/fe0f25ec-co-npm-stylus-0-42-3-package-tgz.lock
+137 silly gunzTarPerm modes [ '755', '644' ]
+138 silly gunzTarPerm extractEntry package.json
+139 silly gunzTarPerm extractEntry LICENSE
+140 silly gunzTarPerm extractEntry bm.js
+141 silly gunzTarPerm extractEntry index.js
+142 silly gunzTarPerm extractEntry Readme.md
+143 silly gunzTarPerm extractEntry bin/stylus
+144 silly gunzTarPerm extractEntry lib/browserify.js
+145 silly gunzTarPerm extractEntry lib/utils.js
+146 silly gunzTarPerm extractEntry lib/errors.js
+147 silly gunzTarPerm extractEntry lib/units.js
+148 silly gunzTarPerm extractEntry lib/lexer.js
+149 silly gunzTarPerm extractEntry lib/middleware.js
+150 silly gunzTarPerm extractEntry lib/token.js
+151 silly gunzTarPerm extractEntry lib/colors.js
+152 silly gunzTarPerm extractEntry lib/renderer.js
+153 silly gunzTarPerm extractEntry lib/stylus.js
+154 silly gunzTarPerm extractEntry lib/parser.js
+155 silly gunzTarPerm extractEntry lib/stack/frame.js
+156 silly gunzTarPerm extractEntry lib/stack/index.js
+157 silly gunzTarPerm extractEntry lib/stack/scope.js
+158 silly gunzTarPerm extractEntry lib/nodes/arguments.js
+159 silly gunzTarPerm extractEntry lib/nodes/if.js
+160 silly gunzTarPerm extractEntry lib/nodes/import.js
+161 silly gunzTarPerm extractEntry lib/nodes/index.js
+162 silly gunzTarPerm extractEntry lib/nodes/ident.js
+163 silly gunzTarPerm extractEntry lib/nodes/keyframes.js
+164 silly gunzTarPerm extractEntry lib/nodes/literal.js
+165 silly gunzTarPerm extractEntry lib/nodes/media.js
+166 silly gunzTarPerm extractEntry lib/nodes/member.js
+167 silly gunzTarPerm extractEntry lib/nodes/mozdocument.js
+168 silly gunzTarPerm extractEntry lib/nodes/hsla.js
+169 silly gunzTarPerm extractEntry lib/nodes/node.js
+170 silly gunzTarPerm extractEntry lib/nodes/group.js
+171 silly gunzTarPerm extractEntry lib/nodes/null.js
+172 silly gunzTarPerm extractEntry lib/nodes/function.js
+173 silly gunzTarPerm extractEntry lib/nodes/object.js
+174 silly gunzTarPerm extractEntry lib/nodes/fontface.js
+175 silly gunzTarPerm extractEntry lib/nodes/page.js
+176 silly gunzTarPerm extractEntry lib/nodes/extend.js
+177 silly gunzTarPerm extractEntry lib/nodes/params.js
+178 silly gunzTarPerm extractEntry lib/nodes/expression.js
+179 silly gunzTarPerm extractEntry lib/nodes/property.js
+180 silly gunzTarPerm extractEntry lib/nodes/each.js
+181 silly gunzTarPerm extractEntry lib/nodes/return.js
+182 silly gunzTarPerm extractEntry lib/nodes/comment.js
+183 silly gunzTarPerm extractEntry lib/nodes/rgba.js
+184 silly gunzTarPerm extractEntry lib/nodes/charset.js
+185 silly gunzTarPerm extractEntry lib/nodes/root.js
+186 silly gunzTarPerm extractEntry lib/nodes/call.js
+187 silly gunzTarPerm extractEntry lib/nodes/selector.js
+188 silly gunzTarPerm extractEntry lib/nodes/boolean.js
+189 silly gunzTarPerm extractEntry lib/nodes/string.js
+190 silly gunzTarPerm extractEntry lib/nodes/block.js
+191 silly gunzTarPerm extractEntry lib/nodes/ternary.js
+192 silly gunzTarPerm extractEntry lib/nodes/binop.js
+193 silly gunzTarPerm extractEntry lib/nodes/unaryop.js
+194 silly gunzTarPerm extractEntry lib/nodes/atblock.js
+195 silly gunzTarPerm extractEntry lib/nodes/unit.js
+196 silly gunzTarPerm extractEntry lib/nodes/jsliteral.js
+197 silly gunzTarPerm extractEntry lib/functions/image.js
+198 silly gunzTarPerm extractEntry lib/functions/index.js
+199 silly gunzTarPerm extractEntry lib/functions/resolver.js
+200 silly gunzTarPerm extractEntry lib/functions/url.js
+201 silly gunzTarPerm extractEntry lib/functions/index.styl
+202 silly gunzTarPerm extractEntry lib/convert/css.js
+203 silly gunzTarPerm extractEntry lib/visitor/compiler.js
+204 silly gunzTarPerm extractEntry lib/visitor/evaluator.js
+205 silly gunzTarPerm extractEntry lib/visitor/index.js
+206 silly gunzTarPerm extractEntry lib/visitor/normalizer.js
+207 silly lockFile 64f6b9b8-rosaco-npm-stylus-0-42-3-package tar:///Users/alvarosaco/.npm/stylus/0.42.3/package
+208 silly lockFile 64f6b9b8-rosaco-npm-stylus-0-42-3-package tar:///Users/alvarosaco/.npm/stylus/0.42.3/package
+209 silly lockFile fe0f25ec-co-npm-stylus-0-42-3-package-tgz tar:///Users/alvarosaco/.npm/stylus/0.42.3/package.tgz
+210 silly lockFile fe0f25ec-co-npm-stylus-0-42-3-package-tgz tar:///Users/alvarosaco/.npm/stylus/0.42.3/package.tgz
+211 verbose chmod /Users/alvarosaco/.npm/stylus/0.42.3/package.tgz 644
+212 verbose chown /Users/alvarosaco/.npm/stylus/0.42.3/package.tgz [ 0, 20 ]
+213 silly lockFile fe235b6f-mjs-org-stylus-stylus-0-42-3-tgz https://registry.npmjs.org/stylus/-/stylus-0.42.3.tgz
+214 silly lockFile fe235b6f-mjs-org-stylus-stylus-0-42-3-tgz https://registry.npmjs.org/stylus/-/stylus-0.42.3.tgz
+215 silly lockFile fb5b2923-stylus-0-42-3 stylus@0.42.3
+216 silly lockFile fb5b2923-stylus-0-42-3 stylus@0.42.3
+217 silly lockFile 5140332e-stylus stylus@
+218 silly lockFile 5140332e-stylus stylus@
+219 silly resolved [ { name: 'stylus',
+219 silly resolved     description: 'Robust, expressive, and feature-rich CSS superset',
+219 silly resolved     version: '0.42.3',
+219 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+219 silly resolved     keywords: [ 'css', 'parser', 'style', 'stylesheets', 'jade', 'language' ],
+219 silly resolved     repository: { type: 'git', url: 'git://github.com/LearnBoost/stylus' },
+219 silly resolved     main: './index.js',
+219 silly resolved     browserify: './lib/browserify.js',
+219 silly resolved     engines: { node: '*' },
+219 silly resolved     bin: { stylus: './bin/stylus' },
+219 silly resolved     scripts: { prepublish: 'npm prune', test: 'make test' },
+219 silly resolved     dependencies:
+219 silly resolved      { 'css-parse': '1.7.x',
+219 silly resolved        mkdirp: '0.3.x',
+219 silly resolved        debug: '*',
+219 silly resolved        sax: '0.5.x',
+219 silly resolved        glob: '3.2.x' },
+219 silly resolved     devDependencies: { should: '*', mocha: '*' },
+219 silly resolved     readme: '# Stylus [![Build Status](https://travis-ci.org/LearnBoost/stylus.png?branch=master)](https://travis-ci.org/LearnBoost/stylus)\n\n Stylus is a revolutionary new language, providing an efficient, dynamic, and expressive way to generate CSS. Supporting both an indented syntax and regular CSS style.\n\n## Installation\n\n```bash\n$ npm install stylus\n```\n\n### Example\n\n```\nborder-radius()\n  -webkit-border-radius: arguments\n  -moz-border-radius: arguments\n  border-radius: arguments\n\nbody a\n  font: 12px/1.4 "Lucida Grande", Arial, sans-serif\n  background: black\n  color: #ccc\n\nform input\n  padding: 5px\n  border: 1px solid\n  border-radius: 5px\n```\n\ncompiles to:\n\n```css\nbody a {\n  font: 12px/1.4 "Lucida Grande", Arial, sans-serif;\n  background: #000;\n  color: #ccc;\n}\nform input {\n  padding: 5px;\n  border: 1px solid;\n  -webkit-border-radius: 5px;\n  -moz-border-radius: 5px;\n  border-radius: 5px;\n}\n```\n\nthe following is equivalent to the indented version of Stylus source, using the CSS syntax instead:\n\n```\nborder-radius() {\n  -webkit-border-radius: arguments\n  -moz-border-radius: arguments\n  border-radius: arguments\n}\n\nbody a {\n  font: 12px/1.4 "Lucida Grande", Arial, sans-serif;\n  background: black;\n  color: #ccc;\n}\n\nform input {\n  padding: 5px;\n  border: 1px solid;\n  border-radius: 5px;\n}\n```\n\n### Features\n\n Stylus has _many_ features.  Detailed documentation links follow:\n\n  - [css syntax](docs/css-style.md) support\n  - [mixins](docs/mixins.md)\n  - [keyword arguments](docs/kwargs.md)\n  - [variables](docs/variables.md)\n  - [interpolation](docs/interpolation.md)\n  - arithmetic, logical, and equality [operators](docs/operators.md)\n  - [importing](docs/import.md) of other stylus sheets\n  - [introspection api](docs/introspection.md)\n  - type coercion\n  - [@extend](docs/extend.md)\n  - [conditionals](docs/conditionals.md)\n  - [iteration](docs/iteration.md)\n  - nested [selectors](docs/selectors.md)\n  - parent reference\n  - in-language [functions](docs/functions.md)\n  - [variable arguments](docs/vargs.md)\n  - built-in [functions](docs/bifs.md) (over 25)\n  - optional [image inlining](docs/functions.url.md)\n  - optional compression\n  - JavaScript [API](docs/js.md)\n  - extremely terse syntax\n  - stylus [executable](docs/executable.md)\n  - [error reporting](docs/error-reporting.md)\n  - single-line and multi-line [comments](docs/comments.md)\n  - css [literal](docs/literal.md)\n  - character [escaping](docs/escape.md)\n  - [@keyframes](docs/keyframes.md) support & expansion\n  - [@font-face](docs/font-face.md) support\n  - [@media](docs/media.md) support\n  - Connect [Middleware](docs/middleware.md)\n  - TextMate [bundle](docs/textmate.md)\n  - Coda/SubEtha Edit [Syntax mode](https://github.com/atljeremy/Stylus.mode)\n  - gedit [language-spec](docs/gedit.md)\n  - VIM [Syntax](https://github.com/wavded/vim-stylus)\n  - [Firebug extension](docs/firebug.md)\n  - heroku [web service](http://styl.heroku.com) for compiling stylus\n  - [style guide](https://github.com/lepture/ganam) parser and generator\n  - transparent vendor-specific function expansion\n\n### Community modules\n\n  - https://github.com/LearnBoost/stylus/wiki\n\n### Framework Support\n\n   - [Connect](docs/middleware.md)\n   - [Play! 2.0](https://github.com/patiencelabs/play-stylus)\n   - [Ruby On Rails](https://github.com/lucasmazza/ruby-stylus)\n   - [Meteor](http://docs.meteor.com/#stylus)\n\n### CMS Support\n\n   - [DocPad](https://github.com/bevry/docpad)\n   - [Punch](https://github.com/laktek/punch-stylus-compiler)\n\n### Screencasts\n\n  - [Stylus Intro](http://screenr.com/bNY)\n  - [CSS Syntax & Postfix Conditionals](http://screenr.com/A8v)\n\n### Authors\n\n  - [TJ Holowaychuk (visionmedia)](http://github.com/visionmedia)\n\n### More Information\n\n  - Language [comparisons](docs/compare.md)\n\n## License \n\n(The MIT License)\n\nCopyright (c) 2010 LearnBoost &lt;dev@learnboost.com&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\'Software\'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n',
+219 silly resolved     readmeFilename: 'Readme.md',
+219 silly resolved     bugs: { url: 'https://github.com/LearnBoost/stylus/issues' },
+219 silly resolved     homepage: 'https://github.com/LearnBoost/stylus',
+219 silly resolved     _id: 'stylus@0.42.3',
+219 silly resolved     dist: { shasum: '53ba96234142044ac2266ac38a77da09fc4d4602' },
+219 silly resolved     _from: 'stylus@',
+219 silly resolved     _resolved: 'https://registry.npmjs.org/stylus/-/stylus-0.42.3.tgz' } ]
+220 info install stylus@0.42.3 into /usr/local/lib
+221 info installOne stylus@0.42.3
+222 info /usr/local/lib/node_modules/stylus unbuild
+223 verbose tar unpack /Users/alvarosaco/.npm/stylus/0.42.3/package.tgz
+224 silly lockFile 4aac4a2d-sr-local-lib-node-modules-stylus tar:///usr/local/lib/node_modules/stylus
+225 verbose lock tar:///usr/local/lib/node_modules/stylus /Users/alvarosaco/.npm/4aac4a2d-sr-local-lib-node-modules-stylus.lock
+226 silly lockFile fe0f25ec-co-npm-stylus-0-42-3-package-tgz tar:///Users/alvarosaco/.npm/stylus/0.42.3/package.tgz
+227 verbose lock tar:///Users/alvarosaco/.npm/stylus/0.42.3/package.tgz /Users/alvarosaco/.npm/fe0f25ec-co-npm-stylus-0-42-3-package-tgz.lock
+228 silly gunzTarPerm modes [ '755', '644' ]
+229 silly gunzTarPerm extractEntry package.json
+230 silly gunzTarPerm extractEntry LICENSE
+231 silly gunzTarPerm extractEntry bm.js
+232 silly gunzTarPerm extractEntry index.js
+233 silly gunzTarPerm extractEntry Readme.md
+234 silly gunzTarPerm extractEntry bin/stylus
+235 silly gunzTarPerm extractEntry lib/browserify.js
+236 silly gunzTarPerm extractEntry lib/utils.js
+237 silly gunzTarPerm extractEntry lib/errors.js
+238 silly gunzTarPerm extractEntry lib/units.js
+239 silly gunzTarPerm extractEntry lib/lexer.js
+240 silly gunzTarPerm extractEntry lib/middleware.js
+241 silly gunzTarPerm extractEntry lib/token.js
+242 silly gunzTarPerm extractEntry lib/colors.js
+243 silly gunzTarPerm extractEntry lib/renderer.js
+244 silly gunzTarPerm extractEntry lib/stylus.js
+245 silly gunzTarPerm extractEntry lib/parser.js
+246 silly gunzTarPerm extractEntry lib/stack/frame.js
+247 silly gunzTarPerm extractEntry lib/stack/index.js
+248 silly gunzTarPerm extractEntry lib/stack/scope.js
+249 silly gunzTarPerm extractEntry lib/nodes/arguments.js
+250 silly gunzTarPerm extractEntry lib/nodes/if.js
+251 silly gunzTarPerm extractEntry lib/nodes/import.js
+252 silly gunzTarPerm extractEntry lib/nodes/index.js
+253 silly gunzTarPerm extractEntry lib/nodes/ident.js
+254 silly gunzTarPerm extractEntry lib/nodes/keyframes.js
+255 silly gunzTarPerm extractEntry lib/nodes/literal.js
+256 silly gunzTarPerm extractEntry lib/nodes/media.js
+257 silly gunzTarPerm extractEntry lib/nodes/member.js
+258 silly gunzTarPerm extractEntry lib/nodes/mozdocument.js
+259 silly gunzTarPerm extractEntry lib/nodes/hsla.js
+260 silly gunzTarPerm extractEntry lib/nodes/node.js
+261 silly gunzTarPerm extractEntry lib/nodes/group.js
+262 silly gunzTarPerm extractEntry lib/nodes/null.js
+263 silly gunzTarPerm extractEntry lib/nodes/function.js
+264 silly gunzTarPerm extractEntry lib/nodes/object.js
+265 silly gunzTarPerm extractEntry lib/nodes/fontface.js
+266 silly gunzTarPerm extractEntry lib/nodes/page.js
+267 silly gunzTarPerm extractEntry lib/nodes/extend.js
+268 silly gunzTarPerm extractEntry lib/nodes/params.js
+269 silly gunzTarPerm extractEntry lib/nodes/expression.js
+270 silly gunzTarPerm extractEntry lib/nodes/property.js
+271 silly gunzTarPerm extractEntry lib/nodes/each.js
+272 silly gunzTarPerm extractEntry lib/nodes/return.js
+273 silly gunzTarPerm extractEntry lib/nodes/comment.js
+274 silly gunzTarPerm extractEntry lib/nodes/rgba.js
+275 silly gunzTarPerm extractEntry lib/nodes/charset.js
+276 silly gunzTarPerm extractEntry lib/nodes/root.js
+277 silly gunzTarPerm extractEntry lib/nodes/call.js
+278 silly gunzTarPerm extractEntry lib/nodes/selector.js
+279 silly gunzTarPerm extractEntry lib/nodes/boolean.js
+280 silly gunzTarPerm extractEntry lib/nodes/string.js
+281 silly gunzTarPerm extractEntry lib/nodes/block.js
+282 silly gunzTarPerm extractEntry lib/nodes/ternary.js
+283 silly gunzTarPerm extractEntry lib/nodes/binop.js
+284 silly gunzTarPerm extractEntry lib/nodes/unaryop.js
+285 silly gunzTarPerm extractEntry lib/nodes/atblock.js
+286 silly gunzTarPerm extractEntry lib/nodes/unit.js
+287 silly gunzTarPerm extractEntry lib/nodes/jsliteral.js
+288 silly gunzTarPerm extractEntry lib/functions/image.js
+289 silly gunzTarPerm extractEntry lib/functions/index.js
+290 silly gunzTarPerm extractEntry lib/functions/resolver.js
+291 silly gunzTarPerm extractEntry lib/functions/url.js
+292 silly gunzTarPerm extractEntry lib/functions/index.styl
+293 silly gunzTarPerm extractEntry lib/convert/css.js
+294 silly gunzTarPerm extractEntry lib/visitor/compiler.js
+295 silly gunzTarPerm extractEntry lib/visitor/evaluator.js
+296 silly gunzTarPerm extractEntry lib/visitor/index.js
+297 silly gunzTarPerm extractEntry lib/visitor/normalizer.js
+298 silly lockFile 4aac4a2d-sr-local-lib-node-modules-stylus tar:///usr/local/lib/node_modules/stylus
+299 silly lockFile 4aac4a2d-sr-local-lib-node-modules-stylus tar:///usr/local/lib/node_modules/stylus
+300 silly lockFile fe0f25ec-co-npm-stylus-0-42-3-package-tgz tar:///Users/alvarosaco/.npm/stylus/0.42.3/package.tgz
+301 silly lockFile fe0f25ec-co-npm-stylus-0-42-3-package-tgz tar:///Users/alvarosaco/.npm/stylus/0.42.3/package.tgz
+302 info preinstall stylus@0.42.3
+303 verbose readDependencies using package.json deps
+304 verbose readDependencies using package.json deps
+305 verbose cache add [ 'css-parse@1.7.x', null ]
+306 verbose cache add name=undefined spec="css-parse@1.7.x" args=["css-parse@1.7.x",null]
+307 verbose parsed url { protocol: null,
+307 verbose parsed url   slashes: null,
+307 verbose parsed url   auth: null,
+307 verbose parsed url   host: null,
+307 verbose parsed url   port: null,
+307 verbose parsed url   hostname: null,
+307 verbose parsed url   hash: null,
+307 verbose parsed url   search: null,
+307 verbose parsed url   query: null,
+307 verbose parsed url   pathname: 'css-parse@1.7.x',
+307 verbose parsed url   path: 'css-parse@1.7.x',
+307 verbose parsed url   href: 'css-parse@1.7.x' }
+308 verbose cache add name="css-parse" spec="1.7.x" args=["css-parse","1.7.x"]
+309 verbose parsed url { protocol: null,
+309 verbose parsed url   slashes: null,
+309 verbose parsed url   auth: null,
+309 verbose parsed url   host: null,
+309 verbose parsed url   port: null,
+309 verbose parsed url   hostname: null,
+309 verbose parsed url   hash: null,
+309 verbose parsed url   search: null,
+309 verbose parsed url   query: null,
+309 verbose parsed url   pathname: '1.7.x',
+309 verbose parsed url   path: '1.7.x',
+309 verbose parsed url   href: '1.7.x' }
+310 verbose addNamed [ 'css-parse', '1.7.x' ]
+311 verbose addNamed [ null, '>=1.7.0-0 <1.8.0-0' ]
+312 silly lockFile 6d29b79e-css-parse-1-7-x css-parse@1.7.x
+313 verbose lock css-parse@1.7.x /Users/alvarosaco/.npm/6d29b79e-css-parse-1-7-x.lock
+314 verbose cache add [ 'mkdirp@0.3.x', null ]
+315 verbose cache add name=undefined spec="mkdirp@0.3.x" args=["mkdirp@0.3.x",null]
+316 verbose parsed url { protocol: null,
+316 verbose parsed url   slashes: null,
+316 verbose parsed url   auth: null,
+316 verbose parsed url   host: null,
+316 verbose parsed url   port: null,
+316 verbose parsed url   hostname: null,
+316 verbose parsed url   hash: null,
+316 verbose parsed url   search: null,
+316 verbose parsed url   query: null,
+316 verbose parsed url   pathname: 'mkdirp@0.3.x',
+316 verbose parsed url   path: 'mkdirp@0.3.x',
+316 verbose parsed url   href: 'mkdirp@0.3.x' }
+317 verbose cache add name="mkdirp" spec="0.3.x" args=["mkdirp","0.3.x"]
+318 verbose parsed url { protocol: null,
+318 verbose parsed url   slashes: null,
+318 verbose parsed url   auth: null,
+318 verbose parsed url   host: null,
+318 verbose parsed url   port: null,
+318 verbose parsed url   hostname: null,
+318 verbose parsed url   hash: null,
+318 verbose parsed url   search: null,
+318 verbose parsed url   query: null,
+318 verbose parsed url   pathname: '0.3.x',
+318 verbose parsed url   path: '0.3.x',
+318 verbose parsed url   href: '0.3.x' }
+319 verbose addNamed [ 'mkdirp', '0.3.x' ]
+320 verbose addNamed [ null, '>=0.3.0-0 <0.4.0-0' ]
+321 silly lockFile 6d3723ce-mkdirp-0-3-x mkdirp@0.3.x
+322 verbose lock mkdirp@0.3.x /Users/alvarosaco/.npm/6d3723ce-mkdirp-0-3-x.lock
+323 verbose cache add [ 'debug@*', null ]
+324 verbose cache add name=undefined spec="debug@*" args=["debug@*",null]
+325 verbose parsed url { protocol: null,
+325 verbose parsed url   slashes: null,
+325 verbose parsed url   auth: null,
+325 verbose parsed url   host: null,
+325 verbose parsed url   port: null,
+325 verbose parsed url   hostname: null,
+325 verbose parsed url   hash: null,
+325 verbose parsed url   search: null,
+325 verbose parsed url   query: null,
+325 verbose parsed url   pathname: 'debug@*',
+325 verbose parsed url   path: 'debug@*',
+325 verbose parsed url   href: 'debug@*' }
+326 verbose cache add name="debug" spec="*" args=["debug","*"]
+327 verbose parsed url { protocol: null,
+327 verbose parsed url   slashes: null,
+327 verbose parsed url   auth: null,
+327 verbose parsed url   host: null,
+327 verbose parsed url   port: null,
+327 verbose parsed url   hostname: null,
+327 verbose parsed url   hash: null,
+327 verbose parsed url   search: null,
+327 verbose parsed url   query: null,
+327 verbose parsed url   pathname: '*',
+327 verbose parsed url   path: '*',
+327 verbose parsed url   href: '*' }
+328 verbose addNamed [ 'debug', '*' ]
+329 verbose addNamed [ null, '*' ]
+330 silly lockFile 3ac45eff-debug debug@*
+331 verbose lock debug@* /Users/alvarosaco/.npm/3ac45eff-debug.lock
+332 silly addNameRange { name: 'css-parse',
+332 silly addNameRange   range: '>=1.7.0-0 <1.8.0-0',
+332 silly addNameRange   hasData: false }
+333 verbose cache add [ 'sax@0.5.x', null ]
+334 verbose cache add name=undefined spec="sax@0.5.x" args=["sax@0.5.x",null]
+335 verbose parsed url { protocol: null,
+335 verbose parsed url   slashes: null,
+335 verbose parsed url   auth: null,
+335 verbose parsed url   host: null,
+335 verbose parsed url   port: null,
+335 verbose parsed url   hostname: null,
+335 verbose parsed url   hash: null,
+335 verbose parsed url   search: null,
+335 verbose parsed url   query: null,
+335 verbose parsed url   pathname: 'sax@0.5.x',
+335 verbose parsed url   path: 'sax@0.5.x',
+335 verbose parsed url   href: 'sax@0.5.x' }
+336 verbose cache add name="sax" spec="0.5.x" args=["sax","0.5.x"]
+337 verbose parsed url { protocol: null,
+337 verbose parsed url   slashes: null,
+337 verbose parsed url   auth: null,
+337 verbose parsed url   host: null,
+337 verbose parsed url   port: null,
+337 verbose parsed url   hostname: null,
+337 verbose parsed url   hash: null,
+337 verbose parsed url   search: null,
+337 verbose parsed url   query: null,
+337 verbose parsed url   pathname: '0.5.x',
+337 verbose parsed url   path: '0.5.x',
+337 verbose parsed url   href: '0.5.x' }
+338 verbose addNamed [ 'sax', '0.5.x' ]
+339 verbose addNamed [ null, '>=0.5.0-0 <0.6.0-0' ]
+340 silly lockFile 6db52aec-sax-0-5-x sax@0.5.x
+341 verbose lock sax@0.5.x /Users/alvarosaco/.npm/6db52aec-sax-0-5-x.lock
+342 verbose url raw css-parse
+343 verbose url resolving [ 'https://registry.npmjs.org/', './css-parse' ]
+344 verbose url resolved https://registry.npmjs.org/css-parse
+345 info trying registry request attempt 1 at 18:22:14
+346 http GET https://registry.npmjs.org/css-parse
+347 silly addNameRange { name: 'mkdirp', range: '>=0.3.0-0 <0.4.0-0', hasData: false }
+348 verbose cache add [ 'glob@3.2.x', null ]
+349 verbose cache add name=undefined spec="glob@3.2.x" args=["glob@3.2.x",null]
+350 verbose parsed url { protocol: null,
+350 verbose parsed url   slashes: null,
+350 verbose parsed url   auth: null,
+350 verbose parsed url   host: null,
+350 verbose parsed url   port: null,
+350 verbose parsed url   hostname: null,
+350 verbose parsed url   hash: null,
+350 verbose parsed url   search: null,
+350 verbose parsed url   query: null,
+350 verbose parsed url   pathname: 'glob@3.2.x',
+350 verbose parsed url   path: 'glob@3.2.x',
+350 verbose parsed url   href: 'glob@3.2.x' }
+351 verbose cache add name="glob" spec="3.2.x" args=["glob","3.2.x"]
+352 verbose parsed url { protocol: null,
+352 verbose parsed url   slashes: null,
+352 verbose parsed url   auth: null,
+352 verbose parsed url   host: null,
+352 verbose parsed url   port: null,
+352 verbose parsed url   hostname: null,
+352 verbose parsed url   hash: null,
+352 verbose parsed url   search: null,
+352 verbose parsed url   query: null,
+352 verbose parsed url   pathname: '3.2.x',
+352 verbose parsed url   path: '3.2.x',
+352 verbose parsed url   href: '3.2.x' }
+353 verbose addNamed [ 'glob', '3.2.x' ]
+354 verbose addNamed [ null, '>=3.2.0-0 <3.3.0-0' ]
+355 silly lockFile 2780ad54-glob-3-2-x glob@3.2.x
+356 verbose lock glob@3.2.x /Users/alvarosaco/.npm/2780ad54-glob-3-2-x.lock
+357 silly addNameRange { name: 'debug', range: '*', hasData: false }
+358 silly addNameRange { name: 'sax', range: '>=0.5.0-0 <0.6.0-0', hasData: false }
+359 silly addNameRange { name: 'glob', range: '>=3.2.0-0 <3.3.0-0', hasData: false }
+360 verbose url raw sax
+361 verbose url resolving [ 'https://registry.npmjs.org/', './sax' ]
+362 verbose url resolved https://registry.npmjs.org/sax
+363 info trying registry request attempt 1 at 18:22:14
+364 http GET https://registry.npmjs.org/sax
+365 verbose url raw mkdirp
+366 verbose url resolving [ 'https://registry.npmjs.org/', './mkdirp' ]
+367 verbose url resolved https://registry.npmjs.org/mkdirp
+368 info trying registry request attempt 1 at 18:22:14
+369 verbose etag "1I2D21V23LF3C46D0QYPU4DKH"
+370 http GET https://registry.npmjs.org/mkdirp
+371 verbose url raw debug
+372 verbose url resolving [ 'https://registry.npmjs.org/', './debug' ]
+373 verbose url resolved https://registry.npmjs.org/debug
+374 info trying registry request attempt 1 at 18:22:14
+375 verbose etag "5HTNPJKOOONWJ5MZTDYKIG585"
+376 http GET https://registry.npmjs.org/debug
+377 verbose url raw glob
+378 verbose url resolving [ 'https://registry.npmjs.org/', './glob' ]
+379 verbose url resolved https://registry.npmjs.org/glob
+380 info trying registry request attempt 1 at 18:22:14
+381 verbose etag "7ICTGDVUC7D2WHVLGKKSDZEGG"
+382 http GET https://registry.npmjs.org/glob
+383 http 304 https://registry.npmjs.org/debug
+384 silly registry.get cb [ 304,
+384 silly registry.get   { date: 'Mon, 24 Mar 2014 17:22:14 GMT',
+384 silly registry.get     server: 'Apache',
+384 silly registry.get     via: '1.1 varnish',
+384 silly registry.get     'last-modified': 'Mon, 24 Mar 2014 17:22:14 GMT',
+384 silly registry.get     'cache-control': 'max-age=1',
+384 silly registry.get     etag: '"5HTNPJKOOONWJ5MZTDYKIG585"',
+384 silly registry.get     'x-served-by': 'cache-lcy1120-LCY',
+384 silly registry.get     'x-cache': 'HIT',
+384 silly registry.get     'x-cache-hits': '1',
+384 silly registry.get     'x-timer': 'S1395681734.592800617,VS0,VE77',
+384 silly registry.get     vary: 'Accept',
+384 silly registry.get     'content-length': '0',
+384 silly registry.get     'keep-alive': 'timeout=10, max=50',
+384 silly registry.get     connection: 'Keep-Alive' } ]
+385 verbose etag debug from cache
+386 http 304 https://registry.npmjs.org/glob
+387 silly registry.get cb [ 304,
+387 silly registry.get   { date: 'Mon, 24 Mar 2014 17:22:14 GMT',
+387 silly registry.get     server: 'Apache',
+387 silly registry.get     via: '1.1 varnish',
+387 silly registry.get     'last-modified': 'Mon, 24 Mar 2014 17:22:14 GMT',
+387 silly registry.get     'cache-control': 'max-age=1',
+387 silly registry.get     etag: '"7ICTGDVUC7D2WHVLGKKSDZEGG"',
+387 silly registry.get     'x-served-by': 'cache-lcy1131-LCY',
+387 silly registry.get     'x-cache': 'HIT',
+387 silly registry.get     'x-cache-hits': '1',
+387 silly registry.get     'x-timer': 'S1395681734.596919298,VS0,VE76',
+387 silly registry.get     vary: 'Accept',
+387 silly registry.get     'content-length': '0',
+387 silly registry.get     'keep-alive': 'timeout=10, max=50',
+387 silly registry.get     connection: 'Keep-Alive' } ]
+388 verbose etag glob from cache
+389 silly addNameRange number 2 { name: 'debug', range: '*', hasData: true }
+390 silly addNameRange versions [ 'debug',
+390 silly addNameRange   [ '0.0.1',
+390 silly addNameRange     '0.1.0',
+390 silly addNameRange     '0.2.0',
+390 silly addNameRange     '0.3.0',
+390 silly addNameRange     '0.4.0',
+390 silly addNameRange     '0.4.1',
+390 silly addNameRange     '0.5.0',
+390 silly addNameRange     '0.6.0',
+390 silly addNameRange     '0.7.0',
+390 silly addNameRange     '0.7.1',
+390 silly addNameRange     '0.7.2',
+390 silly addNameRange     '0.7.3',
+390 silly addNameRange     '0.7.4' ] ]
+391 verbose addNamed [ 'debug', '0.7.4' ]
+392 verbose addNamed [ '0.7.4', '0.7.4' ]
+393 silly lockFile 16160008-debug-0-7-4 debug@0.7.4
+394 verbose lock debug@0.7.4 /Users/alvarosaco/.npm/16160008-debug-0-7-4.lock
+395 silly addNameRange number 2 { name: 'glob', range: '>=3.2.0-0 <3.3.0-0', hasData: true }
+396 silly addNameRange versions [ 'glob',
+396 silly addNameRange   [ '1.1.0',
+396 silly addNameRange     '2.0.9',
+396 silly addNameRange     '2.0.8',
+396 silly addNameRange     '2.0.7',
+396 silly addNameRange     '2.1.0',
+396 silly addNameRange     '3.0.0',
+396 silly addNameRange     '3.0.1',
+396 silly addNameRange     '3.1.0',
+396 silly addNameRange     '3.1.1',
+396 silly addNameRange     '3.1.2',
+396 silly addNameRange     '3.1.3',
+396 silly addNameRange     '3.1.4',
+396 silly addNameRange     '3.1.5',
+396 silly addNameRange     '3.1.6',
+396 silly addNameRange     '3.1.7',
+396 silly addNameRange     '3.1.9',
+396 silly addNameRange     '3.1.10',
+396 silly addNameRange     '3.1.11',
+396 silly addNameRange     '3.1.12',
+396 silly addNameRange     '3.1.13',
+396 silly addNameRange     '3.1.14',
+396 silly addNameRange     '3.1.15',
+396 silly addNameRange     '3.1.16',
+396 silly addNameRange     '3.1.17',
+396 silly addNameRange     '3.1.18',
+396 silly addNameRange     '3.1.19',
+396 silly addNameRange     '3.1.20',
+396 silly addNameRange     '3.1.21',
+396 silly addNameRange     '3.2.0',
+396 silly addNameRange     '3.2.1',
+396 silly addNameRange     '3.2.3',
+396 silly addNameRange     '3.2.4',
+396 silly addNameRange     '3.2.5',
+396 silly addNameRange     '3.2.6',
+396 silly addNameRange     '3.2.7',
+396 silly addNameRange     '3.2.8',
+396 silly addNameRange     '3.2.9' ] ]
+397 verbose addNamed [ 'glob', '3.2.9' ]
+398 verbose addNamed [ '3.2.9', '3.2.9' ]
+399 silly lockFile 311bb488-glob-3-2-9 glob@3.2.9
+400 verbose lock glob@3.2.9 /Users/alvarosaco/.npm/311bb488-glob-3-2-9.lock
+401 silly lockFile 16160008-debug-0-7-4 debug@0.7.4
+402 silly lockFile 16160008-debug-0-7-4 debug@0.7.4
+403 silly lockFile 3ac45eff-debug debug@*
+404 silly lockFile 3ac45eff-debug debug@*
+405 silly lockFile 311bb488-glob-3-2-9 glob@3.2.9
+406 silly lockFile 311bb488-glob-3-2-9 glob@3.2.9
+407 silly lockFile 2780ad54-glob-3-2-x glob@3.2.x
+408 silly lockFile 2780ad54-glob-3-2-x glob@3.2.x
+409 http 200 https://registry.npmjs.org/css-parse
+410 silly registry.get cb [ 200,
+410 silly registry.get   { date: 'Mon, 24 Mar 2014 17:22:14 GMT',
+410 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+410 silly registry.get     etag: '"8V0T76MNQTT1GMJX5JXMTMICZ"',
+410 silly registry.get     'content-type': 'application/json',
+410 silly registry.get     via: '1.1 varnish',
+410 silly registry.get     'cache-control': 'max-age=1',
+410 silly registry.get     'content-length': '14159',
+410 silly registry.get     'accept-ranges': 'bytes',
+410 silly registry.get     age: '580',
+410 silly registry.get     'x-served-by': 'cache-v43-ASH, cache-lcy1126-LCY',
+410 silly registry.get     'x-cache': 'HIT, HIT',
+410 silly registry.get     'x-cache-hits': '2, 1',
+410 silly registry.get     'x-timer': 'S1395641001.268284321,VS0,VS-39,VE-39,VE40733378',
+410 silly registry.get     vary: 'Accept',
+410 silly registry.get     'keep-alive': 'timeout=10, max=50',
+410 silly registry.get     connection: 'Keep-Alive' } ]
+411 silly addNameRange number 2 { name: 'css-parse', range: '>=1.7.0-0 <1.8.0-0', hasData: true }
+412 silly addNameRange versions [ 'css-parse',
+412 silly addNameRange   [ '1.0.0',
+412 silly addNameRange     '1.0.1',
+412 silly addNameRange     '1.0.2',
+412 silly addNameRange     '1.0.3',
+412 silly addNameRange     '1.0.4',
+412 silly addNameRange     '1.1.0',
+412 silly addNameRange     '1.2.0',
+412 silly addNameRange     '1.3.0',
+412 silly addNameRange     '1.4.0',
+412 silly addNameRange     '1.5.0',
+412 silly addNameRange     '1.5.1',
+412 silly addNameRange     '1.5.2',
+412 silly addNameRange     '1.5.3',
+412 silly addNameRange     '1.6.0',
+412 silly addNameRange     '1.7.0' ] ]
+413 verbose addNamed [ 'css-parse', '1.7.0' ]
+414 verbose addNamed [ '1.7.0', '1.7.0' ]
+415 silly lockFile fe68b52b-css-parse-1-7-0 css-parse@1.7.0
+416 verbose lock css-parse@1.7.0 /Users/alvarosaco/.npm/fe68b52b-css-parse-1-7-0.lock
+417 silly lockFile 744438e7-rg-css-parse-css-parse-1-7-0-tgz https://registry.npmjs.org/css-parse/-/css-parse-1.7.0.tgz
+418 verbose lock https://registry.npmjs.org/css-parse/-/css-parse-1.7.0.tgz /Users/alvarosaco/.npm/744438e7-rg-css-parse-css-parse-1-7-0-tgz.lock
+419 verbose addRemoteTarball [ 'https://registry.npmjs.org/css-parse/-/css-parse-1.7.0.tgz',
+419 verbose addRemoteTarball   '321f6cf73782a6ff751111390fc05e2c657d8c9b' ]
+420 info retry fetch attempt 1 at 18:22:14
+421 verbose fetch to= /Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681734953-0.055591938784345984/tmp.tgz
+422 http GET https://registry.npmjs.org/css-parse/-/css-parse-1.7.0.tgz
+423 http 304 https://registry.npmjs.org/mkdirp
+424 silly registry.get cb [ 304,
+424 silly registry.get   { date: 'Mon, 24 Mar 2014 17:22:14 GMT',
+424 silly registry.get     server: 'Apache',
+424 silly registry.get     via: '1.1 varnish',
+424 silly registry.get     'last-modified': 'Mon, 24 Mar 2014 17:22:14 GMT',
+424 silly registry.get     'cache-control': 'max-age=1',
+424 silly registry.get     etag: '"1I2D21V23LF3C46D0QYPU4DKH"',
+424 silly registry.get     'x-served-by': 'cache-lcy1121-LCY',
+424 silly registry.get     'x-cache': 'HIT',
+424 silly registry.get     'x-cache-hits': '1',
+424 silly registry.get     'x-timer': 'S1395681734.588776350,VS0,VE185',
+424 silly registry.get     vary: 'Accept',
+424 silly registry.get     'content-length': '0',
+424 silly registry.get     'keep-alive': 'timeout=10, max=50',
+424 silly registry.get     connection: 'Keep-Alive' } ]
+425 verbose etag mkdirp from cache
+426 silly addNameRange number 2 { name: 'mkdirp', range: '>=0.3.0-0 <0.4.0-0', hasData: true }
+427 silly addNameRange versions [ 'mkdirp',
+427 silly addNameRange   [ '0.0.1',
+427 silly addNameRange     '0.0.2',
+427 silly addNameRange     '0.0.3',
+427 silly addNameRange     '0.0.4',
+427 silly addNameRange     '0.0.5',
+427 silly addNameRange     '0.0.6',
+427 silly addNameRange     '0.0.7',
+427 silly addNameRange     '0.1.0',
+427 silly addNameRange     '0.2.0',
+427 silly addNameRange     '0.2.1',
+427 silly addNameRange     '0.2.2',
+427 silly addNameRange     '0.3.0',
+427 silly addNameRange     '0.3.1',
+427 silly addNameRange     '0.3.2',
+427 silly addNameRange     '0.3.3',
+427 silly addNameRange     '0.3.4',
+427 silly addNameRange     '0.3.5' ] ]
+428 verbose addNamed [ 'mkdirp', '0.3.5' ]
+429 verbose addNamed [ '0.3.5', '0.3.5' ]
+430 silly lockFile 67d2df2a-mkdirp-0-3-5 mkdirp@0.3.5
+431 verbose lock mkdirp@0.3.5 /Users/alvarosaco/.npm/67d2df2a-mkdirp-0-3-5.lock
+432 silly lockFile 67d2df2a-mkdirp-0-3-5 mkdirp@0.3.5
+433 silly lockFile 67d2df2a-mkdirp-0-3-5 mkdirp@0.3.5
+434 silly lockFile 6d3723ce-mkdirp-0-3-x mkdirp@0.3.x
+435 silly lockFile 6d3723ce-mkdirp-0-3-x mkdirp@0.3.x
+436 http 200 https://registry.npmjs.org/css-parse/-/css-parse-1.7.0.tgz
+437 verbose tar unpack /Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681734953-0.055591938784345984/tmp.tgz
+438 silly lockFile 91bad4f6-953-0-055591938784345984-package tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681734953-0.055591938784345984/package
+439 verbose lock tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681734953-0.055591938784345984/package /Users/alvarosaco/.npm/91bad4f6-953-0-055591938784345984-package.lock
+440 silly lockFile 99543a74-953-0-055591938784345984-tmp-tgz tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681734953-0.055591938784345984/tmp.tgz
+441 verbose lock tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681734953-0.055591938784345984/tmp.tgz /Users/alvarosaco/.npm/99543a74-953-0-055591938784345984-tmp-tgz.lock
+442 silly gunzTarPerm modes [ '755', '644' ]
+443 silly gunzTarPerm extractEntry package.json
+444 silly gunzTarPerm extractEntry index.js
+445 silly gunzTarPerm extractEntry Readme.md
+446 silly lockFile 91bad4f6-953-0-055591938784345984-package tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681734953-0.055591938784345984/package
+447 silly lockFile 91bad4f6-953-0-055591938784345984-package tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681734953-0.055591938784345984/package
+448 silly lockFile 99543a74-953-0-055591938784345984-tmp-tgz tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681734953-0.055591938784345984/tmp.tgz
+449 silly lockFile 99543a74-953-0-055591938784345984-tmp-tgz tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681734953-0.055591938784345984/tmp.tgz
+450 verbose tar pack [ '/Users/alvarosaco/.npm/css-parse/1.7.0/package.tgz',
+450 verbose tar pack   '/Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681734953-0.055591938784345984/package' ]
+451 verbose tarball /Users/alvarosaco/.npm/css-parse/1.7.0/package.tgz
+452 verbose folder /Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681734953-0.055591938784345984/package
+453 silly lockFile 91bad4f6-953-0-055591938784345984-package tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681734953-0.055591938784345984/package
+454 verbose lock tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681734953-0.055591938784345984/package /Users/alvarosaco/.npm/91bad4f6-953-0-055591938784345984-package.lock
+455 silly lockFile 0f147a2a--npm-css-parse-1-7-0-package-tgz tar:///Users/alvarosaco/.npm/css-parse/1.7.0/package.tgz
+456 verbose lock tar:///Users/alvarosaco/.npm/css-parse/1.7.0/package.tgz /Users/alvarosaco/.npm/0f147a2a--npm-css-parse-1-7-0-package-tgz.lock
+457 silly lockFile 91bad4f6-953-0-055591938784345984-package tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681734953-0.055591938784345984/package
+458 silly lockFile 91bad4f6-953-0-055591938784345984-package tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681734953-0.055591938784345984/package
+459 silly lockFile 0f147a2a--npm-css-parse-1-7-0-package-tgz tar:///Users/alvarosaco/.npm/css-parse/1.7.0/package.tgz
+460 silly lockFile 0f147a2a--npm-css-parse-1-7-0-package-tgz tar:///Users/alvarosaco/.npm/css-parse/1.7.0/package.tgz
+461 silly lockFile cf845938-saco-npm-css-parse-1-7-0-package /Users/alvarosaco/.npm/css-parse/1.7.0/package
+462 verbose lock /Users/alvarosaco/.npm/css-parse/1.7.0/package /Users/alvarosaco/.npm/cf845938-saco-npm-css-parse-1-7-0-package.lock
+463 silly lockFile cf845938-saco-npm-css-parse-1-7-0-package /Users/alvarosaco/.npm/css-parse/1.7.0/package
+464 silly lockFile cf845938-saco-npm-css-parse-1-7-0-package /Users/alvarosaco/.npm/css-parse/1.7.0/package
+465 verbose tar unpack /Users/alvarosaco/.npm/css-parse/1.7.0/package.tgz
+466 silly lockFile b8f81c0a-saco-npm-css-parse-1-7-0-package tar:///Users/alvarosaco/.npm/css-parse/1.7.0/package
+467 verbose lock tar:///Users/alvarosaco/.npm/css-parse/1.7.0/package /Users/alvarosaco/.npm/b8f81c0a-saco-npm-css-parse-1-7-0-package.lock
+468 silly lockFile 0f147a2a--npm-css-parse-1-7-0-package-tgz tar:///Users/alvarosaco/.npm/css-parse/1.7.0/package.tgz
+469 verbose lock tar:///Users/alvarosaco/.npm/css-parse/1.7.0/package.tgz /Users/alvarosaco/.npm/0f147a2a--npm-css-parse-1-7-0-package-tgz.lock
+470 silly gunzTarPerm modes [ '755', '644' ]
+471 silly gunzTarPerm extractEntry package.json
+472 silly gunzTarPerm extractEntry index.js
+473 silly gunzTarPerm extractEntry Readme.md
+474 silly lockFile b8f81c0a-saco-npm-css-parse-1-7-0-package tar:///Users/alvarosaco/.npm/css-parse/1.7.0/package
+475 silly lockFile b8f81c0a-saco-npm-css-parse-1-7-0-package tar:///Users/alvarosaco/.npm/css-parse/1.7.0/package
+476 silly lockFile 0f147a2a--npm-css-parse-1-7-0-package-tgz tar:///Users/alvarosaco/.npm/css-parse/1.7.0/package.tgz
+477 silly lockFile 0f147a2a--npm-css-parse-1-7-0-package-tgz tar:///Users/alvarosaco/.npm/css-parse/1.7.0/package.tgz
+478 verbose chmod /Users/alvarosaco/.npm/css-parse/1.7.0/package.tgz 644
+479 verbose chown /Users/alvarosaco/.npm/css-parse/1.7.0/package.tgz [ 0, 20 ]
+480 silly lockFile 744438e7-rg-css-parse-css-parse-1-7-0-tgz https://registry.npmjs.org/css-parse/-/css-parse-1.7.0.tgz
+481 silly lockFile 744438e7-rg-css-parse-css-parse-1-7-0-tgz https://registry.npmjs.org/css-parse/-/css-parse-1.7.0.tgz
+482 silly lockFile fe68b52b-css-parse-1-7-0 css-parse@1.7.0
+483 silly lockFile fe68b52b-css-parse-1-7-0 css-parse@1.7.0
+484 silly lockFile 6d29b79e-css-parse-1-7-x css-parse@1.7.x
+485 silly lockFile 6d29b79e-css-parse-1-7-x css-parse@1.7.x
+486 http 200 https://registry.npmjs.org/sax
+487 silly registry.get cb [ 200,
+487 silly registry.get   { date: 'Mon, 24 Mar 2014 17:22:14 GMT',
+487 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B)',
+487 silly registry.get     etag: '"BMADOSLXS9J3Y5XDYTYN59J1S"',
+487 silly registry.get     'content-type': 'application/json',
+487 silly registry.get     via: '1.1 varnish',
+487 silly registry.get     'cache-control': 'max-age=1',
+487 silly registry.get     'content-length': '180389',
+487 silly registry.get     'accept-ranges': 'bytes',
+487 silly registry.get     age: '578',
+487 silly registry.get     'x-served-by': 'cache-v43-ASH, cache-lcy1129-LCY',
+487 silly registry.get     'x-cache': 'HIT, HIT',
+487 silly registry.get     'x-cache-hits': '1, 1',
+487 silly registry.get     'x-timer': 'S1395468608.725346565,VS0,VS-28,VE-27,VE213126107',
+487 silly registry.get     vary: 'Accept',
+487 silly registry.get     'keep-alive': 'timeout=10, max=50',
+487 silly registry.get     connection: 'Keep-Alive' } ]
+488 silly addNameRange number 2 { name: 'sax', range: '>=0.5.0-0 <0.6.0-0', hasData: true }
+489 silly addNameRange versions [ 'sax',
+489 silly addNameRange   [ '0.1.0',
+489 silly addNameRange     '0.1.1',
+489 silly addNameRange     '0.1.2',
+489 silly addNameRange     '0.1.3',
+489 silly addNameRange     '0.1.4',
+489 silly addNameRange     '0.1.5',
+489 silly addNameRange     '0.2.0',
+489 silly addNameRange     '0.2.1',
+489 silly addNameRange     '0.2.2',
+489 silly addNameRange     '0.2.3',
+489 silly addNameRange     '0.2.4',
+489 silly addNameRange     '0.2.5',
+489 silly addNameRange     '0.3.0',
+489 silly addNameRange     '0.3.1',
+489 silly addNameRange     '0.3.2',
+489 silly addNameRange     '0.3.3',
+489 silly addNameRange     '0.3.4',
+489 silly addNameRange     '0.3.5',
+489 silly addNameRange     '0.4.1',
+489 silly addNameRange     '0.4.0',
+489 silly addNameRange     '0.4.2',
+489 silly addNameRange     '0.4.3',
+489 silly addNameRange     '0.5.0',
+489 silly addNameRange     '0.5.1',
+489 silly addNameRange     '0.5.2',
+489 silly addNameRange     '0.5.3',
+489 silly addNameRange     '0.5.4',
+489 silly addNameRange     '0.5.5',
+489 silly addNameRange     '0.5.6',
+489 silly addNameRange     '0.5.7',
+489 silly addNameRange     '0.5.8',
+489 silly addNameRange     '0.6.0' ] ]
+490 verbose addNamed [ 'sax', '0.5.8' ]
+491 verbose addNamed [ '0.5.8', '0.5.8' ]
+492 silly lockFile c9464f8a-sax-0-5-8 sax@0.5.8
+493 verbose lock sax@0.5.8 /Users/alvarosaco/.npm/c9464f8a-sax-0-5-8.lock
+494 silly lockFile 83d4174f-stry-npmjs-org-sax-sax-0-5-8-tgz https://registry.npmjs.org/sax/-/sax-0.5.8.tgz
+495 verbose lock https://registry.npmjs.org/sax/-/sax-0.5.8.tgz /Users/alvarosaco/.npm/83d4174f-stry-npmjs-org-sax-sax-0-5-8-tgz.lock
+496 verbose addRemoteTarball [ 'https://registry.npmjs.org/sax/-/sax-0.5.8.tgz',
+496 verbose addRemoteTarball   'd472db228eb331c2506b0e8c15524adb939d12c1' ]
+497 info retry fetch attempt 1 at 18:22:15
+498 verbose fetch to= /Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681735538-0.5112768521066755/tmp.tgz
+499 http GET https://registry.npmjs.org/sax/-/sax-0.5.8.tgz
+500 http 200 https://registry.npmjs.org/sax/-/sax-0.5.8.tgz
+501 verbose tar unpack /Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681735538-0.5112768521066755/tmp.tgz
+502 silly lockFile a4309070-35538-0-5112768521066755-package tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681735538-0.5112768521066755/package
+503 verbose lock tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681735538-0.5112768521066755/package /Users/alvarosaco/.npm/a4309070-35538-0-5112768521066755-package.lock
+504 silly lockFile a99d66e6-35538-0-5112768521066755-tmp-tgz tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681735538-0.5112768521066755/tmp.tgz
+505 verbose lock tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681735538-0.5112768521066755/tmp.tgz /Users/alvarosaco/.npm/a99d66e6-35538-0-5112768521066755-tmp-tgz.lock
+506 silly gunzTarPerm modes [ '755', '644' ]
+507 silly gunzTarPerm extractEntry package.json
+508 silly gunzTarPerm extractEntry README.md
+509 silly gunzTarPerm extractEntry LICENSE
+510 silly gunzTarPerm extractEntry AUTHORS
+511 silly gunzTarPerm extractEntry LICENSE-W3C.html
+512 silly gunzTarPerm extractEntry component.json
+513 silly gunzTarPerm extractEntry examples/example.js
+514 silly gunzTarPerm extractEntry examples/get-products.js
+515 silly gunzTarPerm extractEntry examples/hello-world.js
+516 silly gunzTarPerm extractEntry examples/pretty-print.js
+517 silly gunzTarPerm extractEntry examples/big-not-pretty.xml
+518 silly gunzTarPerm extractEntry examples/not-pretty.xml
+519 silly gunzTarPerm extractEntry examples/shopping.xml
+520 silly gunzTarPerm extractEntry examples/strict.dtd
+521 silly gunzTarPerm extractEntry examples/test.html
+522 silly gunzTarPerm extractEntry examples/test.xml
+523 silly gunzTarPerm extractEntry lib/sax.js
+524 silly gunzTarPerm extractEntry test/attribute-name.js
+525 silly gunzTarPerm extractEntry test/issue-35.js
+526 silly gunzTarPerm extractEntry test/issue-47.js
+527 silly gunzTarPerm extractEntry test/issue-49.js
+528 silly gunzTarPerm extractEntry test/issue-84.js
+529 silly gunzTarPerm extractEntry test/issue-30.js
+530 silly gunzTarPerm extractEntry test/script-close-better.js
+531 silly gunzTarPerm extractEntry test/script.js
+532 silly gunzTarPerm extractEntry test/self-closing-child-strict.js
+533 silly gunzTarPerm extractEntry test/self-closing-child.js
+534 silly gunzTarPerm extractEntry test/self-closing-tag.js
+535 silly gunzTarPerm extractEntry test/issue-23.js
+536 silly gunzTarPerm extractEntry test/stray-ending.js
+537 silly gunzTarPerm extractEntry test/index.js
+538 silly gunzTarPerm extractEntry test/trailing-attribute-no-value.js
+539 silly gunzTarPerm extractEntry test/flush.js
+540 silly gunzTarPerm extractEntry test/trailing-non-whitespace.js
+541 silly gunzTarPerm extractEntry test/entity-mega.js
+542 silly gunzTarPerm extractEntry test/unclosed-root.js
+543 silly gunzTarPerm extractEntry test/entities.js
+544 silly gunzTarPerm extractEntry test/unquoted.js
+545 silly gunzTarPerm extractEntry test/end_empty_stream.js
+546 silly gunzTarPerm extractEntry test/utf8-split.js
+547 silly gunzTarPerm extractEntry test/duplicate-attribute.js
+548 silly gunzTarPerm extractEntry test/xmlns-as-tag-name.js
+549 silly gunzTarPerm extractEntry test/cyrillic.js
+550 silly gunzTarPerm extractEntry test/xmlns-issue-41.js
+551 silly gunzTarPerm extractEntry test/cdata.js
+552 silly gunzTarPerm extractEntry test/xmlns-rebinding.js
+553 silly gunzTarPerm extractEntry test/cdata-multiple.js
+554 silly gunzTarPerm extractEntry test/xmlns-strict.js
+555 silly gunzTarPerm extractEntry test/cdata-fake-end.js
+556 silly gunzTarPerm extractEntry test/xmlns-unbound-element.js
+557 silly gunzTarPerm extractEntry test/cdata-end-split.js
+558 silly gunzTarPerm extractEntry test/xmlns-unbound.js
+559 silly gunzTarPerm extractEntry test/cdata-chunked.js
+560 silly gunzTarPerm extractEntry test/xmlns-xml-default-ns.js
+561 silly gunzTarPerm extractEntry test/case.js
+562 silly gunzTarPerm extractEntry test/xmlns-xml-default-prefix-attribute.js
+563 silly gunzTarPerm extractEntry test/buffer-overrun.js
+564 silly gunzTarPerm extractEntry test/xmlns-xml-default-prefix.js
+565 silly gunzTarPerm extractEntry test/attribute-no-space.js
+566 silly gunzTarPerm extractEntry test/xmlns-xml-default-redefine.js
+567 silly gunzTarPerm extractEntry test/parser-position.js
+568 silly lockFile a4309070-35538-0-5112768521066755-package tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681735538-0.5112768521066755/package
+569 silly lockFile a4309070-35538-0-5112768521066755-package tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681735538-0.5112768521066755/package
+570 silly lockFile a99d66e6-35538-0-5112768521066755-tmp-tgz tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681735538-0.5112768521066755/tmp.tgz
+571 silly lockFile a99d66e6-35538-0-5112768521066755-tmp-tgz tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681735538-0.5112768521066755/tmp.tgz
+572 verbose tar pack [ '/Users/alvarosaco/.npm/sax/0.5.8/package.tgz',
+572 verbose tar pack   '/Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681735538-0.5112768521066755/package' ]
+573 verbose tarball /Users/alvarosaco/.npm/sax/0.5.8/package.tgz
+574 verbose folder /Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681735538-0.5112768521066755/package
+575 silly lockFile a4309070-35538-0-5112768521066755-package tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681735538-0.5112768521066755/package
+576 verbose lock tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681735538-0.5112768521066755/package /Users/alvarosaco/.npm/a4309070-35538-0-5112768521066755-package.lock
+577 silly lockFile 8cc1b180-rosaco-npm-sax-0-5-8-package-tgz tar:///Users/alvarosaco/.npm/sax/0.5.8/package.tgz
+578 verbose lock tar:///Users/alvarosaco/.npm/sax/0.5.8/package.tgz /Users/alvarosaco/.npm/8cc1b180-rosaco-npm-sax-0-5-8-package-tgz.lock
+579 silly lockFile a4309070-35538-0-5112768521066755-package tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681735538-0.5112768521066755/package
+580 silly lockFile a4309070-35538-0-5112768521066755-package tar:///Users/alvarosaco/tmp/npm-1856-Zg8heOgY/1395681735538-0.5112768521066755/package
+581 silly lockFile 8cc1b180-rosaco-npm-sax-0-5-8-package-tgz tar:///Users/alvarosaco/.npm/sax/0.5.8/package.tgz
+582 silly lockFile 8cc1b180-rosaco-npm-sax-0-5-8-package-tgz tar:///Users/alvarosaco/.npm/sax/0.5.8/package.tgz
+583 silly lockFile ce9ad356-alvarosaco-npm-sax-0-5-8-package /Users/alvarosaco/.npm/sax/0.5.8/package
+584 verbose lock /Users/alvarosaco/.npm/sax/0.5.8/package /Users/alvarosaco/.npm/ce9ad356-alvarosaco-npm-sax-0-5-8-package.lock
+585 silly lockFile ce9ad356-alvarosaco-npm-sax-0-5-8-package /Users/alvarosaco/.npm/sax/0.5.8/package
+586 silly lockFile ce9ad356-alvarosaco-npm-sax-0-5-8-package /Users/alvarosaco/.npm/sax/0.5.8/package
+587 verbose tar unpack /Users/alvarosaco/.npm/sax/0.5.8/package.tgz
+588 silly lockFile 24303e97-alvarosaco-npm-sax-0-5-8-package tar:///Users/alvarosaco/.npm/sax/0.5.8/package
+589 verbose lock tar:///Users/alvarosaco/.npm/sax/0.5.8/package /Users/alvarosaco/.npm/24303e97-alvarosaco-npm-sax-0-5-8-package.lock
+590 silly lockFile 8cc1b180-rosaco-npm-sax-0-5-8-package-tgz tar:///Users/alvarosaco/.npm/sax/0.5.8/package.tgz
+591 verbose lock tar:///Users/alvarosaco/.npm/sax/0.5.8/package.tgz /Users/alvarosaco/.npm/8cc1b180-rosaco-npm-sax-0-5-8-package-tgz.lock
+592 silly gunzTarPerm modes [ '755', '644' ]
+593 silly gunzTarPerm extractEntry package.json
+594 silly gunzTarPerm extractEntry README.md
+595 silly gunzTarPerm extractEntry LICENSE
+596 silly gunzTarPerm extractEntry AUTHORS
+597 silly gunzTarPerm extractEntry LICENSE-W3C.html
+598 silly gunzTarPerm extractEntry component.json
+599 silly gunzTarPerm extractEntry examples/example.js
+600 silly gunzTarPerm extractEntry examples/get-products.js
+601 silly gunzTarPerm extractEntry examples/hello-world.js
+602 silly gunzTarPerm extractEntry examples/pretty-print.js
+603 silly gunzTarPerm extractEntry examples/big-not-pretty.xml
+604 silly gunzTarPerm extractEntry examples/not-pretty.xml
+605 silly gunzTarPerm extractEntry examples/shopping.xml
+606 silly gunzTarPerm extractEntry examples/strict.dtd
+607 silly gunzTarPerm extractEntry examples/test.html
+608 silly gunzTarPerm extractEntry examples/test.xml
+609 silly gunzTarPerm extractEntry lib/sax.js
+610 silly gunzTarPerm extractEntry test/attribute-name.js
+611 silly gunzTarPerm extractEntry test/issue-35.js
+612 silly gunzTarPerm extractEntry test/issue-47.js
+613 silly gunzTarPerm extractEntry test/issue-49.js
+614 silly gunzTarPerm extractEntry test/issue-84.js
+615 silly gunzTarPerm extractEntry test/issue-30.js
+616 silly gunzTarPerm extractEntry test/script-close-better.js
+617 silly gunzTarPerm extractEntry test/script.js
+618 silly gunzTarPerm extractEntry test/self-closing-child-strict.js
+619 silly gunzTarPerm extractEntry test/self-closing-child.js
+620 silly gunzTarPerm extractEntry test/self-closing-tag.js
+621 silly gunzTarPerm extractEntry test/issue-23.js
+622 silly gunzTarPerm extractEntry test/stray-ending.js
+623 silly gunzTarPerm extractEntry test/index.js
+624 silly gunzTarPerm extractEntry test/trailing-attribute-no-value.js
+625 silly gunzTarPerm extractEntry test/flush.js
+626 silly gunzTarPerm extractEntry test/trailing-non-whitespace.js
+627 silly gunzTarPerm extractEntry test/entity-mega.js
+628 silly gunzTarPerm extractEntry test/unclosed-root.js
+629 silly gunzTarPerm extractEntry test/entities.js
+630 silly gunzTarPerm extractEntry test/unquoted.js
+631 silly gunzTarPerm extractEntry test/end_empty_stream.js
+632 silly gunzTarPerm extractEntry test/utf8-split.js
+633 silly gunzTarPerm extractEntry test/duplicate-attribute.js
+634 silly gunzTarPerm extractEntry test/xmlns-as-tag-name.js
+635 silly gunzTarPerm extractEntry test/cyrillic.js
+636 silly gunzTarPerm extractEntry test/xmlns-issue-41.js
+637 silly gunzTarPerm extractEntry test/cdata.js
+638 silly gunzTarPerm extractEntry test/xmlns-rebinding.js
+639 silly gunzTarPerm extractEntry test/cdata-multiple.js
+640 silly gunzTarPerm extractEntry test/xmlns-strict.js
+641 silly gunzTarPerm extractEntry test/cdata-fake-end.js
+642 silly gunzTarPerm extractEntry test/xmlns-unbound-element.js
+643 silly gunzTarPerm extractEntry test/cdata-end-split.js
+644 silly gunzTarPerm extractEntry test/xmlns-unbound.js
+645 silly gunzTarPerm extractEntry test/cdata-chunked.js
+646 silly gunzTarPerm extractEntry test/xmlns-xml-default-ns.js
+647 silly gunzTarPerm extractEntry test/case.js
+648 silly gunzTarPerm extractEntry test/xmlns-xml-default-prefix-attribute.js
+649 silly gunzTarPerm extractEntry test/buffer-overrun.js
+650 silly gunzTarPerm extractEntry test/xmlns-xml-default-prefix.js
+651 silly gunzTarPerm extractEntry test/attribute-no-space.js
+652 silly gunzTarPerm extractEntry test/xmlns-xml-default-redefine.js
+653 silly gunzTarPerm extractEntry test/parser-position.js
+654 silly lockFile 24303e97-alvarosaco-npm-sax-0-5-8-package tar:///Users/alvarosaco/.npm/sax/0.5.8/package
+655 silly lockFile 24303e97-alvarosaco-npm-sax-0-5-8-package tar:///Users/alvarosaco/.npm/sax/0.5.8/package
+656 silly lockFile 8cc1b180-rosaco-npm-sax-0-5-8-package-tgz tar:///Users/alvarosaco/.npm/sax/0.5.8/package.tgz
+657 silly lockFile 8cc1b180-rosaco-npm-sax-0-5-8-package-tgz tar:///Users/alvarosaco/.npm/sax/0.5.8/package.tgz
+658 verbose chmod /Users/alvarosaco/.npm/sax/0.5.8/package.tgz 644
+659 verbose chown /Users/alvarosaco/.npm/sax/0.5.8/package.tgz [ 0, 20 ]
+660 silly lockFile 83d4174f-stry-npmjs-org-sax-sax-0-5-8-tgz https://registry.npmjs.org/sax/-/sax-0.5.8.tgz
+661 silly lockFile 83d4174f-stry-npmjs-org-sax-sax-0-5-8-tgz https://registry.npmjs.org/sax/-/sax-0.5.8.tgz
+662 silly lockFile c9464f8a-sax-0-5-8 sax@0.5.8
+663 silly lockFile c9464f8a-sax-0-5-8 sax@0.5.8
+664 silly lockFile 6db52aec-sax-0-5-x sax@0.5.x
+665 silly lockFile 6db52aec-sax-0-5-x sax@0.5.x
+666 silly resolved [ { name: 'debug',
+666 silly resolved     version: '0.7.4',
+666 silly resolved     repository: { type: 'git', url: 'git://github.com/visionmedia/debug.git' },
+666 silly resolved     description: 'small debugging utility',
+666 silly resolved     keywords: [ 'debug', 'log', 'debugger' ],
+666 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+666 silly resolved     dependencies: {},
+666 silly resolved     devDependencies: { mocha: '*' },
+666 silly resolved     main: 'lib/debug.js',
+666 silly resolved     browser: './debug.js',
+666 silly resolved     engines: { node: '*' },
+666 silly resolved     files: [ 'lib/debug.js', 'debug.js', 'index.js' ],
+666 silly resolved     component: { scripts: [Object] },
+666 silly resolved     readme: '# debug\n\n  tiny node.js debugging utility modelled after node core\'s debugging technique.\n\n## Installation\n\n```\n$ npm install debug\n```\n\n## Usage\n\n With `debug` you simply invoke the exported function to generate your debug function, passing it a name which will determine if a noop function is returned, or a decorated `console.error`, so all of the `console` format string goodies you\'re used to work fine. A unique color is selected per-function for visibility.\n \nExample _app.js_:\n\n```js\nvar debug = require(\'debug\')(\'http\')\n  , http = require(\'http\')\n  , name = \'My App\';\n\n// fake app\n\ndebug(\'booting %s\', name);\n\nhttp.createServer(function(req, res){\n  debug(req.method + \' \' + req.url);\n  res.end(\'hello\\n\');\n}).listen(3000, function(){\n  debug(\'listening\');\n});\n\n// fake worker of some kind\n\nrequire(\'./worker\');\n```\n\nExample _worker.js_:\n\n```js\nvar debug = require(\'debug\')(\'worker\');\n\nsetInterval(function(){\n  debug(\'doing some work\');\n}, 1000);\n```\n\n The __DEBUG__ environment variable is then used to enable these based on space or comma-delimited names. Here are some examples:\n\n  ![debug http and worker](http://f.cl.ly/items/18471z1H402O24072r1J/Screenshot.png)\n\n  ![debug worker](http://f.cl.ly/items/1X413v1a3M0d3C2c1E0i/Screenshot.png)\n\n## Millisecond diff\n\n  When actively developing an application it can be useful to see when the time spent between one `debug()` call and the next. Suppose for example you invoke `debug()` before requesting a resource, and after as well, the "+NNNms" will show you how much time was spent between calls.\n\n  ![](http://f.cl.ly/items/2i3h1d3t121M2Z1A3Q0N/Screenshot.png)\n\n  When stderr is not a TTY, `Date#toUTCString()` is used, making it more useful for logging the debug information as shown below:\n  _(NOTE: Debug now uses stderr instead of stdout, so the correct shell command for this example is actually `DEBUG=* node example/worker 2> out &`)_\n  \n  ![](http://f.cl.ly/items/112H3i0e0o0P0a2Q2r11/Screenshot.png)\n  \n## Conventions\n\n If you\'re using this in one or more of your libraries, you _should_ use the name of your library so that developers may toggle debugging as desired without guessing names. If you have more than one debuggers you _should_ prefix them with your library name and use ":" to separate features. For example "bodyParser" from Connect would then be "connect:bodyParser". \n\n## Wildcards\n\n  The "*" character may be used as a wildcard. Suppose for example your library has debuggers named "connect:bodyParser", "connect:compress", "connect:session", instead of listing all three with `DEBUG=connect:bodyParser,connect.compress,connect:session`, you may simply do `DEBUG=connect:*`, or to run everything using this module simply use `DEBUG=*`.\n\n  You can also exclude specific debuggers by prefixing them with a "-" character.  For example, `DEBUG=* -connect:*` would include all debuggers except those starting with "connect:".\n\n## Browser support\n\n Debug works in the browser as well, currently persisted by `localStorage`. For example if you have `worker:a` and `worker:b` as shown below, and wish to debug both type `debug.enable(\'worker:*\')` in the console and refresh the page, this will remain until you disable with `debug.disable()`. \n\n```js\na = debug(\'worker:a\');\nb = debug(\'worker:b\');\n\nsetInterval(function(){\n  a(\'doing some work\');\n}, 1000);\n\nsetInterval(function(){\n  a(\'doing some work\');\n}, 1200);\n```\n\n## License \n\n(The MIT License)\n\nCopyright (c) 2011 TJ Holowaychuk &lt;tj@vision-media.ca&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\'Software\'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n',
+666 silly resolved     readmeFilename: 'Readme.md',
+666 silly resolved     bugs: { url: 'https://github.com/visionmedia/debug/issues' },
+666 silly resolved     homepage: 'https://github.com/visionmedia/debug',
+666 silly resolved     _id: 'debug@0.7.4',
+666 silly resolved     _from: 'debug@*' },
+666 silly resolved   { author:
+666 silly resolved      { name: 'Isaac Z. Schlueter',
+666 silly resolved        email: 'i@izs.me',
+666 silly resolved        url: 'http://blog.izs.me/' },
+666 silly resolved     name: 'glob',
+666 silly resolved     description: 'a little globber',
+666 silly resolved     version: '3.2.9',
+666 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/node-glob.git' },
+666 silly resolved     main: 'glob.js',
+666 silly resolved     engines: { node: '*' },
+666 silly resolved     dependencies: { minimatch: '~0.2.11', inherits: '2' },
+666 silly resolved     devDependencies: { tap: '~0.4.0', mkdirp: '0', rimraf: '1' },
+666 silly resolved     scripts:
+666 silly resolved      { test: 'tap test/*.js',
+666 silly resolved        'test-regen': 'TEST_REGEN=1 node test/00-setup.js' },
+666 silly resolved     license: 'BSD',
+666 silly resolved     readme: '# Glob\n\nMatch files using the patterns the shell uses, like stars and stuff.\n\nThis is a glob implementation in JavaScript.  It uses the `minimatch`\nlibrary to do its matching.\n\n## Attention: node-glob users!\n\nThe API has changed dramatically between 2.x and 3.x. This library is\nnow 100% JavaScript, and the integer flags have been replaced with an\noptions object.\n\nAlso, there\'s an event emitter class, proper tests, and all the other\nthings you\'ve come to expect from node modules.\n\nAnd best of all, no compilation!\n\n## Usage\n\n```javascript\nvar glob = require("glob")\n\n// options is optional\nglob("**/*.js", options, function (er, files) {\n  // files is an array of filenames.\n  // If the `nonull` option is set, and nothing\n  // was found, then files is ["**/*.js"]\n  // er is an error object or null.\n})\n```\n\n## Features\n\nPlease see the [minimatch\ndocumentation](https://github.com/isaacs/minimatch) for more details.\n\nSupports these glob features:\n\n* Brace Expansion\n* Extended glob matching\n* "Globstar" `**` matching\n\nSee:\n\n* `man sh`\n* `man bash`\n* `man 3 fnmatch`\n* `man 5 gitignore`\n* [minimatch documentation](https://github.com/isaacs/minimatch)\n\n## glob(pattern, [options], cb)\n\n* `pattern` {String} Pattern to be matched\n* `options` {Object}\n* `cb` {Function}\n  * `err` {Error | null}\n  * `matches` {Array<String>} filenames found matching the pattern\n\nPerform an asynchronous glob search.\n\n## glob.sync(pattern, [options])\n\n* `pattern` {String} Pattern to be matched\n* `options` {Object}\n* return: {Array<String>} filenames found matching the pattern\n\nPerform a synchronous glob search.\n\n## Class: glob.Glob\n\nCreate a Glob object by instanting the `glob.Glob` class.\n\n```javascript\nvar Glob = require("glob").Glob\nvar mg = new Glob(pattern, options, cb)\n```\n\nIt\'s an EventEmitter, and starts walking the filesystem to find matches\nimmediately.\n\n### new glob.Glob(pattern, [options], [cb])\n\n* `pattern` {String} pattern to search for\n* `options` {Object}\n* `cb` {Function} Called when an error occurs, or matches are found\n  * `err` {Error | null}\n  * `matches` {Array<String>} filenames found matching the pattern\n\nNote that if the `sync` flag is set in the options, then matches will\nbe immediately available on the `g.found` member.\n\n### Properties\n\n* `minimatch` The minimatch object that the glob uses.\n* `options` The options object passed in.\n* `error` The error encountered.  When an error is encountered, the\n  glob object is in an undefined state, and should be discarded.\n* `aborted` Boolean which is set to true when calling `abort()`.  There\n  is no way at this time to continue a glob search after aborting, but\n  you can re-use the statCache to avoid having to duplicate syscalls.\n* `statCache` Collection of all the stat results the glob search\n  performed.\n* `cache` Convenience object.  Each field has the following possible\n  values:\n  * `false` - Path does not exist\n  * `true` - Path exists\n  * `1` - Path exists, and is not a directory\n  * `2` - Path exists, and is a directory\n  * `[file, entries, ...]` - Path exists, is a directory, and the\n    array value is the results of `fs.readdir`\n\n### Events\n\n* `end` When the matching is finished, this is emitted with all the\n  matches found.  If the `nonull` option is set, and no match was found,\n  then the `matches` list contains the original pattern.  The matches\n  are sorted, unless the `nosort` flag is set.\n* `match` Every time a match is found, this is emitted with the matched.\n* `error` Emitted when an unexpected error is encountered, or whenever\n  any fs error occurs if `options.strict` is set.\n* `abort` When `abort()` is called, this event is raised.\n\n### Methods\n\n* `abort` Stop the search.\n\n### Options\n\nAll the options that can be passed to Minimatch can also be passed to\nGlob to change pattern matching behavior.  Also, some have been added,\nor have glob-specific ramifications.\n\nAll options are false by default, unless otherwise noted.\n\nAll options are added to the glob object, as well.\n\n* `cwd` The current working directory in which to search.  Defaults\n  to `process.cwd()`.\n* `root` The place where patterns starting with `/` will be mounted\n  onto.  Defaults to `path.resolve(options.cwd, "/")` (`/` on Unix\n  systems, and `C:\\` or some such on Windows.)\n* `dot` Include `.dot` files in normal matches and `globstar` matches.\n  Note that an explicit dot in a portion of the pattern will always\n  match dot files.\n* `nomount` By default, a pattern starting with a forward-slash will be\n  "mounted" onto the root setting, so that a valid filesystem path is\n  returned.  Set this flag to disable that behavior.\n* `mark` Add a `/` character to directory matches.  Note that this\n  requires additional stat calls.\n* `nosort` Don\'t sort the results.\n* `stat` Set to true to stat *all* results.  This reduces performance\n  somewhat, and is completely unnecessary, unless `readdir` is presumed\n  to be an untrustworthy indicator of file existence.  It will cause\n  ELOOP to be triggered one level sooner in the case of cyclical\n  symbolic links.\n* `silent` When an unusual error is encountered\n  when attempting to read a directory, a warning will be printed to\n  stderr.  Set the `silent` option to true to suppress these warnings.\n* `strict` When an unusual error is encountered\n  when attempting to read a directory, the process will just continue on\n  in search of other matches.  Set the `strict` option to raise an error\n  in these cases.\n* `cache` See `cache` property above.  Pass in a previously generated\n  cache object to save some fs calls.\n* `statCache` A cache of results of filesystem information, to prevent\n  unnecessary stat calls.  While it should not normally be necessary to\n  set this, you may pass the statCache from one glob() call to the\n  options object of another, if you know that the filesystem will not\n  change between calls.  (See "Race Conditions" below.)\n* `sync` Perform a synchronous glob search.\n* `nounique` In some cases, brace-expanded patterns can result in the\n  same file showing up multiple times in the result set.  By default,\n  this implementation prevents duplicates in the result set.\n  Set this flag to disable that behavior.\n* `nonull` Set to never return an empty set, instead returning a set\n  containing the pattern itself.  This is the default in glob(3).\n* `nocase` Perform a case-insensitive match.  Note that case-insensitive\n  filesystems will sometimes result in glob returning results that are\n  case-insensitively matched anyway, since readdir and stat will not\n  raise an error.\n* `debug` Set to enable debug logging in minimatch and glob.\n* `globDebug` Set to enable debug logging in glob, but not minimatch.\n\n## Comparisons to other fnmatch/glob implementations\n\nWhile strict compliance with the existing standards is a worthwhile\ngoal, some discrepancies exist between node-glob and other\nimplementations, and are intentional.\n\nIf the pattern starts with a `!` character, then it is negated.  Set the\n`nonegate` flag to suppress this behavior, and treat leading `!`\ncharacters normally.  This is perhaps relevant if you wish to start the\npattern with a negative extglob pattern like `!(a|B)`.  Multiple `!`\ncharacters at the start of a pattern will negate the pattern multiple\ntimes.\n\nIf a pattern starts with `#`, then it is treated as a comment, and\nwill not match anything.  Use `\\#` to match a literal `#` at the\nstart of a line, or set the `nocomment` flag to suppress this behavior.\n\nThe double-star character `**` is supported by default, unless the\n`noglobstar` flag is set.  This is supported in the manner of bsdglob\nand bash 4.1, where `**` only has special significance if it is the only\nthing in a path part.  That is, `a/**/b` will match `a/x/y/b`, but\n`a/**b` will not.\n\nIf an escaped pattern has no matches, and the `nonull` flag is set,\nthen glob returns the pattern as-provided, rather than\ninterpreting the character escapes.  For example,\n`glob.match([], "\\\\*a\\\\?")` will return `"\\\\*a\\\\?"` rather than\n`"*a?"`.  This is akin to setting the `nullglob` option in bash, except\nthat it does not resolve escaped pattern characters.\n\nIf brace expansion is not disabled, then it is performed before any\nother interpretation of the glob pattern.  Thus, a pattern like\n`+(a|{b),c)}`, which would not be valid in bash or zsh, is expanded\n**first** into the set of `+(a|b)` and `+(a|c)`, and those patterns are\nchecked for validity.  Since those two are valid, matching proceeds.\n\n## Windows\n\n**Please only use forward-slashes in glob expressions.**\n\nThough windows uses either `/` or `\\` as its path separator, only `/`\ncharacters are used by this glob implementation.  You must use\nforward-slashes **only** in glob expressions.  Back-slashes will always\nbe interpreted as escape characters, not path separators.\n\nResults from absolute patterns such as `/foo/*` are mounted onto the\nroot setting using `path.join`.  On windows, this will by default result\nin `/foo/*` matching `C:\\foo\\bar.txt`.\n\n## Race Conditions\n\nGlob searching, by its very nature, is susceptible to race conditions,\nsince it relies on directory walking and such.\n\nAs a result, it is possible that a file that exists when glob looks for\nit may have been deleted or modified by the time it returns the result.\n\nAs part of its internal implementation, this program caches all stat\nand readdir calls that it makes, in order to cut down on system\noverhead.  However, this also makes it even more susceptible to races,\nespecially if the cache or statCache objects are reused between glob\ncalls.\n\nUsers are thus advised not to use a glob result as a guarantee of\nfilesystem state in the face of rapid changes.  For the vast majority\nof operations, this is never a problem.\n',
+666 silly resolved     readmeFilename: 'README.md',
+666 silly resolved     bugs: { url: 'https://github.com/isaacs/node-glob/issues' },
+666 silly resolved     homepage: 'https://github.com/isaacs/node-glob',
+666 silly resolved     _id: 'glob@3.2.9',
+666 silly resolved     _from: 'glob@3.2.x' },
+666 silly resolved   { name: 'mkdirp',
+666 silly resolved     description: 'Recursively mkdir, like `mkdir -p`',
+666 silly resolved     version: '0.3.5',
+666 silly resolved     author:
+666 silly resolved      { name: 'James Halliday',
+666 silly resolved        email: 'mail@substack.net',
+666 silly resolved        url: 'http://substack.net' },
+666 silly resolved     main: './index',
+666 silly resolved     keywords: [ 'mkdir', 'directory' ],
+666 silly resolved     repository:
+666 silly resolved      { type: 'git',
+666 silly resolved        url: 'http://github.com/substack/node-mkdirp.git' },
+666 silly resolved     scripts: { test: 'tap test/*.js' },
+666 silly resolved     devDependencies: { tap: '~0.4.0' },
+666 silly resolved     license: 'MIT',
+666 silly resolved     readme: '# mkdirp\n\nLike `mkdir -p`, but in node.js!\n\n[![build status](https://secure.travis-ci.org/substack/node-mkdirp.png)](http://travis-ci.org/substack/node-mkdirp)\n\n# example\n\n## pow.js\n\n```js\nvar mkdirp = require(\'mkdirp\');\n    \nmkdirp(\'/tmp/foo/bar/baz\', function (err) {\n    if (err) console.error(err)\n    else console.log(\'pow!\')\n});\n```\n\nOutput\n\n```\npow!\n```\n\nAnd now /tmp/foo/bar/baz exists, huzzah!\n\n# methods\n\n```js\nvar mkdirp = require(\'mkdirp\');\n```\n\n## mkdirp(dir, mode, cb)\n\nCreate a new directory and any necessary subdirectories at `dir` with octal\npermission string `mode`.\n\nIf `mode` isn\'t specified, it defaults to `0777 & (~process.umask())`.\n\n`cb(err, made)` fires with the error or the first directory `made`\nthat had to be created, if any.\n\n## mkdirp.sync(dir, mode)\n\nSynchronously create a new directory and any necessary subdirectories at `dir`\nwith octal permission string `mode`.\n\nIf `mode` isn\'t specified, it defaults to `0777 & (~process.umask())`.\n\nReturns the first directory that had to be created, if any.\n\n# install\n\nWith [npm](http://npmjs.org) do:\n\n```\nnpm install mkdirp\n```\n\n# license\n\nMIT\n',
+666 silly resolved     readmeFilename: 'readme.markdown',
+666 silly resolved     bugs: { url: 'https://github.com/substack/node-mkdirp/issues' },
+666 silly resolved     homepage: 'https://github.com/substack/node-mkdirp',
+666 silly resolved     _id: 'mkdirp@0.3.5',
+666 silly resolved     _from: 'mkdirp@0.3.x' },
+666 silly resolved   { name: 'css-parse',
+666 silly resolved     version: '1.7.0',
+666 silly resolved     description: 'CSS parser',
+666 silly resolved     keywords: [ 'css', 'parser', 'stylesheet' ],
+666 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+666 silly resolved     license: 'MIT',
+666 silly resolved     devDependencies: { mocha: '*', should: '*', matcha: '~0.4.0', bytes: '~0.2.1' },
+666 silly resolved     main: 'index',
+666 silly resolved     repository:
+666 silly resolved      { type: 'git',
+666 silly resolved        url: 'https://github.com/visionmedia/css-parse.git' },
+666 silly resolved     scripts: { test: 'make test' },
+666 silly resolved     files: [ 'index.js' ],
+666 silly resolved     readme: '# css-parse [![Build Status](https://travis-ci.org/visionmedia/css-parse.png)](https://travis-ci.org/visionmedia/css-parse)\n\n  JavaScript CSS parser for nodejs and the browser.\n\n## Installation\n\n  $ npm install css-parse\n\n## Usage\n\n````javascript\nvar parse = require(\'css-parse\');\n\n// CSS input string\nvar css = "body { \\n background-color: #fff;\\n }";\n\nvar output_obj = parse(css);\n\n// Position and Source parameters\nvar output_obj_pos = parse(css, { position: true, source: \'file.css\' });\n\n// Print parsed object as CSS string\nconsole.log(JSON.stringify(output_obj, null, 2));\n\n````\n\n## Example\n\ncss:\n\n```css\nbody {\n  background: #eee;\n  color: #888;\n}\n```\n\nparse tree:\n\n```json\n{\n  "type": "stylesheet",\n  "stylesheet": {\n    "rules": [\n      {\n        "type": "rule",\n        "selectors": [\n          "body"\n        ],\n        "declarations": [\n          {\n            "type": "declaration",\n            "property": "background",\n            "value": "#eee"\n          },\n          {\n            "type": "declaration",\n            "property": "color",\n            "value": "#888"\n          }\n        ]\n      }\n    ]\n  }\n}\n```\n\nparse tree with `.position` enabled:\n\n```json\n{\n  "type": "stylesheet",\n  "stylesheet": {\n    "rules": [\n      {\n        "type": "rule",\n        "selectors": [\n          "body"\n        ],\n        "declarations": [\n          {\n            "type": "declaration",\n            "property": "background",\n            "value": "#eee",\n            "position": {\n              "start": {\n                "line": 3,\n                "column": 3\n              },\n              "end": {\n                "line": 3,\n                "column": 19\n              }\n            }\n          },\n          {\n            "type": "declaration",\n            "property": "color",\n            "value": "#888",\n            "position": {\n              "start": {\n                "line": 4,\n                "column": 3\n              },\n              "end": {\n                "line": 4,\n                "column": 14\n              }\n            }\n          }\n        ],\n        "position": {\n          "start": {\n            "line": 2,\n            "column": 1\n          },\n          "end": {\n            "line": 5,\n            "column": 2\n          }\n        }\n      }\n    ]\n  }\n}\n```\n\nIf you also pass in `source: \'path/to/original.css\'`, that will be set\non `node.position.source`.\n\n## Performance\n\n  Parsed 15,000 lines of CSS (2mb) in 40ms on my macbook air.\n\n## Related\n \n  [css-stringify](https://github.com/visionmedia/css-stringify "CSS-Stringify")  \n  [css-value](https://github.com/visionmedia/css-value "CSS-Value")  \n\n## License\n\n  MIT\n',
+666 silly resolved     readmeFilename: 'Readme.md',
+666 silly resolved     bugs: { url: 'https://github.com/visionmedia/css-parse/issues' },
+666 silly resolved     homepage: 'https://github.com/visionmedia/css-parse',
+666 silly resolved     _id: 'css-parse@1.7.0',
+666 silly resolved     dist: { shasum: '93e02d0bd68ef5adb3bd5a62037c116c471dfe34' },
+666 silly resolved     _from: 'css-parse@1.7.x',
+666 silly resolved     _resolved: 'https://registry.npmjs.org/css-parse/-/css-parse-1.7.0.tgz' },
+666 silly resolved   { name: 'sax',
+666 silly resolved     description: 'An evented streaming XML parser in JavaScript',
+666 silly resolved     author:
+666 silly resolved      { name: 'Isaac Z. Schlueter',
+666 silly resolved        email: 'i@izs.me',
+666 silly resolved        url: 'http://blog.izs.me/' },
+666 silly resolved     version: '0.5.8',
+666 silly resolved     main: 'lib/sax.js',
+666 silly resolved     license: 'BSD',
+666 silly resolved     scripts: { test: 'node test/index.js' },
+666 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/sax-js.git' },
+666 silly resolved     contributors:
+666 silly resolved      [ [Object],
+666 silly resolved        [Object],
+666 silly resolved        [Object],
+666 silly resolved        [Object],
+666 silly resolved        [Object],
+666 silly resolved        [Object],
+666 silly resolved        [Object],
+666 silly resolved        [Object],
+666 silly resolved        [Object] ],
+666 silly resolved     readme: '# sax js\n\nA sax-style parser for XML and HTML.\n\nDesigned with [node](http://nodejs.org/) in mind, but should work fine in\nthe browser or other CommonJS implementations.\n\n## What This Is\n\n* A very simple tool to parse through an XML string.\n* A stepping stone to a streaming HTML parser.\n* A handy way to deal with RSS and other mostly-ok-but-kinda-broken XML \n  docs.\n\n## What This Is (probably) Not\n\n* An HTML Parser - That\'s a fine goal, but this isn\'t it.  It\'s just\n  XML.\n* A DOM Builder - You can use it to build an object model out of XML,\n  but it doesn\'t do that out of the box.\n* XSLT - No DOM = no querying.\n* 100% Compliant with (some other SAX implementation) - Most SAX\n  implementations are in Java and do a lot more than this does.\n* An XML Validator - It does a little validation when in strict mode, but\n  not much.\n* A Schema-Aware XSD Thing - Schemas are an exercise in fetishistic \n  masochism.\n* A DTD-aware Thing - Fetching DTDs is a much bigger job.\n\n## Regarding `<!DOCTYPE`s and `<!ENTITY`s\n\nThe parser will handle the basic XML entities in text nodes and attribute\nvalues: `&amp; &lt; &gt; &apos; &quot;`. It\'s possible to define additional\nentities in XML by putting them in the DTD. This parser doesn\'t do anything\nwith that. If you want to listen to the `ondoctype` event, and then fetch\nthe doctypes, and read the entities and add them to `parser.ENTITIES`, then\nbe my guest.\n\nUnknown entities will fail in strict mode, and in loose mode, will pass\nthrough unmolested.\n\n## Usage\n\n    var sax = require("./lib/sax"),\n      strict = true, // set to false for html-mode\n      parser = sax.parser(strict);\n\n    parser.onerror = function (e) {\n      // an error happened.\n    };\n    parser.ontext = function (t) {\n      // got some text.  t is the string of text.\n    };\n    parser.onopentag = function (node) {\n      // opened a tag.  node has "name" and "attributes"\n    };\n    parser.onattribute = function (attr) {\n      // an attribute.  attr has "name" and "value"\n    };\n    parser.onend = function () {\n      // parser stream is done, and ready to have more stuff written to it.\n    };\n\n    parser.write(\'<xml>Hello, <who name="world">world</who>!</xml>\').close();\n\n    // stream usage\n    // takes the same options as the parser\n    var saxStream = require("sax").createStream(strict, options)\n    saxStream.on("error", function (e) {\n      // unhandled errors will throw, since this is a proper node\n      // event emitter.\n      console.error("error!", e)\n      // clear the error\n      this._parser.error = null\n      this._parser.resume()\n    })\n    saxStream.on("opentag", function (node) {\n      // same object as above\n    })\n    // pipe is supported, and it\'s readable/writable\n    // same chunks coming in also go out.\n    fs.createReadStream("file.xml")\n      .pipe(saxStream)\n      .pipe(fs.createWriteStream("file-copy.xml"))\n\n\n\n## Arguments\n\nPass the following arguments to the parser function.  All are optional.\n\n`strict` - Boolean. Whether or not to be a jerk. Default: `false`.\n\n`opt` - Object bag of settings regarding string formatting.  All default to `false`.\n\nSettings supported:\n\n* `trim` - Boolean. Whether or not to trim text and comment nodes.\n* `normalize` - Boolean. If true, then turn any whitespace into a single\n  space.\n* `lowercase` - Boolean. If true, then lowercase tag names and attribute names\n  in loose mode, rather than uppercasing them.\n* `xmlns` - Boolean. If true, then namespaces are supported.\n* `position` - Boolean. If false, then don\'t track line/col/position.\n\n## Methods\n\n`write` - Write bytes onto the stream. You don\'t have to do this all at\nonce. You can keep writing as much as you want.\n\n`close` - Close the stream. Once closed, no more data may be written until\nit is done processing the buffer, which is signaled by the `end` event.\n\n`resume` - To gracefully handle errors, assign a listener to the `error`\nevent. Then, when the error is taken care of, you can call `resume` to\ncontinue parsing. Otherwise, the parser will not continue while in an error\nstate.\n\n## Members\n\nAt all times, the parser object will have the following members:\n\n`line`, `column`, `position` - Indications of the position in the XML\ndocument where the parser currently is looking.\n\n`startTagPosition` - Indicates the position where the current tag starts.\n\n`closed` - Boolean indicating whether or not the parser can be written to.\nIf it\'s `true`, then wait for the `ready` event to write again.\n\n`strict` - Boolean indicating whether or not the parser is a jerk.\n\n`opt` - Any options passed into the constructor.\n\n`tag` - The current tag being dealt with.\n\nAnd a bunch of other stuff that you probably shouldn\'t touch.\n\n## Events\n\nAll events emit with a single argument. To listen to an event, assign a\nfunction to `on<eventname>`. Functions get executed in the this-context of\nthe parser object. The list of supported events are also in the exported\n`EVENTS` array.\n\nWhen using the stream interface, assign handlers using the EventEmitter\n`on` function in the normal fashion.\n\n`error` - Indication that something bad happened. The error will be hanging\nout on `parser.error`, and must be deleted before parsing can continue. By\nlistening to this event, you can keep an eye on that kind of stuff. Note:\nthis happens *much* more in strict mode. Argument: instance of `Error`.\n\n`text` - Text node. Argument: string of text.\n\n`doctype` - The `<!DOCTYPE` declaration. Argument: doctype string.\n\n`processinginstruction` - Stuff like `<?xml foo="blerg" ?>`. Argument:\nobject with `name` and `body` members. Attributes are not parsed, as\nprocessing instructions have implementation dependent semantics.\n\n`sgmldeclaration` - Random SGML declarations. Stuff like `<!ENTITY p>`\nwould trigger this kind of event. This is a weird thing to support, so it\nmight go away at some point. SAX isn\'t intended to be used to parse SGML,\nafter all.\n\n`opentag` - An opening tag. Argument: object with `name` and `attributes`.\nIn non-strict mode, tag names are uppercased, unless the `lowercase`\noption is set.  If the `xmlns` option is set, then it will contain\nnamespace binding information on the `ns` member, and will have a\n`local`, `prefix`, and `uri` member.\n\n`closetag` - A closing tag. In loose mode, tags are auto-closed if their\nparent closes. In strict mode, well-formedness is enforced. Note that\nself-closing tags will have `closeTag` emitted immediately after `openTag`.\nArgument: tag name.\n\n`attribute` - An attribute node.  Argument: object with `name` and `value`.\nIn non-strict mode, attribute names are uppercased, unless the `lowercase`\noption is set.  If the `xmlns` option is set, it will also contains namespace\ninformation.\n\n`comment` - A comment node.  Argument: the string of the comment.\n\n`opencdata` - The opening tag of a `<![CDATA[` block.\n\n`cdata` - The text of a `<![CDATA[` block. Since `<![CDATA[` blocks can get\nquite large, this event may fire multiple times for a single block, if it\nis broken up into multiple `write()`s. Argument: the string of random\ncharacter data.\n\n`closecdata` - The closing tag (`]]>`) of a `<![CDATA[` block.\n\n`opennamespace` - If the `xmlns` option is set, then this event will\nsignal the start of a new namespace binding.\n\n`closenamespace` - If the `xmlns` option is set, then this event will\nsignal the end of a namespace binding.\n\n`end` - Indication that the closed stream has ended.\n\n`ready` - Indication that the stream has reset, and is ready to be written\nto.\n\n`noscript` - In non-strict mode, `<script>` tags trigger a `"script"`\nevent, and their contents are not checked for special xml characters.\nIf you pass `noscript: true`, then this behavior is suppressed.\n\n## Reporting Problems\n\nIt\'s best to write a failing test if you find an issue.  I will always\naccept pull requests with failing tests if they demonstrate intended\nbehavior, but it is very hard to figure out what issue you\'re describing\nwithout a test.  Writing a test is also the best way for you yourself\nto figure out if you really understand the issue you think you have with\nsax-js.\n',
+666 silly resolved     readmeFilename: 'README.md',
+666 silly resolved     bugs: { url: 'https://github.com/isaacs/sax-js/issues' },
+666 silly resolved     homepage: 'https://github.com/isaacs/sax-js',
+666 silly resolved     _id: 'sax@0.5.8',
+666 silly resolved     dist: { shasum: '9015b39d718143a4822fe3d625e0c8ad59f0cabf' },
+666 silly resolved     _from: 'sax@0.5.x',
+666 silly resolved     _resolved: 'https://registry.npmjs.org/sax/-/sax-0.5.8.tgz' } ]
+667 info install debug@0.7.4 into /usr/local/lib/node_modules/stylus
+668 info install glob@3.2.9 into /usr/local/lib/node_modules/stylus
+669 info install mkdirp@0.3.5 into /usr/local/lib/node_modules/stylus
+670 info install css-parse@1.7.0 into /usr/local/lib/node_modules/stylus
+671 info install sax@0.5.8 into /usr/local/lib/node_modules/stylus
+672 info installOne debug@0.7.4
+673 info installOne glob@3.2.9
+674 info installOne mkdirp@0.3.5
+675 info installOne css-parse@1.7.0
+676 info installOne sax@0.5.8
+677 info /usr/local/lib/node_modules/stylus/node_modules/debug unbuild
+678 info /usr/local/lib/node_modules/stylus/node_modules/glob unbuild
+679 info /usr/local/lib/node_modules/stylus/node_modules/mkdirp unbuild
+680 info /usr/local/lib/node_modules/stylus/node_modules/css-parse unbuild
+681 info /usr/local/lib/node_modules/stylus/node_modules/sax unbuild
+682 verbose tar unpack /Users/alvarosaco/.npm/debug/0.7.4/package.tgz
+683 silly lockFile b23e0d6a-odules-stylus-node-modules-debug tar:///usr/local/lib/node_modules/stylus/node_modules/debug
+684 verbose lock tar:///usr/local/lib/node_modules/stylus/node_modules/debug /Users/alvarosaco/.npm/b23e0d6a-odules-stylus-node-modules-debug.lock
+685 silly lockFile 55c84d05-saco-npm-debug-0-7-4-package-tgz tar:///Users/alvarosaco/.npm/debug/0.7.4/package.tgz
+686 verbose lock tar:///Users/alvarosaco/.npm/debug/0.7.4/package.tgz /Users/alvarosaco/.npm/55c84d05-saco-npm-debug-0-7-4-package-tgz.lock
+687 verbose tar unpack /Users/alvarosaco/.npm/glob/3.2.9/package.tgz
+688 silly lockFile 838c6da9-modules-stylus-node-modules-glob tar:///usr/local/lib/node_modules/stylus/node_modules/glob
+689 verbose lock tar:///usr/local/lib/node_modules/stylus/node_modules/glob /Users/alvarosaco/.npm/838c6da9-modules-stylus-node-modules-glob.lock
+690 silly lockFile 9c60d97d-osaco-npm-glob-3-2-9-package-tgz tar:///Users/alvarosaco/.npm/glob/3.2.9/package.tgz
+691 verbose lock tar:///Users/alvarosaco/.npm/glob/3.2.9/package.tgz /Users/alvarosaco/.npm/9c60d97d-osaco-npm-glob-3-2-9-package-tgz.lock
+692 verbose tar unpack /Users/alvarosaco/.npm/mkdirp/0.3.5/package.tgz
+693 silly lockFile 08986b85-dules-stylus-node-modules-mkdirp tar:///usr/local/lib/node_modules/stylus/node_modules/mkdirp
+694 verbose lock tar:///usr/local/lib/node_modules/stylus/node_modules/mkdirp /Users/alvarosaco/.npm/08986b85-dules-stylus-node-modules-mkdirp.lock
+695 silly lockFile 71505dd5-aco-npm-mkdirp-0-3-5-package-tgz tar:///Users/alvarosaco/.npm/mkdirp/0.3.5/package.tgz
+696 verbose lock tar:///Users/alvarosaco/.npm/mkdirp/0.3.5/package.tgz /Users/alvarosaco/.npm/71505dd5-aco-npm-mkdirp-0-3-5-package-tgz.lock
+697 verbose tar unpack /Users/alvarosaco/.npm/css-parse/1.7.0/package.tgz
+698 silly lockFile 22cf06fb-es-stylus-node-modules-css-parse tar:///usr/local/lib/node_modules/stylus/node_modules/css-parse
+699 verbose lock tar:///usr/local/lib/node_modules/stylus/node_modules/css-parse /Users/alvarosaco/.npm/22cf06fb-es-stylus-node-modules-css-parse.lock
+700 silly lockFile 0f147a2a--npm-css-parse-1-7-0-package-tgz tar:///Users/alvarosaco/.npm/css-parse/1.7.0/package.tgz
+701 verbose lock tar:///Users/alvarosaco/.npm/css-parse/1.7.0/package.tgz /Users/alvarosaco/.npm/0f147a2a--npm-css-parse-1-7-0-package-tgz.lock
+702 verbose tar unpack /Users/alvarosaco/.npm/sax/0.5.8/package.tgz
+703 silly lockFile f5c3b756--modules-stylus-node-modules-sax tar:///usr/local/lib/node_modules/stylus/node_modules/sax
+704 verbose lock tar:///usr/local/lib/node_modules/stylus/node_modules/sax /Users/alvarosaco/.npm/f5c3b756--modules-stylus-node-modules-sax.lock
+705 silly lockFile 8cc1b180-rosaco-npm-sax-0-5-8-package-tgz tar:///Users/alvarosaco/.npm/sax/0.5.8/package.tgz
+706 verbose lock tar:///Users/alvarosaco/.npm/sax/0.5.8/package.tgz /Users/alvarosaco/.npm/8cc1b180-rosaco-npm-sax-0-5-8-package-tgz.lock
+707 silly gunzTarPerm modes [ '755', '644' ]
+708 silly gunzTarPerm modes [ '755', '644' ]
+709 silly gunzTarPerm modes [ '755', '644' ]
+710 silly gunzTarPerm modes [ '755', '644' ]
+711 silly gunzTarPerm modes [ '755', '644' ]
+712 silly gunzTarPerm extractEntry package.json
+713 silly gunzTarPerm extractEntry package.json
+714 silly gunzTarPerm extractEntry package.json
+715 silly gunzTarPerm extractEntry package.json
+716 silly gunzTarPerm extractEntry package.json
+717 silly gunzTarPerm extractEntry debug.js
+718 silly gunzTarPerm extractEntry index.js
+719 silly gunzTarPerm extractEntry .npmignore
+720 silly gunzTarPerm extractEntry README.md
+721 silly gunzTarPerm extractEntry .npmignore
+722 silly gunzTarPerm extractEntry LICENSE
+723 silly gunzTarPerm extractEntry index.js
+724 silly gunzTarPerm extractEntry Readme.md
+725 silly gunzTarPerm extractEntry README.md
+726 silly gunzTarPerm extractEntry LICENSE
+727 silly gunzTarPerm extractEntry Readme.md
+728 silly gunzTarPerm extractEntry lib/debug.js
+729 silly gunzTarPerm extractEntry AUTHORS
+730 silly gunzTarPerm extractEntry LICENSE-W3C.html
+731 silly gunzTarPerm extractEntry LICENSE
+732 silly gunzTarPerm extractEntry glob.js
+733 silly gunzTarPerm extractEntry index.js
+734 silly gunzTarPerm extractEntry .travis.yml
+735 silly gunzTarPerm extractEntry examples/pow.js
+736 silly gunzTarPerm extractEntry readme.markdown
+737 silly gunzTarPerm extractEntry .travis.yml
+738 silly gunzTarPerm extractEntry test/chmod.js
+739 silly gunzTarPerm extractEntry test/perm.js
+740 silly gunzTarPerm extractEntry component.json
+741 silly gunzTarPerm extractEntry test/perm_sync.js
+742 silly gunzTarPerm extractEntry test/race.js
+743 silly gunzTarPerm extractEntry test/mkdirp.js
+744 silly gunzTarPerm extractEntry test/return.js
+745 silly gunzTarPerm extractEntry test/return_sync.js
+746 silly gunzTarPerm extractEntry test/root.js
+747 silly gunzTarPerm extractEntry test/sync.js
+748 silly gunzTarPerm extractEntry test/umask.js
+749 silly gunzTarPerm extractEntry test/clobber.js
+750 silly gunzTarPerm extractEntry test/umask_sync.js
+751 silly gunzTarPerm extractEntry test/rel.js
+752 silly gunzTarPerm extractEntry examples/example.js
+753 silly gunzTarPerm extractEntry examples/get-products.js
+754 silly gunzTarPerm extractEntry examples/g.js
+755 silly gunzTarPerm extractEntry examples/usr-local.js
+756 silly gunzTarPerm extractEntry examples/hello-world.js
+757 silly gunzTarPerm extractEntry examples/pretty-print.js
+758 silly lockFile 22cf06fb-es-stylus-node-modules-css-parse tar:///usr/local/lib/node_modules/stylus/node_modules/css-parse
+759 silly lockFile 22cf06fb-es-stylus-node-modules-css-parse tar:///usr/local/lib/node_modules/stylus/node_modules/css-parse
+760 silly gunzTarPerm extractEntry test/00-setup.js
+761 silly gunzTarPerm extractEntry test/cwd-test.js
+762 silly lockFile 0f147a2a--npm-css-parse-1-7-0-package-tgz tar:///Users/alvarosaco/.npm/css-parse/1.7.0/package.tgz
+763 silly lockFile 0f147a2a--npm-css-parse-1-7-0-package-tgz tar:///Users/alvarosaco/.npm/css-parse/1.7.0/package.tgz
+764 info preinstall css-parse@1.7.0
+765 verbose readDependencies using package.json deps
+766 verbose readDependencies using package.json deps
+767 silly resolved []
+768 verbose about to build /usr/local/lib/node_modules/stylus/node_modules/css-parse
+769 info build /usr/local/lib/node_modules/stylus/node_modules/css-parse
+770 verbose linkStuff [ true,
+770 verbose linkStuff   '/usr/local/lib/node_modules',
+770 verbose linkStuff   false,
+770 verbose linkStuff   '/usr/local/lib/node_modules/stylus/node_modules' ]
+771 info linkStuff css-parse@1.7.0
+772 silly lockFile b23e0d6a-odules-stylus-node-modules-debug tar:///usr/local/lib/node_modules/stylus/node_modules/debug
+773 silly lockFile b23e0d6a-odules-stylus-node-modules-debug tar:///usr/local/lib/node_modules/stylus/node_modules/debug
+774 silly lockFile 55c84d05-saco-npm-debug-0-7-4-package-tgz tar:///Users/alvarosaco/.npm/debug/0.7.4/package.tgz
+775 silly lockFile 55c84d05-saco-npm-debug-0-7-4-package-tgz tar:///Users/alvarosaco/.npm/debug/0.7.4/package.tgz
+776 info preinstall debug@0.7.4
+777 verbose readDependencies using package.json deps
+778 verbose linkBins css-parse@1.7.0
+779 verbose linkMans css-parse@1.7.0
+780 verbose rebuildBundles css-parse@1.7.0
+781 verbose readDependencies using package.json deps
+782 silly resolved []
+783 verbose about to build /usr/local/lib/node_modules/stylus/node_modules/debug
+784 info build /usr/local/lib/node_modules/stylus/node_modules/debug
+785 verbose linkStuff [ true,
+785 verbose linkStuff   '/usr/local/lib/node_modules',
+785 verbose linkStuff   false,
+785 verbose linkStuff   '/usr/local/lib/node_modules/stylus/node_modules' ]
+786 info linkStuff debug@0.7.4
+787 verbose linkBins debug@0.7.4
+788 verbose linkMans debug@0.7.4
+789 verbose rebuildBundles debug@0.7.4
+790 info install css-parse@1.7.0
+791 info install debug@0.7.4
+792 info postinstall css-parse@1.7.0
+793 info postinstall debug@0.7.4
+794 silly gunzTarPerm extractEntry examples/big-not-pretty.xml
+795 silly gunzTarPerm extractEntry examples/not-pretty.xml
+796 silly gunzTarPerm extractEntry examples/shopping.xml
+797 silly gunzTarPerm extractEntry examples/strict.dtd
+798 silly gunzTarPerm extractEntry test/globstar-match.js
+799 silly gunzTarPerm extractEntry test/mark.js
+800 silly gunzTarPerm extractEntry examples/test.html
+801 silly gunzTarPerm extractEntry examples/test.xml
+802 silly gunzTarPerm extractEntry test/stat.js
+803 silly gunzTarPerm extractEntry test/bash-comparison.js
+804 silly gunzTarPerm extractEntry lib/sax.js
+805 silly gunzTarPerm extractEntry test/attribute-name.js
+806 silly gunzTarPerm extractEntry test/pause-resume.js
+807 silly gunzTarPerm extractEntry test/readme-issue.js
+808 silly gunzTarPerm extractEntry test/issue-35.js
+809 silly gunzTarPerm extractEntry test/issue-47.js
+810 silly gunzTarPerm extractEntry test/root-nomount.js
+811 silly gunzTarPerm extractEntry test/root.js
+812 silly gunzTarPerm extractEntry test/issue-49.js
+813 silly gunzTarPerm extractEntry test/issue-84.js
+814 silly gunzTarPerm extractEntry test/new-glob-optional-options.js
+815 silly gunzTarPerm extractEntry test/zz-cleanup.js
+816 silly gunzTarPerm extractEntry test/nocase-nomagic.js
+817 silly gunzTarPerm extractEntry test/bash-results.json
+818 silly lockFile 08986b85-dules-stylus-node-modules-mkdirp tar:///usr/local/lib/node_modules/stylus/node_modules/mkdirp
+819 silly lockFile 08986b85-dules-stylus-node-modules-mkdirp tar:///usr/local/lib/node_modules/stylus/node_modules/mkdirp
+820 silly lockFile 71505dd5-aco-npm-mkdirp-0-3-5-package-tgz tar:///Users/alvarosaco/.npm/mkdirp/0.3.5/package.tgz
+821 silly lockFile 71505dd5-aco-npm-mkdirp-0-3-5-package-tgz tar:///Users/alvarosaco/.npm/mkdirp/0.3.5/package.tgz
+822 info preinstall mkdirp@0.3.5
+823 verbose readDependencies using package.json deps
+824 verbose readDependencies using package.json deps
+825 silly resolved []
+826 verbose about to build /usr/local/lib/node_modules/stylus/node_modules/mkdirp
+827 info build /usr/local/lib/node_modules/stylus/node_modules/mkdirp
+828 verbose linkStuff [ true,
+828 verbose linkStuff   '/usr/local/lib/node_modules',
+828 verbose linkStuff   false,
+828 verbose linkStuff   '/usr/local/lib/node_modules/stylus/node_modules' ]
+829 info linkStuff mkdirp@0.3.5
+830 verbose linkBins mkdirp@0.3.5
+831 verbose linkMans mkdirp@0.3.5
+832 verbose rebuildBundles mkdirp@0.3.5
+833 info install mkdirp@0.3.5
+834 info postinstall mkdirp@0.3.5
+835 silly lockFile 838c6da9-modules-stylus-node-modules-glob tar:///usr/local/lib/node_modules/stylus/node_modules/glob
+836 silly lockFile 838c6da9-modules-stylus-node-modules-glob tar:///usr/local/lib/node_modules/stylus/node_modules/glob
+837 silly lockFile 9c60d97d-osaco-npm-glob-3-2-9-package-tgz tar:///Users/alvarosaco/.npm/glob/3.2.9/package.tgz
+838 silly lockFile 9c60d97d-osaco-npm-glob-3-2-9-package-tgz tar:///Users/alvarosaco/.npm/glob/3.2.9/package.tgz
+839 info preinstall glob@3.2.9
+840 verbose readDependencies using package.json deps
+841 verbose readDependencies using package.json deps
+842 verbose cache add [ 'minimatch@~0.2.11', null ]
+843 verbose cache add name=undefined spec="minimatch@~0.2.11" args=["minimatch@~0.2.11",null]
+844 verbose parsed url { protocol: null,
+844 verbose parsed url   slashes: null,
+844 verbose parsed url   auth: null,
+844 verbose parsed url   host: null,
+844 verbose parsed url   port: null,
+844 verbose parsed url   hostname: null,
+844 verbose parsed url   hash: null,
+844 verbose parsed url   search: null,
+844 verbose parsed url   query: null,
+844 verbose parsed url   pathname: 'minimatch@~0.2.11',
+844 verbose parsed url   path: 'minimatch@~0.2.11',
+844 verbose parsed url   href: 'minimatch@~0.2.11' }
+845 verbose cache add name="minimatch" spec="~0.2.11" args=["minimatch","~0.2.11"]
+846 verbose parsed url { protocol: null,
+846 verbose parsed url   slashes: null,
+846 verbose parsed url   auth: null,
+846 verbose parsed url   host: null,
+846 verbose parsed url   port: null,
+846 verbose parsed url   hostname: null,
+846 verbose parsed url   hash: null,
+846 verbose parsed url   search: null,
+846 verbose parsed url   query: null,
+846 verbose parsed url   pathname: '~0.2.11',
+846 verbose parsed url   path: '~0.2.11',
+846 verbose parsed url   href: '~0.2.11' }
+847 verbose addNamed [ 'minimatch', '~0.2.11' ]
+848 verbose addNamed [ null, '>=0.2.11-0 <0.3.0-0' ]
+849 silly lockFile 94473efb-minimatch-0-2-11 minimatch@~0.2.11
+850 verbose lock minimatch@~0.2.11 /Users/alvarosaco/.npm/94473efb-minimatch-0-2-11.lock
+851 verbose cache add [ 'inherits@2', null ]
+852 verbose cache add name=undefined spec="inherits@2" args=["inherits@2",null]
+853 verbose parsed url { protocol: null,
+853 verbose parsed url   slashes: null,
+853 verbose parsed url   auth: null,
+853 verbose parsed url   host: null,
+853 verbose parsed url   port: null,
+853 verbose parsed url   hostname: null,
+853 verbose parsed url   hash: null,
+853 verbose parsed url   search: null,
+853 verbose parsed url   query: null,
+853 verbose parsed url   pathname: 'inherits@2',
+853 verbose parsed url   path: 'inherits@2',
+853 verbose parsed url   href: 'inherits@2' }
+854 verbose cache add name="inherits" spec="2" args=["inherits","2"]
+855 verbose parsed url { protocol: null,
+855 verbose parsed url   slashes: null,
+855 verbose parsed url   auth: null,
+855 verbose parsed url   host: null,
+855 verbose parsed url   port: null,
+855 verbose parsed url   hostname: null,
+855 verbose parsed url   hash: null,
+855 verbose parsed url   search: null,
+855 verbose parsed url   query: null,
+855 verbose parsed url   pathname: '2',
+855 verbose parsed url   path: '2',
+855 verbose parsed url   href: '2' }
+856 verbose addNamed [ 'inherits', '2' ]
+857 verbose addNamed [ null, '>=2.0.0-0 <3.0.0-0' ]
+858 silly lockFile 1f7ff4de-inherits-2 inherits@2
+859 verbose lock inherits@2 /Users/alvarosaco/.npm/1f7ff4de-inherits-2.lock
+860 silly addNameRange { name: 'minimatch',
+860 silly addNameRange   range: '>=0.2.11-0 <0.3.0-0',
+860 silly addNameRange   hasData: false }
+861 silly addNameRange { name: 'inherits', range: '>=2.0.0-0 <3.0.0-0', hasData: false }
+862 verbose url raw minimatch
+863 verbose url resolving [ 'https://registry.npmjs.org/', './minimatch' ]
+864 verbose url resolved https://registry.npmjs.org/minimatch
+865 info trying registry request attempt 1 at 18:22:16
+866 verbose etag "7ADX0MRR5J58LXI5D3K260YHC"
+867 http GET https://registry.npmjs.org/minimatch
+868 verbose url raw inherits
+869 verbose url resolving [ 'https://registry.npmjs.org/', './inherits' ]
+870 verbose url resolved https://registry.npmjs.org/inherits
+871 info trying registry request attempt 1 at 18:22:16
+872 verbose etag "3W1CD5JH65A947ICUDM7DE1MK"
+873 http GET https://registry.npmjs.org/inherits
+874 silly gunzTarPerm extractEntry test/issue-30.js
+875 silly gunzTarPerm extractEntry test/script-close-better.js
+876 silly gunzTarPerm extractEntry test/script.js
+877 silly gunzTarPerm extractEntry test/self-closing-child-strict.js
+878 silly gunzTarPerm extractEntry test/self-closing-child.js
+879 silly gunzTarPerm extractEntry test/self-closing-tag.js
+880 silly gunzTarPerm extractEntry test/issue-23.js
+881 silly gunzTarPerm extractEntry test/stray-ending.js
+882 silly gunzTarPerm extractEntry test/index.js
+883 silly gunzTarPerm extractEntry test/trailing-attribute-no-value.js
+884 silly gunzTarPerm extractEntry test/flush.js
+885 silly gunzTarPerm extractEntry test/trailing-non-whitespace.js
+886 silly gunzTarPerm extractEntry test/entity-mega.js
+887 silly gunzTarPerm extractEntry test/unclosed-root.js
+888 silly gunzTarPerm extractEntry test/entities.js
+889 silly gunzTarPerm extractEntry test/unquoted.js
+890 silly gunzTarPerm extractEntry test/end_empty_stream.js
+891 silly gunzTarPerm extractEntry test/utf8-split.js
+892 silly gunzTarPerm extractEntry test/duplicate-attribute.js
+893 silly gunzTarPerm extractEntry test/xmlns-as-tag-name.js
+894 silly gunzTarPerm extractEntry test/cyrillic.js
+895 silly gunzTarPerm extractEntry test/xmlns-issue-41.js
+896 silly gunzTarPerm extractEntry test/cdata.js
+897 silly gunzTarPerm extractEntry test/xmlns-rebinding.js
+898 silly gunzTarPerm extractEntry test/cdata-multiple.js
+899 silly gunzTarPerm extractEntry test/xmlns-strict.js
+900 silly gunzTarPerm extractEntry test/cdata-fake-end.js
+901 silly gunzTarPerm extractEntry test/xmlns-unbound-element.js
+902 silly gunzTarPerm extractEntry test/cdata-end-split.js
+903 silly gunzTarPerm extractEntry test/xmlns-unbound.js
+904 silly gunzTarPerm extractEntry test/cdata-chunked.js
+905 silly gunzTarPerm extractEntry test/xmlns-xml-default-ns.js
+906 silly gunzTarPerm extractEntry test/case.js
+907 silly gunzTarPerm extractEntry test/xmlns-xml-default-prefix-attribute.js
+908 silly gunzTarPerm extractEntry test/buffer-overrun.js
+909 silly gunzTarPerm extractEntry test/xmlns-xml-default-prefix.js
+910 silly gunzTarPerm extractEntry test/attribute-no-space.js
+911 silly gunzTarPerm extractEntry test/xmlns-xml-default-redefine.js
+912 silly gunzTarPerm extractEntry test/parser-position.js
+913 silly lockFile f5c3b756--modules-stylus-node-modules-sax tar:///usr/local/lib/node_modules/stylus/node_modules/sax
+914 silly lockFile f5c3b756--modules-stylus-node-modules-sax tar:///usr/local/lib/node_modules/stylus/node_modules/sax
+915 silly lockFile 8cc1b180-rosaco-npm-sax-0-5-8-package-tgz tar:///Users/alvarosaco/.npm/sax/0.5.8/package.tgz
+916 silly lockFile 8cc1b180-rosaco-npm-sax-0-5-8-package-tgz tar:///Users/alvarosaco/.npm/sax/0.5.8/package.tgz
+917 info preinstall sax@0.5.8
+918 verbose readDependencies using package.json deps
+919 verbose readDependencies using package.json deps
+920 silly resolved []
+921 verbose about to build /usr/local/lib/node_modules/stylus/node_modules/sax
+922 info build /usr/local/lib/node_modules/stylus/node_modules/sax
+923 verbose linkStuff [ true,
+923 verbose linkStuff   '/usr/local/lib/node_modules',
+923 verbose linkStuff   false,
+923 verbose linkStuff   '/usr/local/lib/node_modules/stylus/node_modules' ]
+924 info linkStuff sax@0.5.8
+925 verbose linkBins sax@0.5.8
+926 verbose linkMans sax@0.5.8
+927 verbose rebuildBundles sax@0.5.8
+928 info install sax@0.5.8
+929 info postinstall sax@0.5.8
+930 http 304 https://registry.npmjs.org/inherits
+931 silly registry.get cb [ 304,
+931 silly registry.get   { date: 'Mon, 24 Mar 2014 17:22:16 GMT',
+931 silly registry.get     server: 'Apache',
+931 silly registry.get     via: '1.1 varnish',
+931 silly registry.get     'last-modified': 'Mon, 24 Mar 2014 17:22:16 GMT',
+931 silly registry.get     'cache-control': 'max-age=1',
+931 silly registry.get     etag: '"3W1CD5JH65A947ICUDM7DE1MK"',
+931 silly registry.get     'x-served-by': 'cache-lcy1129-LCY',
+931 silly registry.get     'x-cache': 'HIT',
+931 silly registry.get     'x-cache-hits': '1',
+931 silly registry.get     'x-timer': 'S1395681736.448189735,VS0,VE196',
+931 silly registry.get     vary: 'Accept',
+931 silly registry.get     'content-length': '0',
+931 silly registry.get     'keep-alive': 'timeout=10, max=50',
+931 silly registry.get     connection: 'Keep-Alive' } ]
+932 verbose etag inherits from cache
+933 silly addNameRange number 2 { name: 'inherits', range: '>=2.0.0-0 <3.0.0-0', hasData: true }
+934 silly addNameRange versions [ 'inherits', [ '1.0.0', '2.0.0', '2.0.1' ] ]
+935 verbose addNamed [ 'inherits', '2.0.1' ]
+936 verbose addNamed [ '2.0.1', '2.0.1' ]
+937 silly lockFile 2b2e8f1b-inherits-2-0-1 inherits@2.0.1
+938 verbose lock inherits@2.0.1 /Users/alvarosaco/.npm/2b2e8f1b-inherits-2-0-1.lock
+939 silly lockFile 2b2e8f1b-inherits-2-0-1 inherits@2.0.1
+940 silly lockFile 2b2e8f1b-inherits-2-0-1 inherits@2.0.1
+941 silly lockFile 1f7ff4de-inherits-2 inherits@2
+942 silly lockFile 1f7ff4de-inherits-2 inherits@2
+943 http 304 https://registry.npmjs.org/minimatch
+944 silly registry.get cb [ 304,
+944 silly registry.get   { date: 'Mon, 24 Mar 2014 17:22:16 GMT',
+944 silly registry.get     server: 'Apache',
+944 silly registry.get     via: '1.1 varnish',
+944 silly registry.get     'last-modified': 'Mon, 24 Mar 2014 17:22:16 GMT',
+944 silly registry.get     'cache-control': 'max-age=1',
+944 silly registry.get     etag: '"7ADX0MRR5J58LXI5D3K260YHC"',
+944 silly registry.get     'x-served-by': 'cache-lcy1135-LCY',
+944 silly registry.get     'x-cache': 'HIT',
+944 silly registry.get     'x-cache-hits': '1',
+944 silly registry.get     'x-timer': 'S1395681736.445239067,VS0,VE254',
+944 silly registry.get     vary: 'Accept',
+944 silly registry.get     'content-length': '0',
+944 silly registry.get     'keep-alive': 'timeout=10, max=50',
+944 silly registry.get     connection: 'Keep-Alive' } ]
+945 verbose etag minimatch from cache
+946 silly addNameRange number 2 { name: 'minimatch',
+946 silly addNameRange   range: '>=0.2.11-0 <0.3.0-0',
+946 silly addNameRange   hasData: true }
+947 silly addNameRange versions [ 'minimatch',
+947 silly addNameRange   [ '0.0.1',
+947 silly addNameRange     '0.0.2',
+947 silly addNameRange     '0.0.4',
+947 silly addNameRange     '0.0.5',
+947 silly addNameRange     '0.1.1',
+947 silly addNameRange     '0.1.2',
+947 silly addNameRange     '0.1.3',
+947 silly addNameRange     '0.1.4',
+947 silly addNameRange     '0.1.5',
+947 silly addNameRange     '0.2.0',
+947 silly addNameRange     '0.2.2',
+947 silly addNameRange     '0.2.3',
+947 silly addNameRange     '0.2.4',
+947 silly addNameRange     '0.2.5',
+947 silly addNameRange     '0.2.6',
+947 silly addNameRange     '0.2.7',
+947 silly addNameRange     '0.2.8',
+947 silly addNameRange     '0.2.9',
+947 silly addNameRange     '0.2.10',
+947 silly addNameRange     '0.2.11',
+947 silly addNameRange     '0.2.12',
+947 silly addNameRange     '0.2.13',
+947 silly addNameRange     '0.2.14' ] ]
+948 verbose addNamed [ 'minimatch', '0.2.14' ]
+949 verbose addNamed [ '0.2.14', '0.2.14' ]
+950 silly lockFile a72880d0-minimatch-0-2-14 minimatch@0.2.14
+951 verbose lock minimatch@0.2.14 /Users/alvarosaco/.npm/a72880d0-minimatch-0-2-14.lock
+952 silly lockFile a72880d0-minimatch-0-2-14 minimatch@0.2.14
+953 silly lockFile a72880d0-minimatch-0-2-14 minimatch@0.2.14
+954 silly lockFile 94473efb-minimatch-0-2-11 minimatch@~0.2.11
+955 silly lockFile 94473efb-minimatch-0-2-11 minimatch@~0.2.11
+956 silly resolved [ { name: 'inherits',
+956 silly resolved     description: 'Browser-friendly inheritance fully compatible with standard node.js inherits()',
+956 silly resolved     version: '2.0.1',
+956 silly resolved     keywords:
+956 silly resolved      [ 'inheritance',
+956 silly resolved        'class',
+956 silly resolved        'klass',
+956 silly resolved        'oop',
+956 silly resolved        'object-oriented',
+956 silly resolved        'inherits',
+956 silly resolved        'browser',
+956 silly resolved        'browserify' ],
+956 silly resolved     main: './inherits.js',
+956 silly resolved     browser: './inherits_browser.js',
+956 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/inherits' },
+956 silly resolved     license: 'ISC',
+956 silly resolved     scripts: { test: 'node test' },
+956 silly resolved     readme: 'Browser-friendly inheritance fully compatible with standard node.js\n[inherits](http://nodejs.org/api/util.html#util_util_inherits_constructor_superconstructor).\n\nThis package exports standard `inherits` from node.js `util` module in\nnode environment, but also provides alternative browser-friendly\nimplementation through [browser\nfield](https://gist.github.com/shtylman/4339901). Alternative\nimplementation is a literal copy of standard one located in standalone\nmodule to avoid requiring of `util`. It also has a shim for old\nbrowsers with no `Object.create` support.\n\nWhile keeping you sure you are using standard `inherits`\nimplementation in node.js environment, it allows bundlers such as\n[browserify](https://github.com/substack/node-browserify) to not\ninclude full `util` package to your client code if all you need is\njust `inherits` function. It worth, because browser shim for `util`\npackage is large and `inherits` is often the single function you need\nfrom it.\n\nIt\'s recommended to use this package instead of\n`require(\'util\').inherits` for any code that has chances to be used\nnot only in node.js but in browser too.\n\n## usage\n\n```js\nvar inherits = require(\'inherits\');\n// then use exactly as the standard one\n```\n\n## note on version ~1.0\n\nVersion ~1.0 had completely different motivation and is not compatible\nneither with 2.0 nor with standard node.js `inherits`.\n\nIf you are using version ~1.0 and planning to switch to ~2.0, be\ncareful:\n\n* new version uses `super_` instead of `super` for referencing\n  superclass\n* new version overwrites current prototype while old one preserves any\n  existing fields on it\n',
+956 silly resolved     readmeFilename: 'README.md',
+956 silly resolved     bugs: { url: 'https://github.com/isaacs/inherits/issues' },
+956 silly resolved     homepage: 'https://github.com/isaacs/inherits',
+956 silly resolved     _id: 'inherits@2.0.1',
+956 silly resolved     _from: 'inherits@2' },
+956 silly resolved   { author:
+956 silly resolved      { name: 'Isaac Z. Schlueter',
+956 silly resolved        email: 'i@izs.me',
+956 silly resolved        url: 'http://blog.izs.me' },
+956 silly resolved     name: 'minimatch',
+956 silly resolved     description: 'a glob matcher in javascript',
+956 silly resolved     version: '0.2.14',
+956 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/minimatch.git' },
+956 silly resolved     main: 'minimatch.js',
+956 silly resolved     scripts: { test: 'tap test/*.js' },
+956 silly resolved     engines: { node: '*' },
+956 silly resolved     dependencies: { 'lru-cache': '2', sigmund: '~1.0.0' },
+956 silly resolved     devDependencies: { tap: '' },
+956 silly resolved     license:
+956 silly resolved      { type: 'MIT',
+956 silly resolved        url: 'http://github.com/isaacs/minimatch/raw/master/LICENSE' },
+956 silly resolved     readme: '# minimatch\n\nA minimal matching utility.\n\n[![Build Status](https://secure.travis-ci.org/isaacs/minimatch.png)](http://travis-ci.org/isaacs/minimatch)\n\n\nThis is the matching library used internally by npm.\n\nEventually, it will replace the C binding in node-glob.\n\nIt works by converting glob expressions into JavaScript `RegExp`\nobjects.\n\n## Usage\n\n```javascript\nvar minimatch = require("minimatch")\n\nminimatch("bar.foo", "*.foo") // true!\nminimatch("bar.foo", "*.bar") // false!\nminimatch("bar.foo", "*.+(bar|foo)", { debug: true }) // true, and noisy!\n```\n\n## Features\n\nSupports these glob features:\n\n* Brace Expansion\n* Extended glob matching\n* "Globstar" `**` matching\n\nSee:\n\n* `man sh`\n* `man bash`\n* `man 3 fnmatch`\n* `man 5 gitignore`\n\n## Minimatch Class\n\nCreate a minimatch object by instanting the `minimatch.Minimatch` class.\n\n```javascript\nvar Minimatch = require("minimatch").Minimatch\nvar mm = new Minimatch(pattern, options)\n```\n\n### Properties\n\n* `pattern` The original pattern the minimatch object represents.\n* `options` The options supplied to the constructor.\n* `set` A 2-dimensional array of regexp or string expressions.\n  Each row in the\n  array corresponds to a brace-expanded pattern.  Each item in the row\n  corresponds to a single path-part.  For example, the pattern\n  `{a,b/c}/d` would expand to a set of patterns like:\n\n        [ [ a, d ]\n        , [ b, c, d ] ]\n\n    If a portion of the pattern doesn\'t have any "magic" in it\n    (that is, it\'s something like `"foo"` rather than `fo*o?`), then it\n    will be left as a string rather than converted to a regular\n    expression.\n\n* `regexp` Created by the `makeRe` method.  A single regular expression\n  expressing the entire pattern.  This is useful in cases where you wish\n  to use the pattern somewhat like `fnmatch(3)` with `FNM_PATH` enabled.\n* `negate` True if the pattern is negated.\n* `comment` True if the pattern is a comment.\n* `empty` True if the pattern is `""`.\n\n### Methods\n\n* `makeRe` Generate the `regexp` member if necessary, and return it.\n  Will return `false` if the pattern is invalid.\n* `match(fname)` Return true if the filename matches the pattern, or\n  false otherwise.\n* `matchOne(fileArray, patternArray, partial)` Take a `/`-split\n  filename, and match it against a single row in the `regExpSet`.  This\n  method is mainly for internal use, but is exposed so that it can be\n  used by a glob-walker that needs to avoid excessive filesystem calls.\n\nAll other methods are internal, and will be called as necessary.\n\n## Functions\n\nThe top-level exported function has a `cache` property, which is an LRU\ncache set to store 100 items.  So, calling these methods repeatedly\nwith the same pattern and options will use the same Minimatch object,\nsaving the cost of parsing it multiple times.\n\n### minimatch(path, pattern, options)\n\nMain export.  Tests a path against the pattern using the options.\n\n```javascript\nvar isJS = minimatch(file, "*.js", { matchBase: true })\n```\n\n### minimatch.filter(pattern, options)\n\nReturns a function that tests its\nsupplied argument, suitable for use with `Array.filter`.  Example:\n\n```javascript\nvar javascripts = fileList.filter(minimatch.filter("*.js", {matchBase: true}))\n```\n\n### minimatch.match(list, pattern, options)\n\nMatch against the list of\nfiles, in the style of fnmatch or glob.  If nothing is matched, and\noptions.nonull is set, then return a list containing the pattern itself.\n\n```javascript\nvar javascripts = minimatch.match(fileList, "*.js", {matchBase: true}))\n```\n\n### minimatch.makeRe(pattern, options)\n\nMake a regular expression object from the pattern.\n\n## Options\n\nAll options are `false` by default.\n\n### debug\n\nDump a ton of stuff to stderr.\n\n### nobrace\n\nDo not expand `{a,b}` and `{1..3}` brace sets.\n\n### noglobstar\n\nDisable `**` matching against multiple folder names.\n\n### dot\n\nAllow patterns to match filenames starting with a period, even if\nthe pattern does not explicitly have a period in that spot.\n\nNote that by default, `a/**/b` will **not** match `a/.d/b`, unless `dot`\nis set.\n\n### noext\n\nDisable "extglob" style patterns like `+(a|b)`.\n\n### nocase\n\nPerform a case-insensitive match.\n\n### nonull\n\nWhen a match is not found by `minimatch.match`, return a list containing\nthe pattern itself.  When set, an empty list is returned if there are\nno matches.\n\n### matchBase\n\nIf set, then patterns without slashes will be matched\nagainst the basename of the path if it contains slashes.  For example,\n`a?b` would match the path `/xyz/123/acb`, but not `/xyz/acb/123`.\n\n### nocomment\n\nSuppress the behavior of treating `#` at the start of a pattern as a\ncomment.\n\n### nonegate\n\nSuppress the behavior of treating a leading `!` character as negation.\n\n### flipNegate\n\nReturns from negate expressions the same as if they were not negated.\n(Ie, true on a hit, false on a miss.)\n\n\n## Comparisons to other fnmatch/glob implementations\n\nWhile strict compliance with the existing standards is a worthwhile\ngoal, some discrepancies exist between minimatch and other\nimplementations, and are intentional.\n\nIf the pattern starts with a `!` character, then it is negated.  Set the\n`nonegate` flag to suppress this behavior, and treat leading `!`\ncharacters normally.  This is perhaps relevant if you wish to start the\npattern with a negative extglob pattern like `!(a|B)`.  Multiple `!`\ncharacters at the start of a pattern will negate the pattern multiple\ntimes.\n\nIf a pattern starts with `#`, then it is treated as a comment, and\nwill not match anything.  Use `\\#` to match a literal `#` at the\nstart of a line, or set the `nocomment` flag to suppress this behavior.\n\nThe double-star character `**` is supported by default, unless the\n`noglobstar` flag is set.  This is supported in the manner of bsdglob\nand bash 4.1, where `**` only has special significance if it is the only\nthing in a path part.  That is, `a/**/b` will match `a/x/y/b`, but\n`a/**b` will not.\n\nIf an escaped pattern has no matches, and the `nonull` flag is set,\nthen minimatch.match returns the pattern as-provided, rather than\ninterpreting the character escapes.  For example,\n`minimatch.match([], "\\\\*a\\\\?")` will return `"\\\\*a\\\\?"` rather than\n`"*a?"`.  This is akin to setting the `nullglob` option in bash, except\nthat it does not resolve escaped pattern characters.\n\nIf brace expansion is not disabled, then it is performed before any\nother interpretation of the glob pattern.  Thus, a pattern like\n`+(a|{b),c)}`, which would not be valid in bash or zsh, is expanded\n**first** into the set of `+(a|b)` and `+(a|c)`, and those patterns are\nchecked for validity.  Since those two are valid, matching proceeds.\n',
+956 silly resolved     readmeFilename: 'README.md',
+956 silly resolved     bugs: { url: 'https://github.com/isaacs/minimatch/issues' },
+956 silly resolved     homepage: 'https://github.com/isaacs/minimatch',
+956 silly resolved     _id: 'minimatch@0.2.14',
+956 silly resolved     _from: 'minimatch@~0.2.11' } ]
+957 info install inherits@2.0.1 into /usr/local/lib/node_modules/stylus/node_modules/glob
+958 info install minimatch@0.2.14 into /usr/local/lib/node_modules/stylus/node_modules/glob
+959 info installOne inherits@2.0.1
+960 info installOne minimatch@0.2.14
+961 info /usr/local/lib/node_modules/stylus/node_modules/glob/node_modules/inherits unbuild
+962 info /usr/local/lib/node_modules/stylus/node_modules/glob/node_modules/minimatch unbuild
+963 verbose tar unpack /Users/alvarosaco/.npm/inherits/2.0.1/package.tgz
+964 silly lockFile bfaa9856-dules-glob-node-modules-inherits tar:///usr/local/lib/node_modules/stylus/node_modules/glob/node_modules/inherits
+965 verbose lock tar:///usr/local/lib/node_modules/stylus/node_modules/glob/node_modules/inherits /Users/alvarosaco/.npm/bfaa9856-dules-glob-node-modules-inherits.lock
+966 silly lockFile 1a8a9cfa-o-npm-inherits-2-0-1-package-tgz tar:///Users/alvarosaco/.npm/inherits/2.0.1/package.tgz
+967 verbose lock tar:///Users/alvarosaco/.npm/inherits/2.0.1/package.tgz /Users/alvarosaco/.npm/1a8a9cfa-o-npm-inherits-2-0-1-package-tgz.lock
+968 verbose tar unpack /Users/alvarosaco/.npm/minimatch/0.2.14/package.tgz
+969 silly lockFile 5c50bd1f-ules-glob-node-modules-minimatch tar:///usr/local/lib/node_modules/stylus/node_modules/glob/node_modules/minimatch
+970 verbose lock tar:///usr/local/lib/node_modules/stylus/node_modules/glob/node_modules/minimatch /Users/alvarosaco/.npm/5c50bd1f-ules-glob-node-modules-minimatch.lock
+971 silly lockFile d1015428-npm-minimatch-0-2-14-package-tgz tar:///Users/alvarosaco/.npm/minimatch/0.2.14/package.tgz
+972 verbose lock tar:///Users/alvarosaco/.npm/minimatch/0.2.14/package.tgz /Users/alvarosaco/.npm/d1015428-npm-minimatch-0-2-14-package-tgz.lock
+973 silly gunzTarPerm modes [ '755', '644' ]
+974 silly gunzTarPerm modes [ '755', '644' ]
+975 silly gunzTarPerm extractEntry package.json
+976 silly gunzTarPerm extractEntry package.json
+977 silly gunzTarPerm extractEntry README.md
+978 silly gunzTarPerm extractEntry LICENSE
+979 silly gunzTarPerm extractEntry .npmignore
+980 silly gunzTarPerm extractEntry README.md
+981 silly gunzTarPerm extractEntry inherits.js
+982 silly gunzTarPerm extractEntry inherits_browser.js
+983 silly gunzTarPerm extractEntry LICENSE
+984 silly gunzTarPerm extractEntry minimatch.js
+985 silly gunzTarPerm extractEntry test.js
+986 silly gunzTarPerm extractEntry test/basic.js
+987 silly gunzTarPerm extractEntry test/brace-expand.js
+988 silly gunzTarPerm extractEntry test/caching.js
+989 silly gunzTarPerm extractEntry test/defaults.js
+990 silly gunzTarPerm extractEntry test/extglob-ending-with-state-char.js
+991 silly lockFile bfaa9856-dules-glob-node-modules-inherits tar:///usr/local/lib/node_modules/stylus/node_modules/glob/node_modules/inherits
+992 silly lockFile bfaa9856-dules-glob-node-modules-inherits tar:///usr/local/lib/node_modules/stylus/node_modules/glob/node_modules/inherits
+993 silly lockFile 1a8a9cfa-o-npm-inherits-2-0-1-package-tgz tar:///Users/alvarosaco/.npm/inherits/2.0.1/package.tgz
+994 silly lockFile 1a8a9cfa-o-npm-inherits-2-0-1-package-tgz tar:///Users/alvarosaco/.npm/inherits/2.0.1/package.tgz
+995 info preinstall inherits@2.0.1
+996 verbose readDependencies using package.json deps
+997 verbose readDependencies using package.json deps
+998 silly resolved []
+999 verbose about to build /usr/local/lib/node_modules/stylus/node_modules/glob/node_modules/inherits
+1000 info build /usr/local/lib/node_modules/stylus/node_modules/glob/node_modules/inherits
+1001 verbose linkStuff [ true,
+1001 verbose linkStuff   '/usr/local/lib/node_modules',
+1001 verbose linkStuff   false,
+1001 verbose linkStuff   '/usr/local/lib/node_modules/stylus/node_modules/glob/node_modules' ]
+1002 info linkStuff inherits@2.0.1
+1003 verbose linkBins inherits@2.0.1
+1004 verbose linkMans inherits@2.0.1
+1005 verbose rebuildBundles inherits@2.0.1
+1006 info install inherits@2.0.1
+1007 info postinstall inherits@2.0.1
+1008 silly lockFile 5c50bd1f-ules-glob-node-modules-minimatch tar:///usr/local/lib/node_modules/stylus/node_modules/glob/node_modules/minimatch
+1009 silly lockFile 5c50bd1f-ules-glob-node-modules-minimatch tar:///usr/local/lib/node_modules/stylus/node_modules/glob/node_modules/minimatch
+1010 silly lockFile d1015428-npm-minimatch-0-2-14-package-tgz tar:///Users/alvarosaco/.npm/minimatch/0.2.14/package.tgz
+1011 silly lockFile d1015428-npm-minimatch-0-2-14-package-tgz tar:///Users/alvarosaco/.npm/minimatch/0.2.14/package.tgz
+1012 info preinstall minimatch@0.2.14
+1013 verbose readDependencies using package.json deps
+1014 verbose readDependencies using package.json deps
+1015 verbose cache add [ 'lru-cache@2', null ]
+1016 verbose cache add name=undefined spec="lru-cache@2" args=["lru-cache@2",null]
+1017 verbose parsed url { protocol: null,
+1017 verbose parsed url   slashes: null,
+1017 verbose parsed url   auth: null,
+1017 verbose parsed url   host: null,
+1017 verbose parsed url   port: null,
+1017 verbose parsed url   hostname: null,
+1017 verbose parsed url   hash: null,
+1017 verbose parsed url   search: null,
+1017 verbose parsed url   query: null,
+1017 verbose parsed url   pathname: 'lru-cache@2',
+1017 verbose parsed url   path: 'lru-cache@2',
+1017 verbose parsed url   href: 'lru-cache@2' }
+1018 verbose cache add name="lru-cache" spec="2" args=["lru-cache","2"]
+1019 verbose parsed url { protocol: null,
+1019 verbose parsed url   slashes: null,
+1019 verbose parsed url   auth: null,
+1019 verbose parsed url   host: null,
+1019 verbose parsed url   port: null,
+1019 verbose parsed url   hostname: null,
+1019 verbose parsed url   hash: null,
+1019 verbose parsed url   search: null,
+1019 verbose parsed url   query: null,
+1019 verbose parsed url   pathname: '2',
+1019 verbose parsed url   path: '2',
+1019 verbose parsed url   href: '2' }
+1020 verbose addNamed [ 'lru-cache', '2' ]
+1021 verbose addNamed [ null, '>=2.0.0-0 <3.0.0-0' ]
+1022 silly lockFile b4f9d1ff-lru-cache-2 lru-cache@2
+1023 verbose lock lru-cache@2 /Users/alvarosaco/.npm/b4f9d1ff-lru-cache-2.lock
+1024 verbose cache add [ 'sigmund@~1.0.0', null ]
+1025 verbose cache add name=undefined spec="sigmund@~1.0.0" args=["sigmund@~1.0.0",null]
+1026 verbose parsed url { protocol: null,
+1026 verbose parsed url   slashes: null,
+1026 verbose parsed url   auth: null,
+1026 verbose parsed url   host: null,
+1026 verbose parsed url   port: null,
+1026 verbose parsed url   hostname: null,
+1026 verbose parsed url   hash: null,
+1026 verbose parsed url   search: null,
+1026 verbose parsed url   query: null,
+1026 verbose parsed url   pathname: 'sigmund@~1.0.0',
+1026 verbose parsed url   path: 'sigmund@~1.0.0',
+1026 verbose parsed url   href: 'sigmund@~1.0.0' }
+1027 verbose cache add name="sigmund" spec="~1.0.0" args=["sigmund","~1.0.0"]
+1028 verbose parsed url { protocol: null,
+1028 verbose parsed url   slashes: null,
+1028 verbose parsed url   auth: null,
+1028 verbose parsed url   host: null,
+1028 verbose parsed url   port: null,
+1028 verbose parsed url   hostname: null,
+1028 verbose parsed url   hash: null,
+1028 verbose parsed url   search: null,
+1028 verbose parsed url   query: null,
+1028 verbose parsed url   pathname: '~1.0.0',
+1028 verbose parsed url   path: '~1.0.0',
+1028 verbose parsed url   href: '~1.0.0' }
+1029 verbose addNamed [ 'sigmund', '~1.0.0' ]
+1030 verbose addNamed [ null, '>=1.0.0-0 <1.1.0-0' ]
+1031 silly lockFile 584a4a05-sigmund-1-0-0 sigmund@~1.0.0
+1032 verbose lock sigmund@~1.0.0 /Users/alvarosaco/.npm/584a4a05-sigmund-1-0-0.lock
+1033 silly addNameRange { name: 'lru-cache',
+1033 silly addNameRange   range: '>=2.0.0-0 <3.0.0-0',
+1033 silly addNameRange   hasData: false }
+1034 silly addNameRange { name: 'sigmund', range: '>=1.0.0-0 <1.1.0-0', hasData: false }
+1035 verbose url raw lru-cache
+1036 verbose url resolving [ 'https://registry.npmjs.org/', './lru-cache' ]
+1037 verbose url resolved https://registry.npmjs.org/lru-cache
+1038 info trying registry request attempt 1 at 18:22:16
+1039 verbose etag "210MPUYDE1HO6CSH965563NT3"
+1040 http GET https://registry.npmjs.org/lru-cache
+1041 verbose url raw sigmund
+1042 verbose url resolving [ 'https://registry.npmjs.org/', './sigmund' ]
+1043 verbose url resolved https://registry.npmjs.org/sigmund
+1044 info trying registry request attempt 1 at 18:22:16
+1045 verbose etag "8OJIRUBHCK4G6S1X15SJTQRA9"
+1046 http GET https://registry.npmjs.org/sigmund
+1047 http 304 https://registry.npmjs.org/lru-cache
+1048 silly registry.get cb [ 304,
+1048 silly registry.get   { date: 'Mon, 24 Mar 2014 17:22:17 GMT',
+1048 silly registry.get     server: 'Apache',
+1048 silly registry.get     via: '1.1 varnish',
+1048 silly registry.get     'last-modified': 'Mon, 24 Mar 2014 17:22:17 GMT',
+1048 silly registry.get     'cache-control': 'max-age=1',
+1048 silly registry.get     etag: '"210MPUYDE1HO6CSH965563NT3"',
+1048 silly registry.get     'x-served-by': 'cache-lcy1125-LCY',
+1048 silly registry.get     'x-cache': 'HIT',
+1048 silly registry.get     'x-cache-hits': '1',
+1048 silly registry.get     'x-timer': 'S1395681737.003432274,VS0,VE0',
+1048 silly registry.get     vary: 'Accept',
+1048 silly registry.get     'content-length': '0',
+1048 silly registry.get     'keep-alive': 'timeout=10, max=50',
+1048 silly registry.get     connection: 'Keep-Alive' } ]
+1049 verbose etag lru-cache from cache
+1050 silly addNameRange number 2 { name: 'lru-cache', range: '>=2.0.0-0 <3.0.0-0', hasData: true }
+1051 silly addNameRange versions [ 'lru-cache',
+1051 silly addNameRange   [ '1.0.1',
+1051 silly addNameRange     '1.0.2',
+1051 silly addNameRange     '1.0.3',
+1051 silly addNameRange     '1.0.4',
+1051 silly addNameRange     '1.0.5',
+1051 silly addNameRange     '1.0.6',
+1051 silly addNameRange     '1.1.0',
+1051 silly addNameRange     '1.1.1',
+1051 silly addNameRange     '2.0.0',
+1051 silly addNameRange     '2.0.1',
+1051 silly addNameRange     '2.0.2',
+1051 silly addNameRange     '2.0.3',
+1051 silly addNameRange     '2.0.4',
+1051 silly addNameRange     '2.1.0',
+1051 silly addNameRange     '2.2.0',
+1051 silly addNameRange     '2.2.1',
+1051 silly addNameRange     '2.2.2',
+1051 silly addNameRange     '2.2.4',
+1051 silly addNameRange     '2.3.0',
+1051 silly addNameRange     '2.3.1',
+1051 silly addNameRange     '2.5.0' ] ]
+1052 verbose addNamed [ 'lru-cache', '2.5.0' ]
+1053 verbose addNamed [ '2.5.0', '2.5.0' ]
+1054 silly lockFile 30aa630e-lru-cache-2-5-0 lru-cache@2.5.0
+1055 verbose lock lru-cache@2.5.0 /Users/alvarosaco/.npm/30aa630e-lru-cache-2-5-0.lock
+1056 http 304 https://registry.npmjs.org/sigmund
+1057 silly registry.get cb [ 304,
+1057 silly registry.get   { date: 'Mon, 24 Mar 2014 17:22:17 GMT',
+1057 silly registry.get     server: 'Apache',
+1057 silly registry.get     via: '1.1 varnish',
+1057 silly registry.get     'last-modified': 'Mon, 24 Mar 2014 17:22:17 GMT',
+1057 silly registry.get     'cache-control': 'max-age=1',
+1057 silly registry.get     etag: '"8OJIRUBHCK4G6S1X15SJTQRA9"',
+1057 silly registry.get     'x-served-by': 'cache-lcy1121-LCY',
+1057 silly registry.get     'x-cache': 'HIT',
+1057 silly registry.get     'x-cache-hits': '1',
+1057 silly registry.get     'x-timer': 'S1395681737.010050774,VS0,VE0',
+1057 silly registry.get     vary: 'Accept',
+1057 silly registry.get     'content-length': '0',
+1057 silly registry.get     'keep-alive': 'timeout=10, max=50',
+1057 silly registry.get     connection: 'Keep-Alive' } ]
+1058 verbose etag sigmund from cache
+1059 silly lockFile 30aa630e-lru-cache-2-5-0 lru-cache@2.5.0
+1060 silly lockFile 30aa630e-lru-cache-2-5-0 lru-cache@2.5.0
+1061 silly lockFile b4f9d1ff-lru-cache-2 lru-cache@2
+1062 silly lockFile b4f9d1ff-lru-cache-2 lru-cache@2
+1063 silly addNameRange number 2 { name: 'sigmund', range: '>=1.0.0-0 <1.1.0-0', hasData: true }
+1064 silly addNameRange versions [ 'sigmund', [ '1.0.0' ] ]
+1065 verbose addNamed [ 'sigmund', '1.0.0' ]
+1066 verbose addNamed [ '1.0.0', '1.0.0' ]
+1067 silly lockFile 7b2d1244-sigmund-1-0-0 sigmund@1.0.0
+1068 verbose lock sigmund@1.0.0 /Users/alvarosaco/.npm/7b2d1244-sigmund-1-0-0.lock
+1069 silly lockFile 7b2d1244-sigmund-1-0-0 sigmund@1.0.0
+1070 silly lockFile 7b2d1244-sigmund-1-0-0 sigmund@1.0.0
+1071 silly lockFile 584a4a05-sigmund-1-0-0 sigmund@~1.0.0
+1072 silly lockFile 584a4a05-sigmund-1-0-0 sigmund@~1.0.0
+1073 silly resolved [ { name: 'lru-cache',
+1073 silly resolved     description: 'A cache object that deletes the least-recently-used items.',
+1073 silly resolved     version: '2.5.0',
+1073 silly resolved     author: { name: 'Isaac Z. Schlueter', email: 'i@izs.me' },
+1073 silly resolved     scripts: { test: 'tap test --gc' },
+1073 silly resolved     main: 'lib/lru-cache.js',
+1073 silly resolved     repository:
+1073 silly resolved      { type: 'git',
+1073 silly resolved        url: 'git://github.com/isaacs/node-lru-cache.git' },
+1073 silly resolved     devDependencies: { tap: '', weak: '' },
+1073 silly resolved     license:
+1073 silly resolved      { type: 'MIT',
+1073 silly resolved        url: 'http://github.com/isaacs/node-lru-cache/raw/master/LICENSE' },
+1073 silly resolved     readme: '# lru cache\n\nA cache object that deletes the least-recently-used items.\n\n## Usage:\n\n```javascript\nvar LRU = require("lru-cache")\n  , options = { max: 500\n              , length: function (n) { return n * 2 }\n              , dispose: function (key, n) { n.close() }\n              , maxAge: 1000 * 60 * 60 }\n  , cache = LRU(options)\n  , otherCache = LRU(50) // sets just the max size\n\ncache.set("key", "value")\ncache.get("key") // "value"\n\ncache.reset()    // empty the cache\n```\n\nIf you put more stuff in it, then items will fall out.\n\nIf you try to put an oversized thing in it, then it\'ll fall out right\naway.\n\n## Options\n\n* `max` The maximum size of the cache, checked by applying the length\n  function to all values in the cache.  Not setting this is kind of\n  silly, since that\'s the whole purpose of this lib, but it defaults\n  to `Infinity`.\n* `maxAge` Maximum age in ms.  Items are not pro-actively pruned out\n  as they age, but if you try to get an item that is too old, it\'ll\n  drop it and return undefined instead of giving it to you.\n* `length` Function that is used to calculate the length of stored\n  items.  If you\'re storing strings or buffers, then you probably want\n  to do something like `function(n){return n.length}`.  The default is\n  `function(n){return 1}`, which is fine if you want to store `n`\n  like-sized things.\n* `dispose` Function that is called on items when they are dropped\n  from the cache.  This can be handy if you want to close file\n  descriptors or do other cleanup tasks when items are no longer\n  accessible.  Called with `key, value`.  It\'s called *before*\n  actually removing the item from the internal cache, so if you want\n  to immediately put it back in, you\'ll have to do that in a\n  `nextTick` or `setTimeout` callback or it won\'t do anything.\n* `stale` By default, if you set a `maxAge`, it\'ll only actually pull\n  stale items out of the cache when you `get(key)`.  (That is, it\'s\n  not pre-emptively doing a `setTimeout` or anything.)  If you set\n  `stale:true`, it\'ll return the stale value before deleting it.  If\n  you don\'t set this, then it\'ll return `undefined` when you try to\n  get a stale entry, as if it had already been deleted.\n\n## API\n\n* `set(key, value)`\n* `get(key) => value`\n\n    Both of these will update the "recently used"-ness of the key.\n    They do what you think.\n\n* `peek(key)`\n\n    Returns the key value (or `undefined` if not found) without\n    updating the "recently used"-ness of the key.\n\n    (If you find yourself using this a lot, you *might* be using the\n    wrong sort of data structure, but there are some use cases where\n    it\'s handy.)\n\n* `del(key)`\n\n    Deletes a key out of the cache.\n\n* `reset()`\n\n    Clear the cache entirely, throwing away all values.\n\n* `has(key)`\n\n    Check if a key is in the cache, without updating the recent-ness\n    or deleting it for being stale.\n\n* `forEach(function(value,key,cache), [thisp])`\n\n    Just like `Array.prototype.forEach`.  Iterates over all the keys\n    in the cache, in order of recent-ness.  (Ie, more recently used\n    items are iterated over first.)\n\n* `keys()`\n\n    Return an array of the keys in the cache.\n\n* `values()`\n\n    Return an array of the values in the cache.\n',
+1073 silly resolved     readmeFilename: 'README.md',
+1073 silly resolved     bugs: { url: 'https://github.com/isaacs/node-lru-cache/issues' },
+1073 silly resolved     homepage: 'https://github.com/isaacs/node-lru-cache',
+1073 silly resolved     _id: 'lru-cache@2.5.0',
+1073 silly resolved     _from: 'lru-cache@2' },
+1073 silly resolved   { name: 'sigmund',
+1073 silly resolved     version: '1.0.0',
+1073 silly resolved     description: 'Quick and dirty signatures for Objects.',
+1073 silly resolved     main: 'sigmund.js',
+1073 silly resolved     directories: { test: 'test' },
+1073 silly resolved     dependencies: {},
+1073 silly resolved     devDependencies: { tap: '~0.3.0' },
+1073 silly resolved     scripts: { test: 'tap test/*.js', bench: 'node bench.js' },
+1073 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/sigmund' },
+1073 silly resolved     keywords: [ 'object', 'signature', 'key', 'data', 'psychoanalysis' ],
+1073 silly resolved     author:
+1073 silly resolved      { name: 'Isaac Z. Schlueter',
+1073 silly resolved        email: 'i@izs.me',
+1073 silly resolved        url: 'http://blog.izs.me/' },
+1073 silly resolved     license: 'BSD',
+1073 silly resolved     readme: '# sigmund\n\nQuick and dirty signatures for Objects.\n\nThis is like a much faster `deepEquals` comparison, which returns a\nstring key suitable for caches and the like.\n\n## Usage\n\n```javascript\nfunction doSomething (someObj) {\n  var key = sigmund(someObj, maxDepth) // max depth defaults to 10\n  var cached = cache.get(key)\n  if (cached) return cached)\n\n  var result = expensiveCalculation(someObj)\n  cache.set(key, result)\n  return result\n}\n```\n\nThe resulting key will be as unique and reproducible as calling\n`JSON.stringify` or `util.inspect` on the object, but is much faster.\nIn order to achieve this speed, some differences are glossed over.\nFor example, the object `{0:\'foo\'}` will be treated identically to the\narray `[\'foo\']`.\n\nAlso, just as there is no way to summon the soul from the scribblings\nof a cocain-addled psychoanalyst, there is no way to revive the object\nfrom the signature string that sigmund gives you.  In fact, it\'s\nbarely even readable.\n\nAs with `sys.inspect` and `JSON.stringify`, larger objects will\nproduce larger signature strings.\n\nBecause sigmund is a bit less strict than the more thorough\nalternatives, the strings will be shorter, and also there is a\nslightly higher chance for collisions.  For example, these objects\nhave the same signature:\n\n    var obj1 = {a:\'b\',c:/def/,g:[\'h\',\'i\',{j:\'\',k:\'l\'}]}\n    var obj2 = {a:\'b\',c:\'/def/\',g:[\'h\',\'i\',\'{jkl\']}\n\nLike a good Freudian, sigmund is most effective when you already have\nsome understanding of what you\'re looking for.  It can help you help\nyourself, but you must be willing to do some work as well.\n\nCycles are handled, and cyclical objects are silently omitted (though\nthe key is included in the signature output.)\n\nThe second argument is the maximum depth, which defaults to 10,\nbecause that is the maximum object traversal depth covered by most\ninsurance carriers.\n',
+1073 silly resolved     readmeFilename: 'README.md',
+1073 silly resolved     bugs: { url: 'https://github.com/isaacs/sigmund/issues' },
+1073 silly resolved     homepage: 'https://github.com/isaacs/sigmund',
+1073 silly resolved     _id: 'sigmund@1.0.0',
+1073 silly resolved     _from: 'sigmund@~1.0.0' } ]
+1074 info install lru-cache@2.5.0 into /usr/local/lib/node_modules/stylus/node_modules/glob/node_modules/minimatch
+1075 info install sigmund@1.0.0 into /usr/local/lib/node_modules/stylus/node_modules/glob/node_modules/minimatch
+1076 info installOne lru-cache@2.5.0
+1077 info installOne sigmund@1.0.0
+1078 info /usr/local/lib/node_modules/stylus/node_modules/glob/node_modules/minimatch/node_modules/lru-cache unbuild
+1079 info /usr/local/lib/node_modules/stylus/node_modules/glob/node_modules/minimatch/node_modules/sigmund unbuild
+1080 verbose tar unpack /Users/alvarosaco/.npm/lru-cache/2.5.0/package.tgz
+1081 silly lockFile 7cd723a5-minimatch-node-modules-lru-cache tar:///usr/local/lib/node_modules/stylus/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
+1082 verbose lock tar:///usr/local/lib/node_modules/stylus/node_modules/glob/node_modules/minimatch/node_modules/lru-cache /Users/alvarosaco/.npm/7cd723a5-minimatch-node-modules-lru-cache.lock
+1083 silly lockFile 571298a8--npm-lru-cache-2-5-0-package-tgz tar:///Users/alvarosaco/.npm/lru-cache/2.5.0/package.tgz
+1084 verbose lock tar:///Users/alvarosaco/.npm/lru-cache/2.5.0/package.tgz /Users/alvarosaco/.npm/571298a8--npm-lru-cache-2-5-0-package-tgz.lock
+1085 verbose tar unpack /Users/alvarosaco/.npm/sigmund/1.0.0/package.tgz
+1086 silly lockFile da8a642e-s-minimatch-node-modules-sigmund tar:///usr/local/lib/node_modules/stylus/node_modules/glob/node_modules/minimatch/node_modules/sigmund
+1087 verbose lock tar:///usr/local/lib/node_modules/stylus/node_modules/glob/node_modules/minimatch/node_modules/sigmund /Users/alvarosaco/.npm/da8a642e-s-minimatch-node-modules-sigmund.lock
+1088 silly lockFile 75d3d59b-co-npm-sigmund-1-0-0-package-tgz tar:///Users/alvarosaco/.npm/sigmund/1.0.0/package.tgz
+1089 verbose lock tar:///Users/alvarosaco/.npm/sigmund/1.0.0/package.tgz /Users/alvarosaco/.npm/75d3d59b-co-npm-sigmund-1-0-0-package-tgz.lock
+1090 silly gunzTarPerm modes [ '755', '644' ]
+1091 silly gunzTarPerm modes [ '755', '644' ]
+1092 silly gunzTarPerm extractEntry package.json
+1093 silly gunzTarPerm extractEntry package.json
+1094 silly gunzTarPerm extractEntry .npmignore
+1095 silly gunzTarPerm extractEntry README.md
+1096 silly gunzTarPerm extractEntry README.md
+1097 silly gunzTarPerm extractEntry LICENSE
+1098 silly gunzTarPerm extractEntry LICENSE
+1099 silly gunzTarPerm extractEntry CONTRIBUTORS
+1100 silly gunzTarPerm extractEntry bench.js
+1101 silly gunzTarPerm extractEntry sigmund.js
+1102 silly gunzTarPerm extractEntry lib/lru-cache.js
+1103 silly gunzTarPerm extractEntry test/basic.js
+1104 silly gunzTarPerm extractEntry test/foreach.js
+1105 silly gunzTarPerm extractEntry test/memory-leak.js
+1106 silly gunzTarPerm extractEntry test/basic.js
+1107 silly lockFile da8a642e-s-minimatch-node-modules-sigmund tar:///usr/local/lib/node_modules/stylus/node_modules/glob/node_modules/minimatch/node_modules/sigmund
+1108 silly lockFile da8a642e-s-minimatch-node-modules-sigmund tar:///usr/local/lib/node_modules/stylus/node_modules/glob/node_modules/minimatch/node_modules/sigmund
+1109 silly lockFile 75d3d59b-co-npm-sigmund-1-0-0-package-tgz tar:///Users/alvarosaco/.npm/sigmund/1.0.0/package.tgz
+1110 silly lockFile 75d3d59b-co-npm-sigmund-1-0-0-package-tgz tar:///Users/alvarosaco/.npm/sigmund/1.0.0/package.tgz
+1111 info preinstall sigmund@1.0.0
+1112 verbose readDependencies using package.json deps
+1113 verbose readDependencies using package.json deps
+1114 silly resolved []
+1115 verbose about to build /usr/local/lib/node_modules/stylus/node_modules/glob/node_modules/minimatch/node_modules/sigmund
+1116 info build /usr/local/lib/node_modules/stylus/node_modules/glob/node_modules/minimatch/node_modules/sigmund
+1117 verbose linkStuff [ true,
+1117 verbose linkStuff   '/usr/local/lib/node_modules',
+1117 verbose linkStuff   false,
+1117 verbose linkStuff   '/usr/local/lib/node_modules/stylus/node_modules/glob/node_modules/minimatch/node_modules' ]
+1118 info linkStuff sigmund@1.0.0
+1119 verbose linkBins sigmund@1.0.0
+1120 verbose linkMans sigmund@1.0.0
+1121 verbose rebuildBundles sigmund@1.0.0
+1122 info install sigmund@1.0.0
+1123 info postinstall sigmund@1.0.0
+1124 silly lockFile 7cd723a5-minimatch-node-modules-lru-cache tar:///usr/local/lib/node_modules/stylus/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
+1125 silly lockFile 7cd723a5-minimatch-node-modules-lru-cache tar:///usr/local/lib/node_modules/stylus/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
+1126 silly lockFile 571298a8--npm-lru-cache-2-5-0-package-tgz tar:///Users/alvarosaco/.npm/lru-cache/2.5.0/package.tgz
+1127 silly lockFile 571298a8--npm-lru-cache-2-5-0-package-tgz tar:///Users/alvarosaco/.npm/lru-cache/2.5.0/package.tgz
+1128 info preinstall lru-cache@2.5.0
+1129 verbose readDependencies using package.json deps
+1130 verbose readDependencies using package.json deps
+1131 silly resolved []
+1132 verbose about to build /usr/local/lib/node_modules/stylus/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
+1133 info build /usr/local/lib/node_modules/stylus/node_modules/glob/node_modules/minimatch/node_modules/lru-cache
+1134 verbose linkStuff [ true,
+1134 verbose linkStuff   '/usr/local/lib/node_modules',
+1134 verbose linkStuff   false,
+1134 verbose linkStuff   '/usr/local/lib/node_modules/stylus/node_modules/glob/node_modules/minimatch/node_modules' ]
+1135 info linkStuff lru-cache@2.5.0
+1136 verbose linkBins lru-cache@2.5.0
+1137 verbose linkMans lru-cache@2.5.0
+1138 verbose rebuildBundles lru-cache@2.5.0
+1139 info install lru-cache@2.5.0
+1140 info postinstall lru-cache@2.5.0
+1141 verbose about to build /usr/local/lib/node_modules/stylus/node_modules/glob/node_modules/minimatch
+1142 info build /usr/local/lib/node_modules/stylus/node_modules/glob/node_modules/minimatch
+1143 verbose linkStuff [ true,
+1143 verbose linkStuff   '/usr/local/lib/node_modules',
+1143 verbose linkStuff   false,
+1143 verbose linkStuff   '/usr/local/lib/node_modules/stylus/node_modules/glob/node_modules' ]
+1144 info linkStuff minimatch@0.2.14
+1145 verbose linkBins minimatch@0.2.14
+1146 verbose linkMans minimatch@0.2.14
+1147 verbose rebuildBundles minimatch@0.2.14
+1148 verbose rebuildBundles [ 'lru-cache', 'sigmund' ]
+1149 info install minimatch@0.2.14
+1150 info postinstall minimatch@0.2.14
+1151 verbose about to build /usr/local/lib/node_modules/stylus/node_modules/glob
+1152 info build /usr/local/lib/node_modules/stylus/node_modules/glob
+1153 verbose linkStuff [ true,
+1153 verbose linkStuff   '/usr/local/lib/node_modules',
+1153 verbose linkStuff   false,
+1153 verbose linkStuff   '/usr/local/lib/node_modules/stylus/node_modules' ]
+1154 info linkStuff glob@3.2.9
+1155 verbose linkBins glob@3.2.9
+1156 verbose linkMans glob@3.2.9
+1157 verbose rebuildBundles glob@3.2.9
+1158 verbose rebuildBundles [ 'inherits', 'minimatch' ]
+1159 info install glob@3.2.9
+1160 info postinstall glob@3.2.9
+1161 verbose about to build /usr/local/lib/node_modules/stylus
+1162 info build /usr/local/lib/node_modules/stylus
+1163 verbose linkStuff [ true,
+1163 verbose linkStuff   '/usr/local/lib/node_modules',
+1163 verbose linkStuff   true,
+1163 verbose linkStuff   '/usr/local/lib/node_modules' ]
+1164 info linkStuff stylus@0.42.3
+1165 verbose linkBins stylus@0.42.3
+1166 verbose link bins [ { stylus: './bin/stylus' }, '/usr/local/bin', true ]
+1167 verbose linkMans stylus@0.42.3
+1168 verbose rebuildBundles stylus@0.42.3
+1169 verbose rebuildBundles [ 'css-parse', 'debug', 'glob', 'mkdirp', 'sax' ]
+1170 info install stylus@0.42.3
+1171 info postinstall stylus@0.42.3
+1172 error peerinvalid The package generator-karma does not satisfy its siblings' peerDependencies requirements!
+1172 error peerinvalid Peer generator-angular@0.7.1 wants generator-karma@~0.6.0
+1173 error System Darwin 13.1.0
+1174 error command "node" "/usr/local/bin/npm" "install" "-g" "stylus"
+1175 error cwd /Applications/MAMP/htdocs/compart.io/compart.io
+1176 error node -v v0.10.25
+1177 error npm -v 1.3.24
+1178 error code EPEERINVALID
+1179 verbose exit [ 1, true ]
