@@ -8,20 +8,14 @@ html(lang="es")
 
     link(href='vendor/foundation.min.js', rel='stylesheet')
     link(href='stylesheets/foundation.css', rel='stylesheet')     
+    
     link(href='img/favicon.png', rel='shortcut icon')
 
     link(href='vendor/modernizr.js')
 
   body
 
-      // container
+body
+  include includes/top-bar
 
-    block content
-    block scripts
-
-      // Included JS Files
-      script(src='javascripts/jquery.min.js')
-      script(src='javascripts/modernizr.foundation.js')
-      script(src='javascripts/foundation.js')
-      script(src='javascripts/app.js')
-
+  include includes/footer
