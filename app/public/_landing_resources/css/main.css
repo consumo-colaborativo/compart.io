@@ -1,0 +1,699 @@
+/**
+ * The filename convention for the retina-sized image is image@2x.png, 
+ * but of course you can change this in the mixin when you use it
+
+ 
+.image-logo {
+  width: 100px;
+  height: 50px;
+  .image-2x('image.png', 100px, 50px);
+}
+ 
+.reapeating-background-image {
+  background-color: #444;
+  .image-2x('image.png', 200px, 200px, repeat);
+}
+*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  *behavior: url(boxsizing.htc);
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #eee;
+  line-height: 1;
+  font-family: Lato, sans-serif;
+  height: 100%;
+}
+#videofondo {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+#videofondo.imagen {
+  position: relative;
+}
+#videofondo.imagen img {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.85s ease;
+  -moz-transition: opacity 0.85s ease;
+  -o-transition: opacity 0.85s ease;
+  transition: opacity 0.85s ease;
+}
+#videofondo.imagen img.activo {
+  opacity: 1;
+}
+.main {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  min-height: 433px;
+}
+.main .textos_formulario {
+  width: 85%;
+  margin-left: 15%;
+  color: #321910;
+  text-align: center;
+  height: 100%;
+  min-height: 433px;
+  -webkit-transition: color 0.85s ease;
+  -moz-transition: color 0.85s ease;
+  -o-transition: color 0.85s ease;
+  transition: color 0.85s ease;
+}
+.main .textos_formulario h1 {
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 124px;
+  text-indent: -9999px;
+  border-bottom: 1px dotted #321910;
+  -webkit-transition: border 0.85s ease;
+  -moz-transition: border 0.85s ease;
+  -o-transition: border 0.85s ease;
+  transition: border 0.85s ease;
+}
+.main .textos_formulario h1 span {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 6%;
+  width: 88%;
+  height: 115px;
+  background-image: url(../_img_css/logo_oscuro@2x.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  -webkit-transition: opacity 0.85s ease;
+  -moz-transition: opacity 0.85s ease;
+  -o-transition: opacity 0.85s ease;
+  transition: opacity 0.85s ease;
+}
+@media print, screen, (-webkit-min-device-pixel-ratio: 1.25), (min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .main .textos_formulario h1 span {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url(../_img_css/logo_oscuro@2x.png);
+    background-size: 100% auto;
+  }
+}
+.main .textos_formulario h1 span:last-child {
+  background-image: url(../_img_css/logo_claro@2x.png);
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+@media print, screen, (-webkit-min-device-pixel-ratio: 1.25), (min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .main .textos_formulario h1 span:last-child {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url(../_img_css/logo_claro@2x.png);
+    background-size: 100% auto;
+  }
+}
+.main .textos_formulario h2 {
+  margin: 24px 0 0 0;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 24px;
+}
+.main .textos_formulario > p {
+  width: 88%;
+  margin-left: 6%;
+  margin-top: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+.main .textos_formulario .formulario {
+  margin: 30px 0 0 0;
+}
+.main .textos_formulario #mc_embed_signup label {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+}
+.main .textos_formulario #mc_embed_signup input#mce-EMAIL.email {
+  display: inline-block;
+  width: 261px;
+  height: 31px;
+  margin-top: 6px;
+  padding: 4px 10px;
+  background-color: rgba(50, 25, 16, 0.22);
+  font-size: 18px;
+  text-align: center;
+  color: #7b706c;
+  border: 0;
+  -webkit-border-radius: 9px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 9px;
+  -moz-background-clip: padding;
+  border-radius: 9px;
+  background-clip: padding-box;
+  -webkit-transition: background 0.85s ease, color 0.85s ease;
+  -moz-transition: background 0.85s ease, color 0.85s ease;
+  -o-transition: background 0.85s ease, color 0.85s ease;
+  transition: background 0.85s ease, color 0.85s ease;
+}
+.main .textos_formulario #mc_embed_signup input#mce-EMAIL.email.hover {
+  background-color: rgba(50, 25, 16, 0.52);
+}
+.main .textos_formulario #mc_embed_signup input#mce-EMAIL.email::-webkit-input-placeholder {
+  -webkit-transition: color 0.85s ease;
+  -moz-transition: color 0.85s ease;
+  -o-transition: color 0.85s ease;
+  transition: color 0.85s ease;
+  color: rgba(50, 25, 26, 0.5);
+}
+.main .textos_formulario #mc_embed_signup input#mce-EMAIL.email:-moz-placeholder {
+  -webkit-transition: color 0.85s ease;
+  -moz-transition: color 0.85s ease;
+  -o-transition: color 0.85s ease;
+  transition: color 0.85s ease;
+  color: rgba(50, 25, 26, 0.5);
+}
+.main .textos_formulario #mc_embed_signup input#mce-EMAIL.email::-moz-placeholder {
+  -webkit-transition: color 0.85s ease;
+  -moz-transition: color 0.85s ease;
+  -o-transition: color 0.85s ease;
+  transition: color 0.85s ease;
+  color: rgba(50, 25, 26, 0.5);
+}
+.main .textos_formulario #mc_embed_signup input#mce-EMAIL.email:-ms-input-placeholder {
+  -webkit-transition: color 0.85s ease;
+  -moz-transition: color 0.85s ease;
+  -o-transition: color 0.85s ease;
+  transition: color 0.85s ease;
+  color: rgba(50, 25, 26, 0.5);
+}
+.main .textos_formulario #mc_embed_signup input#mce-EMAIL.email:focus {
+  outline: none;
+}
+.main .textos_formulario #mc_embed_signup div.linea {
+  font-size: 0;
+}
+.main .textos_formulario #mc_embed_signup div.linea span {
+  display: inline-block;
+  width: 2px;
+  height: 24px;
+  background-color: rgba(50, 25, 16, 0.22);
+  -webkit-transition: background 0.85s ease;
+  -moz-transition: background 0.85s ease;
+  -o-transition: background 0.85s ease;
+  transition: background 0.85s ease;
+}
+.main .textos_formulario #mc_embed_signup div.linea span.hover {
+  background-color: rgba(50, 25, 16, 0.52);
+}
+.main .textos_formulario #mc_embed_signup input#mc-embedded-subscribe.button {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  font-size: 11px;
+  line-height: 12px;
+  font-weight: 700;
+  color: #321910;
+  background-color: rgba(50, 25, 16, 0.22);
+  border: 0;
+  cursor: pointer;
+  -webkit-border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 50%;
+  -moz-background-clip: padding;
+  border-radius: 50%;
+  background-clip: padding-box;
+  -webkit-transition: background 0.85s ease, color 0.85s ease;
+  -moz-transition: background 0.85s ease, color 0.85s ease;
+  -o-transition: background 0.85s ease, color 0.85s ease;
+  transition: background 0.85s ease, color 0.85s ease;
+}
+.main .textos_formulario #mc_embed_signup input#mc-embedded-subscribe.button:focus {
+  outline: none;
+}
+.main .textos_formulario #mc_embed_signup input#mc-embedded-subscribe.button.hover {
+  background-color: rgba(50, 25, 16, 0.52);
+}
+.main .footer {
+  width: 100%;
+  position: absolute;
+  bottom: 40px;
+}
+.main .footer div {
+  width: 85%;
+  margin-left: 15%;
+  text-align: center;
+  font-size: 16px;
+}
+#bodyinvertido .main .textos_formulario,
+body.invertido .main .textos_formulario {
+  color: #fff;
+}
+#bodyinvertido .main .textos_formulario h1,
+body.invertido .main .textos_formulario h1 {
+  border-bottom-color: #fff;
+}
+#bodyinvertido .main .textos_formulario h1 span:first-child,
+body.invertido .main .textos_formulario h1 span:first-child {
+  opacity: 0;
+}
+#bodyinvertido .main .textos_formulario h1 span:last-child,
+body.invertido .main .textos_formulario h1 span:last-child {
+  opacity: 1;
+}
+#bodyinvertido .main .textos_formulario #mc_embed_signup input#mce-EMAIL.email,
+body.invertido .main .textos_formulario #mc_embed_signup input#mce-EMAIL.email {
+  color: #dadada;
+  background-color: rgba(255, 255, 255, 0.22);
+}
+#bodyinvertido .main .textos_formulario #mc_embed_signup input#mce-EMAIL.email.hover,
+body.invertido .main .textos_formulario #mc_embed_signup input#mce-EMAIL.email.hover {
+  background-color: rgba(255, 255, 255, 0.52);
+}
+#bodyinvertido .main .textos_formulario #mc_embed_signup input#mce-EMAIL.email::-webkit-input-placeholder,
+body.invertido .main .textos_formulario #mc_embed_signup input#mce-EMAIL.email::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+#bodyinvertido .main .textos_formulario #mc_embed_signup input#mce-EMAIL.email:-moz-placeholder,
+body.invertido .main .textos_formulario #mc_embed_signup input#mce-EMAIL.email:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+#bodyinvertido .main .textos_formulario #mc_embed_signup input#mce-EMAIL.email::-moz-placeholder,
+body.invertido .main .textos_formulario #mc_embed_signup input#mce-EMAIL.email::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+#bodyinvertido .main .textos_formulario #mc_embed_signup input#mce-EMAIL.email:-ms-input-placeholder,
+body.invertido .main .textos_formulario #mc_embed_signup input#mce-EMAIL.email:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+#bodyinvertido .main .textos_formulario #mc_embed_signup div.linea span,
+body.invertido .main .textos_formulario #mc_embed_signup div.linea span {
+  background-color: rgba(255, 255, 255, 0.22);
+}
+#bodyinvertido .main .textos_formulario #mc_embed_signup div.linea span.hover,
+body.invertido .main .textos_formulario #mc_embed_signup div.linea span.hover {
+  background-color: rgba(255, 255, 255, 0.52);
+}
+#bodyinvertido .main .textos_formulario #mc_embed_signup input#mc-embedded-subscribe.button,
+body.invertido .main .textos_formulario #mc_embed_signup input#mc-embedded-subscribe.button {
+  color: #dadada;
+  background-color: rgba(255, 255, 255, 0.22);
+}
+#bodyinvertido .main .textos_formulario #mc_embed_signup input#mc-embedded-subscribe.button.hover,
+body.invertido .main .textos_formulario #mc_embed_signup input#mc-embedded-subscribe.button.hover {
+  background-color: rgba(255, 255, 255, 0.52);
+}
+#bodyinvertido .footer div,
+body.invertido .footer div {
+  color: #fff;
+}
+.textos_bolas {
+  position: fixed;
+  width: 20%;
+  right: 5%;
+  bottom: 5%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 50%;
+  -moz-background-clip: padding;
+  border-radius: 50%;
+  background-clip: padding-box;
+}
+.textos_bolas:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+  /* initial ratio of 1:1*/
+}
+.textos_bolas div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.textos_bolas div p {
+  position: absolute;
+  top: 20%;
+  right: 14%;
+  bottom: 20%;
+  left: 14%;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  margin: 0;
+  font-family: Lato, sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 300;
+  text-align: center;
+  -webkit-transition: opacity 0.85s ease;
+  -moz-transition: opacity 0.85s ease;
+  -o-transition: opacity 0.85s ease;
+  transition: opacity 0.85s ease;
+}
+.textos_bolas div.activo p {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+.vjs-control-bar {
+  display: none;
+}
+#big-video-vid {
+  display: none;
+  width: 0;
+  height: 0;
+  left: -1000px;
+}
+#touchhtml {
+  background: #444;
+}
+#touchhtml body {
+  background: #444;
+  height: auto;
+  padding-bottom: 40px;
+}
+#touchhtml body .main .textos_formulario {
+  color: #fff;
+}
+#touchhtml body .main .textos_formulario h1 {
+  border-bottom-color: #fff;
+}
+#touchhtml body .main .textos_formulario h1 span:first-child {
+  opacity: 0;
+}
+#touchhtml body .main .textos_formulario h1 span:last-child {
+  opacity: 1;
+}
+#touchhtml body .main .textos_formulario #mc_embed_signup input#mce-EMAIL.email {
+  color: #dadada;
+  background-color: rgba(255, 255, 255, 0.22);
+}
+#touchhtml body .main .textos_formulario #mc_embed_signup input#mce-EMAIL.email.hover {
+  background-color: rgba(255, 255, 255, 0.52);
+}
+#touchhtml body .main .textos_formulario #mc_embed_signup input#mce-EMAIL.email::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+#touchhtml body .main .textos_formulario #mc_embed_signup input#mce-EMAIL.email:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+#touchhtml body .main .textos_formulario #mc_embed_signup input#mce-EMAIL.email::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+#touchhtml body .main .textos_formulario #mc_embed_signup input#mce-EMAIL.email:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+#touchhtml body .main .textos_formulario #mc_embed_signup div.linea span {
+  background-color: rgba(255, 255, 255, 0.22);
+}
+#touchhtml body .main .textos_formulario #mc_embed_signup div.linea span.hover {
+  background-color: rgba(255, 255, 255, 0.52);
+}
+#touchhtml body .main .textos_formulario #mc_embed_signup input#mc-embedded-subscribe.button {
+  color: #dadada;
+  background-color: rgba(255, 255, 255, 0.22);
+}
+#touchhtml body .main .textos_formulario #mc_embed_signup input#mc-embedded-subscribe.button.hover {
+  background-color: rgba(255, 255, 255, 0.52);
+}
+#touchhtml body .footer div {
+  color: #fff;
+}
+#touchhtml #videofondo {
+  position: relative;
+  height: 350px;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+}
+#touchhtml #videofondo #big-video-wrap {
+  position: relative;
+}
+#touchhtml .textos_bolas {
+  position: relative;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 4px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-border-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0;
+  -moz-background-clip: padding;
+  border-radius: 0;
+  background-clip: padding-box;
+}
+#touchhtml .textos_bolas:before {
+  content: "";
+  padding-top: 0;
+  /* initial ratio of 1:1*/
+}
+#touchhtml .textos_bolas div {
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+}
+#touchhtml .textos_bolas div p {
+  display: none;
+  width: 80%;
+  margin: 0 10%;
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 300;
+  text-align: center;
+  vertical-align: middle;
+}
+#touchhtml .textos_bolas div.activo p {
+  display: block;
+}
+#touchhtml .textos_bolas div.activo p > span > strong {
+  display: inline;
+}
+#touchhtml .main {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  min-height: initial;
+}
+#touchhtml .main .textos_formulario {
+  width: auto;
+  margin: 0 15%;
+  min-height: initial;
+}
+#touchhtml .main .textos_formulario h1 {
+  height: auto;
+  text-indent: -9999px;
+}
+#touchhtml .main .textos_formulario h1 span {
+  position: relative;
+  left: 0;
+  top: 0;
+  margin: 0 0 10px 0;
+  width: 100%;
+  height: auto;
+}
+#touchhtml .main .textos_formulario h1 span:first-child {
+  display: none;
+}
+#touchhtml .main .textos_formulario h1 span:before {
+  content: "";
+  display: block;
+  padding-top: 12%;
+  /* initial ratio of 1:1*/
+}
+#touchhtml .main .footer {
+  width: 100%;
+  margin: 10px 0 20px 0;
+  position: relative;
+  bottom: auto;
+}
+#touchhtml .main .footer div {
+  width: 70%;
+  margin: 0 15%;
+}
+@media (max-width: 767px) {
+  html {
+    background: #444;
+  }
+  html body {
+    background: #444;
+    height: auto;
+    padding-bottom: 40px;
+  }
+  html body .main .textos_formulario {
+    color: #fff;
+  }
+  html body .main .textos_formulario h1 {
+    border-bottom-color: #fff;
+  }
+  html body .main .textos_formulario h1 span:first-child {
+    opacity: 0;
+  }
+  html body .main .textos_formulario h1 span:last-child {
+    opacity: 1;
+  }
+  html body .main .textos_formulario #mc_embed_signup input#mce-EMAIL.email {
+    color: #dadada;
+    background-color: rgba(255, 255, 255, 0.22);
+  }
+  html body .main .textos_formulario #mc_embed_signup input#mce-EMAIL.email.hover {
+    background-color: rgba(255, 255, 255, 0.52);
+  }
+  html body .main .textos_formulario #mc_embed_signup input#mce-EMAIL.email::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  html body .main .textos_formulario #mc_embed_signup input#mce-EMAIL.email:-moz-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  html body .main .textos_formulario #mc_embed_signup input#mce-EMAIL.email::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  html body .main .textos_formulario #mc_embed_signup input#mce-EMAIL.email:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  html body .main .textos_formulario #mc_embed_signup div.linea span {
+    background-color: rgba(255, 255, 255, 0.22);
+  }
+  html body .main .textos_formulario #mc_embed_signup div.linea span.hover {
+    background-color: rgba(255, 255, 255, 0.52);
+  }
+  html body .main .textos_formulario #mc_embed_signup input#mc-embedded-subscribe.button {
+    color: #dadada;
+    background-color: rgba(255, 255, 255, 0.22);
+  }
+  html body .main .textos_formulario #mc_embed_signup input#mc-embedded-subscribe.button.hover {
+    background-color: rgba(255, 255, 255, 0.52);
+  }
+  html body .footer div {
+    color: #fff;
+  }
+  html #videofondo {
+    position: relative;
+    height: 350px;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+  }
+  html #videofondo #big-video-wrap {
+    position: relative;
+  }
+  html .textos_bolas {
+    position: relative;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 4px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 0;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 0;
+    -moz-background-clip: padding;
+    border-radius: 0;
+    background-clip: padding-box;
+  }
+  html .textos_bolas:before {
+    content: "";
+    padding-top: 0;
+    /* initial ratio of 1:1*/
+  }
+  html .textos_bolas div {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+  }
+  html .textos_bolas div p {
+    display: none;
+    width: 80%;
+    margin: 0 10%;
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 300;
+    text-align: center;
+    vertical-align: middle;
+  }
+  html .textos_bolas div.activo p {
+    display: block;
+  }
+  html .textos_bolas div.activo p > span > strong {
+    display: inline;
+  }
+  html .main {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    min-height: initial;
+  }
+  html .main .textos_formulario {
+    width: auto;
+    margin: 0 15%;
+    min-height: initial;
+  }
+  html .main .textos_formulario h1 {
+    height: auto;
+    text-indent: -9999px;
+  }
+  html .main .textos_formulario h1 span {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 0 0 10px 0;
+    width: 100%;
+    height: auto;
+  }
+  html .main .textos_formulario h1 span:first-child {
+    display: none;
+  }
+  html .main .textos_formulario h1 span:before {
+    content: "";
+    display: block;
+    padding-top: 12%;
+    /* initial ratio of 1:1*/
+  }
+  html .main .footer {
+    width: 100%;
+    margin: 10px 0 20px 0;
+    position: relative;
+    bottom: auto;
+  }
+  html .main .footer div {
+    width: 70%;
+    margin: 0 15%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
