@@ -1,3 +1,4 @@
+// all the routes for our application
 module.exports = function(app) {
 
   app.get('/', function (req, res) {
