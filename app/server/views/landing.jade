@@ -1,15 +1,93 @@
-extends layout
+doctype html
+html.no-js
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='_landing_resources/css/main.css')
+    link(rel='stylesheet', href='bower_components/BigVideo.js/css/bigvideo.css')
+    link(href='http://fonts.googleapis.com/css?family=Lato:300,400,700', rel='stylesheet', type='text/css')
+  body
+    #videofondo
+    .textos_bolas
+      div
+        p
+          span
+            | Me voy  a vivir a África. 
+            strong Te lo presto.
+      div
+        p
+          span
+            | Ya no 
+            | estoy para 
+            | estos trotes. 
+            strong Te las 
+            strong regalo.
+      div
+        p
+          span
+            | Solo ha 
+            | servido 
+            | una vez. 
+            strong Qué pena 
+            strong ¿no?
+      div
+        p
+          span
+            | Mi novia 
+            | me dio un 
+            | ultimatum. 
+            strong ¿La 
+            strong quieres?
+      div
+        p
+          span
+            | Se me 
+            | escapó. 
+            strong ¿Alguien la 
+            strong quiere?
+      div
+        p
+          span
+            | No me 
+            | cabe en casa. 
+            strong ¿Alguien lo 
+            strong adopta?
+      div
+        p
+          span
+            | Mis padres 
+            | no me 
+            | comprenden. 
+            strong ¿Alguien 
+            strong lo quiere?
+    .main
+      .textos_formulario
+        h1 Compartio
+          span
+          span
+        h2 Por un consumo colaborativo…
+        p
+          | Pronto, un espacio donde buscar lo que necesitas y regalar lo que te sobra.
+        div.formulario
+          #mc_embed_signup
+            form#mc-embedded-subscribe-form.validate(action='http://compart.us3.list-manage1.com/subscribe/post?u=39196c96c403178f9d4d677b4&id=5aa7bf55a1', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+              label(for='mce-EMAIL') ¡Mantente al corriente!
+              input#mce-EMAIL.email(type='email', value='', name='EMAIL', placeholder='PON TU EMAIL', required='')
+              div(style='position: absolute; left: -5000px;')
+                input(type='text', name='b_39196c96c403178f9d4d677b4_5aa7bf55a1', value='')
+              div.linea
+                span.linea
+              input#mc-embedded-subscribe.button(type='submit', value='OK', name='subscribe')
+          // End mc_embed_signup
+      .footer
+        div
+          | Proyecto abierto y sin fines comerciales.
 
-block content
 
-    #contenedor.container
-      p <a href="https://www.facebook.com/groups/310342205721740/?fref=ts" target="_blank"><img src="img/consumocolaborativo_logo.jpg" alt="cc_logo"></a><hr />
-      
 
-block scripts
+    script(src='_landing_resources/js/min/libs-ck.js')
+    script(src='_landing_resources/js/min/main-ck.js')
 
-      script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js')
-      script(src='/vendor/jquery.js')
-      script(src='/js/views/landing.js')
-      //script(src='/js/views/prueba.js')
-      script(src='/js/form-validators/EmailValidator.js')
