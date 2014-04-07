@@ -6,3 +6,5 @@ node_modules/
 
 # Excluimos DS_Store
 .DS_Store
+
+*.codekit
