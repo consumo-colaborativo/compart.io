@@ -18,16 +18,30 @@
                 "type": "git",
                 "url": "git://github.com/consumo-colaborativo/compart.io.git"
   },
-  
-	"private": true,
-	
+  "private": true,	
   "dependencies": {
 		"express": "3.0.6",
 		"stylus": "0.31.0",
-		"jade": "0.27.7"
+		"jade": "0.27.7",
+		"ejs" : "~0.8.5", 				
+	    "mongoose" : "~3.8.1", 			
+    	"passport" : "~0.1.17", 		
+    	"passport-local" : "~0.1.6", 	
+    	"passport-facebook" : "~1.0.2", 
+    	"passport-twitter" : "~1.0.2", 	
+    	"passport-google-oauth" : "~0.1.5",
+    	"connect-flash" : "~0.1.1", 	
+    	"bcrypt-nodejs" : "latest",
+    	"nodemon":"~1.0.17" 	
 	},
 	"engines": {
 		"node": "0.8.14",
 		"npm":  "1.1.65"
 	}
 }
+
+
+
+
+
+
