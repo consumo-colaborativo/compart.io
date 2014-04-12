@@ -100,7 +100,7 @@ $(document).ready(function() {
 	if(!Modernizr.touch){
 		BV = new $.BigVideo({container:$('#videofondo')});
 		BV.init();
-		BV.show('_landing_resources/video/landing4.mp4',{ambient:true});
+		BV.show('https://s3-eu-west-1.amazonaws.com/compartio/video/landing4.mp4',{ambient:true});
 		window.setInterval(function(){comp_getVideoFrameNumber()},200);
 	} else {
 		$('#videofondo').addClass('imagen');
@@ -121,6 +121,7 @@ $(document).ready(function() {
 	$('input#mc-embedded-subscribe.button').mouseleave(function(event) {
 		$('input#mc-embedded-subscribe.button , div.linea span , input#mce-EMAIL.email').removeClass('hover');
 	});
+      // ...
 	//Tamaño de cexto del círculo
 	$('.textos_bolas div p').textfill();
 	autoresizeimage();
