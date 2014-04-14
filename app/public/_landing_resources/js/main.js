@@ -1,4 +1,14 @@
 
+//Old browser alerts
+var $buoop = {vs:{i:8,f:15,o:15,s:5.1,n:9}, reminder: 0}; 
+$buoop.ol = window.onload; 
+window.onload=function(){ 
+ try {if ($buoop.ol) $buoop.ol();}catch (e) {} 
+ var e = document.createElement("script"); 
+ e.setAttribute("type", "text/javascript"); 
+ e.setAttribute("src", "//browser-update.org/update.js"); 
+ document.body.appendChild(e); 
+} 
 
 var BV = new $.BigVideo();
 var fase = 1;
@@ -63,6 +73,8 @@ function actualizaestado(){
 				break;
 		}
 	}
+
+	BV.updateSize();
 }
 function autoresizeimage(){
 	//foto en touch
@@ -98,7 +110,7 @@ $(document).ready(function() {
 		$('html').attr('id','touchhtml');
 	}
 	if(!Modernizr.touch){
-		BV = new $.BigVideo({container:$('#videofondo')});
+		BV = new $.BigVideo();
 		BV.init();
 		BV.show('https://s3-eu-west-1.amazonaws.com/compartio/video/landing4.mp4',{ambient:true});
 		window.setInterval(function(){comp_getVideoFrameNumber()},200);
@@ -132,3 +144,5 @@ $(window).resize(function(event) {
 	$('.textos_bolas div p').textfill();
 	autoresizeimage();
 });
+
+
