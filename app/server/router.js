@@ -8,10 +8,10 @@ module.exports = function(app) {
   app.get('/mandar-email', function (req, res) {
         res.render('mandar');
   });
-  /* MGD: Enabling Automatic Deployment */
-	app.post('/deploy/', function (req, res) {  
+ /* MGD: Enabling Automatic Deployment */
+	app.post('/deploy', function (req, res) {  
 	     var spawn = require('child_process').spawn,
-	        deploy = spawn('sh', [ './deploy.sh' ]);
+	        deploy = spawn('sh', ['./deploy.sh' ]);
 
 	    deploy.stdout.on('data', function (data) {
 	        console.log(''+data);
