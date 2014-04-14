@@ -8,7 +8,7 @@ compart.io Express Web Server
   var app = express();
 
 	app.configure(function(){
-		app.set('port', 3000);
+		app.set('port', 80);
 		app.set('views', __dirname + '/app/server/views');
 		app.set('view engine', 'jade');
 		app.locals.pretty = true;
