@@ -1,12 +1,12 @@
 // all the routes for our application
 module.exports = function(app, passport) {
 	// =====================================
-	// LANDING ===============================
+	// LANDING OR HOME======================
 	// =====================================
 	// show the landing
   	app.get('/', function (req, res) {
-
-        res.render('landing');
+		res.render('home');
+        //res.render('landing');
   	});
 	// =====================================
 	// LOGIN ===============================
