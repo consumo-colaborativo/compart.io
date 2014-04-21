@@ -380,6 +380,9 @@ body.invertido .footer div {
   height: 0;
   left: -1000px;
 }
+#videofondo {
+  display: none;
+}
 #touchhtml {
   background: #444;
 }
@@ -442,9 +445,6 @@ body.invertido .footer div {
   left: auto;
   right: auto;
   bottom: auto;
-}
-#touchhtml #videofondo #big-video-wrap {
-  position: relative;
 }
 #touchhtml .textos_bolas {
   position: relative;
@@ -537,6 +537,12 @@ body.invertido .footer div {
   width: 70%;
   margin: 0 15%;
 }
+#touchhtml #big-video-wrap {
+  display: none;
+}
+#touchhtml #videofondo {
+  display: block;
+}
 @media (max-width: 767px) {
   html {
     background: #444;
@@ -600,9 +606,6 @@ body.invertido .footer div {
     left: auto;
     right: auto;
     bottom: auto;
-  }
-  html #videofondo #big-video-wrap {
-    position: relative;
   }
   html .textos_bolas {
     position: relative;
@@ -694,5 +697,11 @@ body.invertido .footer div {
   html .main .footer div {
     width: 70%;
     margin: 0 15%;
+  }
+  html #big-video-wrap {
+    display: none;
+  }
+  html #videofondo {
+    display: block;
   }
 }

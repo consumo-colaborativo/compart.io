@@ -32,6 +32,7 @@
     "commit": "2349f97f55f8b1c9fa525177551131b143ad380d"
   },
   "_source": "git://github.com/dfcb/BigVideo.js.git",
-  "_target": "~1.0.7",
-  "_originalSource": "BigVideo.js"
+  "_target": "1.0.9",
+  "_originalSource": "BigVideo.js",
+  "_direct": true
 }
