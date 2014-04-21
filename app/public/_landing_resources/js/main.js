@@ -74,7 +74,7 @@ function actualizaestado(){
 		}
 	}
 
-	BV.updateSize();
+	// BV.updateSize();
 }
 function autoresizeimage(){
 	//foto en touch
