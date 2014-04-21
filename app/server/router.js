@@ -20,6 +20,7 @@ module.exports = function(app, passport) {
 		// We will create the loginMessage inside our passport configuration.
 	});
 
+<<<<<<< HEAD
 	// process the login form
 	// app.post('/login', do all our passport stuff here);
 
@@ -71,4 +72,9 @@ function isLoggedIn(req, res, next) {
 
 	// if they aren't redirect them to the home page
 	res.redirect('/');
+=======
+  app.get('/mandar-email', function (req, res) {
+        res.render('mandar');
+  });
+>>>>>>> master
 }

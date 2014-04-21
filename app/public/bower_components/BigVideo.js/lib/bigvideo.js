@@ -60,6 +60,10 @@
 			var windowH = settings.container.height();
 			var windowAspect = windowW/windowH;
 
+			if (settings.container.is($('body'))) {
+				$('html,body').css('height',$(window).height() > $('body').css('height','auto').height() ? '100%' : 'auto');
+			}
+
 			if (windowAspect < mediaAspect) {
 				// taller
 				if (currMediaType === 'video') {
@@ -191,7 +195,9 @@
 				player.play();
 				$('#big-video-control-play').css('background-position','0');
 				isPlaying = true;
-			}
+            } else if (action === 'skip') {
+                nextMedia();
+            }
 		}
 
 		function setUpAutoPlay() {
@@ -366,7 +372,8 @@
 			}
 		};
 
-		// Expose BigVideoJS player actions (like 'play', 'pause' and so on)
+		// Expose BigVideoJS player actions play, pause, skip (if a playlist is available)
+		// Example: BigVideo.triggerPlayer('skip')
 		BigVideo.triggerPlayer = function(action){
 			playControl(action);
 		};
