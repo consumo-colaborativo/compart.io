@@ -4,13 +4,12 @@ compart.io Express Web Server
   // Get all the tools we need
   var express = require('express'); //  framework
   var app = express();
-<<<<<<< HEAD
   var http = require('http');
   var stylus = require('stylus'); // Compilador de CSS
   var mongoose = require('mongoose'); // Object modeling for our MongoDB database
   var passport = require('passport'); // Authenticating with different method
   var flash 	 = require('connect-flash'); // Passing session flashdata messages
-=======
+
  /* MGD: Enabling Automatic Deployment */
 	app.post('/deploy/', function (req, res) {  
 	     var spawn = require('child_process').spawn,
@@ -25,7 +24,7 @@ compart.io Express Web Server
 	    });
 	    res.json(200, {message: 'Github Hook received!'})
 	});
->>>>>>> master
+
 
   var configDB = require('./config/database.js');
 
@@ -50,13 +49,9 @@ compart.io Express Web Server
 		app.use(passport.session()); // persistent login sessions
 		app.use(flash()); // use connect-flash for flash messages stored in session
 		});	
-<<<<<<< HEAD
-	// Routes
-	require('./app/server/router')(app);
-=======
-	
+
 require('./app/server/router')(app);
->>>>>>> master
+
 
 /**
  * We create a web server that contains the application
