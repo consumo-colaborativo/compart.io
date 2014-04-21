@@ -30,6 +30,7 @@ function comp_getVideoFrameNumber(){
 		fase=7;
 	}
 	actualizaestado();
+	autoresizeimage();
 }
 function fotos_avanza_fase(){
 	fase++;
@@ -46,7 +47,7 @@ function actualizaestado(){
 	}
 
 	//cambia foto (touch)
-	if(Modernizr.touch){
+	//if(Modernizr.touch){
 		$('#videofondo.imagen img').each(function(index, el) {
 			if(index+1==fase){
 				$(el).addClass('activo');
@@ -54,7 +55,7 @@ function actualizaestado(){
 				$(el).removeClass('activo');
 			}
 		});
-	}
+	//}
 
 	//Cambia color (no touch)
 	if(!Modernizr.touch){
@@ -74,7 +75,7 @@ function actualizaestado(){
 		}
 	}
 
-	// BV.updateSize();
+	//BV.updateSize();
 }
 function autoresizeimage(){
 	//foto en touch
@@ -114,17 +115,19 @@ $(document).ready(function() {
 		BV.init();
 		BV.show('https://s3-eu-west-1.amazonaws.com/compartio/video/landing4.mp4',{ambient:true});
 		window.setInterval(function(){comp_getVideoFrameNumber()},200);
-	} else {
+	} //else {
 		$('#videofondo').addClass('imagen');
 		$('#videofondo.imagen').html('<img src="_landing_resources/_img/1.jpg" class="activo"><img src="_landing_resources/_img/2.jpg"><img src="_landing_resources/_img/3.jpg"><img src="_landing_resources/_img/4.jpg"><img src="_landing_resources/_img/5.jpg"><img src="_landing_resources/_img/6.jpg"><img src="_landing_resources/_img/7.jpg">');
 		$('#videofondo.imagen img').load(function(){
 			autoresizeimage();
 		});
+	if(Modernizr.touch){
 		setInterval(function(){
 			fotos_avanza_fase();
 		}, 10000);
 		actualizaestado();
 	}
+	//}
 
 	//HOVER botón ok
 	$('input#mc-embedded-subscribe.button').mouseenter(function(event) {
