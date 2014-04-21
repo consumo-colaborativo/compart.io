@@ -6,21 +6,10 @@ compart.io Express Web Server
   var http = require('http');
   var stylus = require('stylus');
   var app = express();
-
-	app.configure(function(){
-		app.set('port', 3000);
-		app.set('views', __dirname + '/app/server/views');
-		app.set('view engine', 'jade');
-		app.locals.pretty = true;
-                //app.use(express.favicon());
-		app.use(express.bodyParser());
-		app.use(express.methodOverride());
-		app.use(express.static(__dirname + '/app/public'));
-		});	
-	/* MGD: Enabling Automatic Deployment */
+ /* MGD: Enabling Automatic Deployment */
 	app.post('/deploy/', function (req, res) {  
 	     var spawn = require('child_process').spawn,
-	        deploy = spawn('sh', [ './deploy.sh' ]);
+	        deploy = spawn('sh', ['./deploy.sh' ]);
 
 	    deploy.stdout.on('data', function (data) {
 	        console.log(''+data);
@@ -32,6 +21,17 @@ compart.io Express Web Server
 	    res.json(200, {message: 'Github Hook received!'})
 	});
 
+	app.configure(function(){
+		app.set('port', 80);
+		app.set('views', __dirname + '/app/server/views');
+		app.set('view engine', 'jade');
+		app.locals.pretty = true;
+                //app.use(express.favicon());
+		app.use(express.bodyParser());
+		app.use(express.methodOverride());
+		app.use(express.static(__dirname + '/app/public'));
+		});	
+	
 require('./app/server/router')(app);
 
 /**
