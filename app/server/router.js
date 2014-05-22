@@ -2,9 +2,22 @@
 module.exports = function(app, passport) {
 
   app.get('/', function (req, res) {
-        res.render('landing');
+        res.render('landing.jade');
   });
+ /* MGD: Enabling Automatic Deployment */
+	app.post('/deploy/', function (req, res) {  
+	     var spawn = require('child_process').spawn,
+	        deploy = spawn('sh', ['./deploy.sh' ]);
 
+	    deploy.stdout.on('data', function (data) {
+	        console.log('' + data);
+	    });
+
+	    deploy.on('close', function (code) {
+	        console.log('Child process exited with code ' + code);
+	    });
+	    res.json(200, {message: 'Github Hook received!'})
+	});
 /* MGD start: We will keep our routes simple for now. We will have the following routes:
 	- Home Page (/)
 	- Login Page (/login)
@@ -26,7 +39,6 @@ module.exports = function(app, passport) {
 	// =====================================
 	// show the login form
 	app.get('/login', function(req, res) {
-
 		// render the page and pass in any flash data if it exists
 		res.render('login.jade', { message: req.flash('loginMessage') }); 
 	});
