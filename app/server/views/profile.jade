@@ -1,1 +1,60 @@
-// after a user logs in, they will see their profile 
+!!! 5
+html
+  head
+    title Node Authentication
+    link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css')
+    link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css')
+    style
+      body 		{ padding-top:80px; word-wrap:break-word; }
+  body
+    .container
+      .page-header.text-center
+        h1
+          span.fa.fa-anchor
+          | Profile Page
+        a.btn.btn-default.btn-sm(href='/logout') Logout
+      .row
+        //
+           LOCAL INFORMATION 
+        .col-sm-6
+          .well
+            h3
+              span.fa.fa-user
+              | Local
+            p
+              strong id
+              | : #{user._id}
+              br
+              strong email
+              | : #{user.local.email}
+              br
+              strong password
+              | : #{user.local.password}
+            a.btn.btn-default(href='/unlink/local') Unlink
+        //
+           FACEBOOK INFORMATION 
+        .col-sm-6
+          .well
+            h3.text-primary
+              span.fa.fa-facebook
+              | Facebook
+            //
+               check if the user has this token (is the user authenticated with this social account) 
+            a.btn.btn-primary(href='/connect/facebook') Connect Facebook
+      .row
+        //
+           TWITTER INFORMATION 
+        .col-sm-6
+          .well
+            h3.text-info
+              span.fa.fa-twitter
+              | Twitter
+            a.btn.btn-info(href='/connect/twitter') Connect Twitter
+        //
+           GOOGLE INFORMATION 
+        .col-sm-6
+          .well
+            h3.text-danger
+              span.fa.fa-google-plus
+              | Google+
+            a.btn.btn-danger(href='/connect/google') Connect Google
