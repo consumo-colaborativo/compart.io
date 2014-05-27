@@ -1,9 +1,7 @@
 // all the routes for our application
 module.exports = function(app, passport) {
 
-  app.get('/', function (req, res) {
-        res.render('landing.jade');
-  });
+  
  /* MGD: Enabling Automatic Deployment */
 	app.post('/deploy/', function (req, res) {  
 	     var spawn = require('child_process').spawn,
@@ -29,11 +27,9 @@ module.exports = function(app, passport) {
 // =====================================
 	// HOME PAGE (with login links) ========
 	// =====================================
-	/*
-	app.get('/', function(req, res) {
-		res.render('index.ejs'); // load the index.ejs file
-	}); */
-
+	app.get('/', function (req, res) {
+        res.render('landing.jade');
+  	});
 	// =====================================
 	// LOGIN ===============================
 	// =====================================
@@ -48,14 +44,17 @@ module.exports = function(app, passport) {
 	// ensuring that the message is available to the next page that is to be rendered.
 
 	// process the login form
-	// app.post('/login', do all our passport stuff here);
-
+	app.post('/login', passport.authenticate('local-login', {
+		successRedirect : '/profile', // redirect to the secure profile section
+		failureRedirect : '/login', // redirect back to the signup page if there is an error
+		failureFlash : true // allow flash messages
+	}));
+	
 	// =====================================
 	// SIGNUP ==============================
 	// =====================================
 	// show the signup form
 	app.get('/signup', function(req, res) {
-
 		// render the page and pass in any flash data if it exists
 		res.render('signup.jade', { message: req.flash('signupMessage') });
 	});

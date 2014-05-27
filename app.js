@@ -11,7 +11,7 @@ var flash    = require('connect-flash');
 var configDB = require('./config/database.js');
 
 // configuration ===============================================================
-//mongoose.connect(configDB.url); // connect to our database
+mongoose.connect(configDB.url); // connect to our database
 
 require('./config/passport')(passport); // pass passport for configuration
 
