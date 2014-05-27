@@ -1,52 +1,41 @@
-/**
-compart.io Express Web Server
-**/
+// server.js
+// set up ======================================================================
+// get all the tools we need
+var express  = require('express');
+var app      = express();
+var port     = process.env.PORT || 8000;
+var mongoose = require('mongoose');
+var passport = require('passport');
+var flash    = require('connect-flash');
 
-  var express = require('express');
-  var http = require('http');
-  var stylus = require('stylus');
-  var app = express();
- /* MGD: Enabling Automatic Deployment */
-	app.post('/deploy/', function (req, res) {  
-	     var spawn = require('child_process').spawn,
-	        deploy = spawn('sh', ['./deploy.sh' ]);
+var configDB = require('./config/database.js');
 
-	    deploy.stdout.on('data', function (data) {
-	        console.log(''+data);
-	    });
+// configuration ===============================================================
+mongoose.connect(configDB.url); // connect to our database
 
-	    deploy.on('close', function (code) {
-	        console.log('Child process exited with code ' + code);
-	    });
-	    res.json(200, {message: 'Github Hook received!'})
-	});
+require('./config/passport')(passport); // pass passport for configuration
 
-	app.configure(function(){
-		app.set('port', 80);
-		app.set('views', __dirname + '/app/server/views');
-		app.set('view engine', 'jade');
-		app.locals.pretty = true;
-                //app.use(express.favicon());
-		app.use(express.bodyParser());
-		app.use(express.methodOverride());
-		app.use(express.static(__dirname + '/app/public'));
-		});	
-	
-require('./app/server/router')(app);
+app.configure(function() {
+	app.set('views', __dirname + '/app/server/views');
+	app.set('view engine', 'jade');
+	// set up our express application
+	app.use(express.logger('dev')); // log every request to the console
+	app.use(express.cookieParser()); // read cookies (needed for auth)
+	app.use(express.bodyParser()); // get information from html forms
+	app.use(express.static(__dirname + '/app/public'));
+	app.set('view engine', 'ejs'); // set up ejs for templating
 
-/**
- * We create a web server that contains the application
- */
+	// required for passport
+	app.use(express.session({ secret: 'ilovescotchscotchyscotchscotch' })); // session secret
+	app.use(passport.initialize());
+	app.use(passport.session()); // persistent login sessions
+	app.use(flash()); // use connect-flash for flash messages stored in session
 
-//var server = http.createServer(app);
+});
 
-http.createServer(app).listen(app.get('port'), function(){
-	console.log("Compart.io Express Server is now listening on port " + app.get('port'));
-	})
+// routes ======================================================================
+require('./app/server/router')(app, passport); // load our routes and pass in our app and fully configured passport
 
-
-/**
- *  Lo ponemos a escuchar en el puerto que queramos.
- */
-
-//server.listen(3000);
+// launch ======================================================================
+app.listen(port);
+console.log('The magic happens on port ' + port);

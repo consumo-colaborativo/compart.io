@@ -1,1 +1,32 @@
-// show our signup form 
+!!! 5
+html
+  head
+    title Node Authentication
+    link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css')
+    link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css')
+    style
+      body    { padding-top:80px; }
+  body
+    .container
+      .col-sm-6.col-sm-offset-3
+        h1
+          span.fa.fa-sign-in
+          | Signup
+        //
+           LOGIN FORM 
+        form(action='/signup', method='post')
+          .form-group
+            label Email
+            input.form-control(type='text', name='email')
+          .form-group
+            label Password
+            input.form-control(type='password', name='password')
+          button.btn.btn-warning.btn-lg(type='submit') Signup
+        hr
+        p
+          | Already have an account?
+          a(href='/login') Login
+        p
+          | Or go
+          a(href='/') home
+          | .
