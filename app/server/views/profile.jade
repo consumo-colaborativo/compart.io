@@ -37,21 +37,22 @@ html
               strong Nombre Público
               | : #{user.local.screen_name}
               br
+              strong Dirección de recogida
+              | : #{user.local.addresses[0]}
+              br
+              strong Dirección de residencia
+              | : #{user.local.addresses[1]}
+              br
               strong Karma
               | : #{user.local.karma}
               br
-              strong Dirección
-              | : #{user.local.addresses[0]}
-              br
-              strong Fecha de Alta
+              strong Fecha de alta
               | : #{user.local.sign_up_stamp}
               br
               strong Fecha último login
               | : #{user.local.last_sign_in_stamp}
-              br
-              strong Dirección
-              | : #{user.local.addresses[0]}
-            a.btn.btn-default(href='/unlink/local') Unlink
+
+            a.btn.btn-default(href='/unlink/local') Update
         //
         //   FACEBOOK INFORMATION 
         //.col-sm-6
