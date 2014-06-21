@@ -95,7 +95,7 @@ module.exports = function(app, passport) {
 	// CITIES PAGE ========
 	// =====================================
 	app.get('/cities', function (req, res) {
-        res.render('cities.jade');
+        res.render('cities.jade', {title: 'compart.io | Ciudades', description: 'Ciudades compartio'});
   	});
 
 
