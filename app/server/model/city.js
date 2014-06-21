@@ -4,10 +4,10 @@
 //
 var mongoose = require('mongoose');
 
-// define the schema for our city model
+// define the schema for our user model
 var citySchema = mongoose.Schema({
-
-    info                : {
+    
+    city            : {
         name            : String,
         calling_code    : String,
         country         : String

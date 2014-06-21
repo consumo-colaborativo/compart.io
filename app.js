@@ -18,9 +18,6 @@ require('./config/passport')(passport); // pass passport for configuration
 app.configure(function() {
 	app.set('views', __dirname + '/app/server/views');
 	app.set('view engine', 'jade');
-
-	app.set('title', 'compart.io');
-
 	// set up our express application
 	app.use(express.logger('dev')); // log every request to the console
 	app.use(express.cookieParser()); // read cookies (needed for auth)

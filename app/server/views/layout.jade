@@ -1,14 +1,12 @@
 !!! 5
-
 html(lang="es")
-
   head
 
+    - var title = title || "compart.io &middot Consumo Colaborativo"
     title #{title}
 
-    meta(name='description', content='#{description}')      
-   
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='Compart.io A place to Get & Share ')
     meta(name='author', content='Compart.io Developer Team')
 
     link(href='vendor/foundation.min.js', rel='stylesheet')
@@ -16,15 +14,12 @@ html(lang="es")
     link(href='img/favicon.png', rel='shortcut icon')
 
     link(href='vendor/modernizr.js')
-            
-    block styles    
 
   body
 
       // container
 
     block content
-
     block scripts
 
       // Included JS Files
