@@ -20,41 +20,62 @@ html
           .well
             h3
               span.fa.fa-user
-              | Local
+              | Perfil de Usuario/a
             p
               strong id
               | : #{user._id}
               br
-              strong email
-              | : #{user.local.email}
+              strong Email
+              | : #{user.local.emails[0].email}
               br
-              strong password
-              | : #{user.local.password}
+              strong Password Encriptada
+              | : #{user.local.password_hash}
+              br
+              strong Nombre de Usuario
+              | : #{user.local.username}
+              br
+              strong Nombre Público
+              | : #{user.local.screen_name}
+              br
+              strong Karma
+              | : #{user.local.karma}
+              br
+              strong Dirección
+              | : #{user.local.addresses[0]}
+              br
+              strong Fecha de Alta
+              | : #{user.local.sign_up_stamp}
+              br
+              strong Fecha último login
+              | : #{user.local.last_sign_in_stamp}
+              br
+              strong Dirección
+              | : #{user.local.addresses[0]}
             a.btn.btn-default(href='/unlink/local') Unlink
         //
-           FACEBOOK INFORMATION 
-        .col-sm-6
-          .well
-            h3.text-primary
-              span.fa.fa-facebook
-              | Facebook
-            //
-               check if the user has this token (is the user authenticated with this social account) 
-            a.btn.btn-primary(href='/connect/facebook') Connect Facebook
-      .row
+        //   FACEBOOK INFORMATION 
+        //.col-sm-6
+        //  .well
+        //    h3.text-primary
+        //      span.fa.fa-facebook
+        //      | Facebook
         //
-           TWITTER INFORMATION 
-        .col-sm-6
-          .well
-            h3.text-info
-              span.fa.fa-twitter
-              | Twitter
-            a.btn.btn-info(href='/connect/twitter') Connect Twitter
+        //       check if the user has this token (is the user authenticated with this social account) 
+        //    a.btn.btn-primary(href='/connect/facebook') Connect Facebook
+      //.row
         //
-           GOOGLE INFORMATION 
-        .col-sm-6
-          .well
-            h3.text-danger
-              span.fa.fa-google-plus
-              | Google+
-            a.btn.btn-danger(href='/connect/google') Connect Google
+        //   TWITTER INFORMATION 
+        //.col-sm-6
+        //  .well
+        //    h3.text-info
+        //      span.fa.fa-twitter
+        //      | Twitter
+        //    a.btn.btn-info(href='/connect/twitter') Connect Twitter
+        //
+        //   GOOGLE INFORMATION 
+        //.col-sm-6
+        //  .well
+        //    h3.text-danger
+        //      span.fa.fa-google-plus
+        //      | Google+
+        //    a.btn.btn-danger(href='/connect/google') Connect Google

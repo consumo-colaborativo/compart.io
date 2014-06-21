@@ -59,10 +59,10 @@ module.exports = function(app, passport) {
 		res.render('signup.jade', { message: req.flash('signupMessage') });
 	});
 
-	// process the signup form
+	// process the signup form ++ PENDING ++
 	app.post('/signup', passport.authenticate('local-signup', {
 		successRedirect : '/profile', // redirect to the secure profile section
-		failureRedirect : '/signup', // redirect back to the signup page if there is an error
+		failureRedirect : '/login', // redirect back to the signup page if there is an error
 		failureFlash : true // allow flash messages
 	}));
 
@@ -76,6 +76,13 @@ module.exports = function(app, passport) {
 			user : req.user // get the user out of session and pass to template
 		});
 	});
+	// process the profile form ++ PENDING ++
+	app.post('/profile', isLoggedIn, function(req, res) {
+		res.render('profile.jade', {
+			user : req.user // get the user out of session and pass to template
+		});
+	});
+
 
 	// =====================================
 	// LOGOUT ==============================
