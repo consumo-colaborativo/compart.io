@@ -24,6 +24,7 @@ module.exports = function(app, passport) {
 	- Handle the POST for both signup
 	- Profile Page (after logged in)
 */
+
 // =====================================
 	// HOME PAGE (with login links) ========
 	// =====================================
@@ -86,6 +87,18 @@ module.exports = function(app, passport) {
 		res.redirect('/');
 	});
 /* MGD: end */
+
+	/* ASF:
+	- Cities Page (/cities)
+	*/
+
+	// CITIES PAGE ========
+	// =====================================
+	app.get('/cities', function (req, res) {
+        res.render('cities.jade');
+  	});
+
+
 }
 
 // Route Middleware to make sure a user is logged in. 
