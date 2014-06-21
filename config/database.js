@@ -1,6 +1,5 @@
 // will hold our database connection settings
 module.exports = {
-	'url' : 'mongodb://compartio@compartio.grayhats.es:27017/test' 
-	// mongodb://compartio@compartio.grayhats.es:27017/test
-	// looks like mongodb://<user>:<pass>@mongo.onmodulus.net:27017/Mikha4ot
+	'url' : 'mongodb://app:LdcnjlSplmaedl930yysApp@compartio.grayhats.es:27017/compartio' 
+	//'url' : 'mongodb://magda:LdcnjlSplmaedl9:30yysM@compartio.grayhats.es:27017/compartio' 
 };
