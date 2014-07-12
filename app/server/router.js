@@ -1,7 +1,7 @@
 // all the routes for our application
+//var User            = require('../server/model/user');
 module.exports = function(app, passport) {
-
-  
+ 
  /* MGD: Enabling Automatic Deployment */
 	app.post('/deploy/', function (req, res) {  
 	     var spawn = require('child_process').spawn,
@@ -59,7 +59,7 @@ module.exports = function(app, passport) {
 		res.render('signup.jade', { message: req.flash('signupMessage') });
 	});
 
-	// process the signup form ++ PENDING ++
+	// process the signup form 
 	app.post('/signup', passport.authenticate('local-signup', {
 		successRedirect : '/profile', // redirect to the secure profile section
 		failureRedirect : '/login', // redirect back to the signup page if there is an error
@@ -76,25 +76,19 @@ module.exports = function(app, passport) {
 			user : req.user // get the user out of session and pass to template
 		});
 	});
-	// process the profile form ++ PENDING ++
-	app.post('/profile', isLoggedIn, function(req, res) {
-		res.render('profile.jade', {
-			user : req.user // get the user out of session and pass to template
-		});
-	});
-
-
+	// process the profile form 
+	app.post('/profile', saveProfile);
 	// =====================================
 	// LOGOUT ==============================
 	// =====================================
-	app.get('/logout', function(req, res) {
-		req.logout();
-		// We will handle logout by using req.logout() provided by passport.
-		res.redirect('/');
-	});
+	// process the login form
+	app.get('/logout', passport.authenticate('local-logout', {
+		successRedirect : '/login', 
+		failureRedirect : '/', 
+		failureFlash : true // allow flash messages
+	}));
 /* MGD: end */
 }
-
 // Route Middleware to make sure a user is logged in. 
 // Protect the profile section route.
 function isLoggedIn(req, res, next) {
