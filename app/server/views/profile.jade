@@ -1,7 +1,6 @@
-!!! 5
-html
-  head
-    title Node Authentication
+doctype html
+head
+    title Mi perfil compart.io
     link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css')
     link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css')
     style
@@ -11,8 +10,8 @@ html
       .page-header.text-center
         h1
           span.fa.fa-anchor
-          | Profile Page
-        a.btn.btn-default.btn-sm(href='/logout') Logout
+          | Mi perfil compart.io
+        a.btn.btn-default.btn-sm(href='/logout') Salir
       .row
         //
            LOCAL INFORMATION 
@@ -20,9 +19,9 @@ html
           .well
             h3
               span.fa.fa-user
-              | Perfil de Usuario/a
+              | Usuario/a compart.io
             p
-              strong id
+              strong Identificador
               | : #{user._id}
               br
               strong Email
@@ -52,7 +51,7 @@ html
               strong Fecha último login
               | : #{user.local.last_sign_in_stamp}
 
-            a.btn.btn-default(href='/unlink/local') Update
+            a.btn.btn-default(href='/unlink/local') Actualizar
         //
         //   FACEBOOK INFORMATION 
         //.col-sm-6
