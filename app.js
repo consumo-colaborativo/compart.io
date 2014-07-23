@@ -16,6 +16,7 @@ mongoose.connect(configDB.url, function(err) {
     if (err) throw err;
 }); // connect to our database
 
+require('./config/passport')(passport); // pass passport for configuration
 
 app.configure(function() {
 	app.set('views', __dirname + '/app/server/views');
@@ -35,11 +36,8 @@ app.configure(function() {
 
 });
 
-require('./config/passport')(passport); // pass passport for configuration
-
 // routes ======================================================================
-require('./app/server/router')(app, passport); 		// load our routes and pass in our app and fully configured passport
-require('./app/server/router-user')(app, passport); // load our routes and pass in our app and fully configured passport
+require('./app/server/router')(app, passport); // load our routes and pass in our app and fully configured passport
 
 // launch ======================================================================
 app.listen(port);
