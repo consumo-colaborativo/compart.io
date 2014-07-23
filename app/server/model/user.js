@@ -73,5 +73,33 @@ userSchema.methods.validPassword = function(password) {
     return bcrypt.compareSync(password, this.local.password_hash);
 };
 
+/*
+    Search for email address and update Profile's user information.
+    */
+saveProfile = function saveProfile(cb){ //req, res, callback) {
+        /*this.findOne({ "local.emails.email" :  req.body.email }, function(err, user) {
+                // if there are any errors, return the error before anything else
+                if (err)
+                    return done(err);
+                // if no user is found, return the message
+                if (!user)
+                    return done(null, false, req.flash('loginMessage', 'No user found.')); 
+                    // req.flash is the way to set flashdata using connect-flash
+
+                // all is well, return successful user      
+                user.local.username = req.body.username;
+                user.local.screen_name = req.body.screen_name;
+                user.local.addresses = [{is_pickup: 1, street:req.body.address_collect,zip_code:0,
+                                city:null,country:null},
+                                {is_pickup: 0, street:req.body.address_live,zip_code:0,
+                                city:null,country:null}];     
+                user.save(function(err) {
+                    if (err)
+                        throw err;
+                    });
+                // res.redirect('/');
+            }) // end function*/
+}
+
 // create the model for users and expose it to our app
-module.exports = mongoose.model('User', userSchema);
+module.exports =   mongoose.model('User', userSchema);
