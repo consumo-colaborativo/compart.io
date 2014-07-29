@@ -1,9 +1,10 @@
 !!! 5
 html(lang="es")
   head
-    title Compart.io &middot Consumo Colaborativo
+    title #{title}
+
+    meta(name='description', content='#{description}')      
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    meta(name='description', content='Compart.io A place to Get & Share ')
     meta(name='author', content='Compart.io Developer Team')
 
     link(href='vendor/foundation.min.js', rel='stylesheet')
@@ -13,15 +14,3 @@ html(lang="es")
     link(href='vendor/modernizr.js')
 
   body
-
-      // container
-
-    block content
-    block scripts
-
-      // Included JS Files
-      script(src='javascripts/jquery.min.js')
-      script(src='javascripts/modernizr.foundation.js')
-      script(src='javascripts/foundation.js')
-      script(src='javascripts/app.js')
-
