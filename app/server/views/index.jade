@@ -1,0 +1,43 @@
+!!! 5
+html(lang="es")
+	head
+		title Compart.io &middot Consumo Colaborativo
+
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		meta(name='description', content='Compart.io A place to Get & Share ')
+		meta(name='author', content='Compart.io Developer Team')
+
+		link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css')
+		link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css')   
+
+		style
+			body    { padding-top:80px; }
+  
+	body		
+		.container
+			div(class="row")
+				.col-md-6
+					h2 Ciudades					
+					br										
+					- if (cities)
+						div(class="list-group")
+						- each city in cities
+							a(class="list-group-item", href="/cities/#{city.slug}") #{city.name}
+				
+				br
+
+			div.row
+				h3 Añadir una nueva ciudad
+				div(class="row")
+					.col-md-6
+						form(method='post', role="form", action="cities/new")
+							div(class="form-group")
+								div(class="small-4 columns")
+									label Nombre
+									input(id="right-label", class="form-control", placeholder="Escribe aquí el nombre de una nueva ciudad", value='', name = 'city')
+									br
+									input(type='submit', class="btn btn-primary", value='Añadir') 				
+		
+
+
+	// include includes/footer
