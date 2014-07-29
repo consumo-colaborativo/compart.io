@@ -122,6 +122,13 @@ module.exports = function(app, passport) {
 	app.get('/api', function (req, res) {
   		res.send('API is running');
 	});
+
+
+// route for choosing cities
+//
+	app.get('/ciudad/:city', function(req, res) {
+		res.send("Hola compartio estas en " + req.param('city'));
+	});
   	
 	/* ASF: end */
 
@@ -136,4 +143,8 @@ function isLoggedIn(req, res, next) {
 
 	// if they aren't redirect them to the home page
 	res.redirect('/');
-}	
+}
+
+
+
+
