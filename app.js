@@ -8,14 +8,16 @@ var port     = process.env.PORT || 80;
 var mongoose = require('mongoose');
 var passport = require('passport');
 var flash    = require('connect-flash');
+var jade    = require('jade');
 
 //var routes 	 = require('./app/server/routes');
 
 // Database
 var configDB = require('./config/database.js');
-// configuration ===============================================================
-var db = mongoose.connect(configDB.url); // connect to our database
-
+// configuration 
+var db = mongoose.connect(configDB.url, function(err) {
+    if (err) throw err;
+});
 
 require('./config/passport')(passport); // pass passport for configuration
 

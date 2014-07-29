@@ -1,7 +1,6 @@
-!!! 5
-html
-  head
-    title Node Authentication
+doctype html
+head
+    title Mi perfil compart.io
     link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css')
     link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css')
     style
@@ -11,50 +10,72 @@ html
       .page-header.text-center
         h1
           span.fa.fa-anchor
-          | Profile Page
-        a.btn.btn-default.btn-sm(href='/logout') Logout
+          | Mi perfil compart.io
+        a.btn.btn-default.btn-sm(href='/logout') Salir
       .row
         //
-           LOCAL INFORMATION 
+           READ ONLY LOCAL INFORMATION 
         .col-sm-6
           .well
             h3
               span.fa.fa-user
-              | Local
+              | Usuario/a compart.io: 
             p
-              strong id
+              strong Identificador
               | : #{user._id}
               br
-              strong email
-              | : #{user.local.email}
+              strong Karma
+              | : #{user.local.karma}
               br
-              strong password
-              | : #{user.local.password}
-            a.btn.btn-default(href='/unlink/local') Unlink
-        //
-           FACEBOOK INFORMATION 
-        .col-sm-6
+              strong Fecha de alta
+              | : #{user.local.sign_up_stamp}
+              br
+              strong Fecha último login
+              | : #{user.local.last_sign_in_stamp}
           .well
-            h3.text-primary
-              span.fa.fa-facebook
-              | Facebook
-            //
-               check if the user has this token (is the user authenticated with this social account) 
-            a.btn.btn-primary(href='/connect/facebook') Connect Facebook
-      .row
+            h3
+              span.fa.fa-user
+              |  Actualiza tu perfil: 
+            form(action='/profile',method='post')
+              .form-group
+                label Email
+                input.form-control(name='email',type='text',value=user.local.emails[0].email)
+              .form-group  
+                label Nombre de Usuario 
+                input.form-control(name='username',type='text',value=user.local.username)
+              .form-group
+                label Nombre Público 
+                input.form-control(name='screen_name',type='text',value=user.local.screen_name)
+              .form-group
+                label Dirección de recogida 
+                input.form-control(name='address_collect',type='text',value=user.local.addresses[0].street)
+              .form-group
+                label Dirección de residencia 
+                input.form-control(name='address_live',type='text',value=user.local.addresses[1].street)
+              button.btn.btn-warning.btn-lg(type='submit') Actualizar
+        //   FACEBOOK INFORMATION 
+        //.col-sm-6
+        //  .well
+        //    h3.text-primary
+        //      span.fa.fa-facebook
+        //      | Facebook
         //
-           TWITTER INFORMATION 
-        .col-sm-6
-          .well
-            h3.text-info
-              span.fa.fa-twitter
-              | Twitter
-            a.btn.btn-info(href='/connect/twitter') Connect Twitter
+        //       check if the user has this token (is the user authenticated with this social account) 
+        //    a.btn.btn-primary(href='/connect/facebook') Connect Facebook
+      //.row
         //
-           GOOGLE INFORMATION 
-        .col-sm-6
-          .well
-            h3.text-danger
-              span.fa.fa-google-plus
-              | Google+
-            a.btn.btn-danger(href='/connect/google') Connect Google
+        //   TWITTER INFORMATION 
+        //.col-sm-6
+        //  .well
+        //    h3.text-info
+        //      span.fa.fa-twitter
+        //      | Twitter
+        //    a.btn.btn-info(href='/connect/twitter') Connect Twitter
+        //
+        //   GOOGLE INFORMATION 
+        //.col-sm-6
+        //  .well
+        //    h3.text-danger
+        //      span.fa.fa-google-plus
+        //      | Google+
+        //    a.btn.btn-danger(href='/connect/google') Connect Google
