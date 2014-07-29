@@ -1,7 +1,6 @@
-!!! 5
-html
-  head
-    title Node Authentication
+doctype html
+head
+    title Dar de alta
     link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css')
     link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css')
     style
@@ -11,22 +10,22 @@ html
       .col-sm-6.col-sm-offset-3
         h1
           span.fa.fa-sign-in
-          | Signup
+          |  Dar de alta
         //
            LOGIN FORM 
         form(action='/signup', method='post')
           .form-group
-            label Email
+            label Dirección de email
             input.form-control(type='text', name='email')
           .form-group
-            label Password
+            label Contraseña
             input.form-control(type='password', name='password')
-          button.btn.btn-warning.btn-lg(type='submit') Signup
+          button.btn.btn-warning.btn-lg(type='submit') Dar de alta
         hr
         p
-          | Already have an account?
-          a(href='/login') Login
+          | ¿Tienes cuenta? 
+          a(href='/login') Entrar
         p
-          | Or go
-          a(href='/') home
-          | .
+          | Ir a  
+          a(href='/') compart.io
+          | 
