@@ -50,6 +50,11 @@ head
                 label Dirección de recogida 
                 input.form-control(name='address_collect',type='text',value=user.local.addresses[0].street)
               .form-group
+                label Ciudad
+                select.form-control
+                  for city in cities
+                    option(value="#{city.postal_code}") #{city.name}
+              .form-group
                 label Dirección de residencia 
                 input.form-control(name='address_live',type='text',value=user.local.addresses[1].street)
               button.btn.btn-warning.btn-lg(type='submit') Actualizar
