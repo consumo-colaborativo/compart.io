@@ -1,6 +1,5 @@
 // all the routes for our application
 module.exports = function(app, passport) {
-
   
  /* MGD: Enabling Automatic Deployment */
 	app.post('/deploy/', function (req, res) {  
@@ -16,6 +15,7 @@ module.exports = function(app, passport) {
 	    });
 	    res.json(200, {message: 'Github Hook received!'})
 	});
+
 /* MGD start: We will keep our routes simple for now. We will have the following routes:
 	- Home Page (/)
 	- Login Page (/login)
@@ -88,18 +88,28 @@ module.exports = function(app, passport) {
 	});
 /* MGD: end */
 
-	/* ASF:
-	- Cities Page (/cities)
-	*/
+	
+	
+	// - Home
+	app.get('/home', function(req, res) {
+		// render the page and pass in any flash data if it exists
+		res.render('home.jade'); 
+	});
 
 	// CITIES PAGE ========
 	// =====================================
-	app.get('/cities', function (req, res) {
-        res.render('cities.jade', {title: 'compart.io | Ciudades', description: 'Ciudades compartio'});
-  	});
 
+	
+	// API ===============
+	app.get('/api', function (req, res) {
+  		res.send('API is running');
+	});
+  	
+	/* ASF: end */
 
 }
+
+
 
 // Route Middleware to make sure a user is logged in. 
 // Protect the profile section route.
