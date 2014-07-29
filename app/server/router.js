@@ -1,5 +1,9 @@
 // all the routes for our application
 //var User            = require('../server/model/user');
+
+// load up the city model
+var City = require('../server/model/city');
+
 module.exports = function(app, passport) {
 
  /* MGD: Enabling Automatic Deployment */
@@ -74,10 +78,21 @@ module.exports = function(app, passport) {
 	// we will want this protected so you have to be logged in to visit
 	// we will use route middleware to verify this (the isLoggedIn function)
 	app.get('/profile', isLoggedIn, function(req, res) {
-		res.render('profile.jade', {
-			user : req.user // get the user out of session and pass to template
+		City.find(function(err, cities, count) {
+        if(!err) {
+            //console.log(cities);
+            res.render('profile.jade', {
+            	user : req.user, // get the user out of session and pass to template    
+                cities : cities
+            });
+            // return res.send(cities);
+        } else {
+            //console.log('Error(%d): %s',res.statusCode,err.message);        
+            console.log('Error' + err);        
+        }
 		});
 	});
+
 	// process the profile form 
 	app.post('/profile', saveProfile);
 	// =====================================

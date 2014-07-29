@@ -21,8 +21,7 @@ html(lang="es")
 						a(href="#") Home
 					li(class="active")  Ciudades
 
-			div(class="row")
-
+			div(class="row")  					
 				.col-md-6					
 						h2 Ciudades					
 						br										
@@ -49,18 +48,23 @@ html(lang="es")
 				
 					br
 
-				div.row
-					h3 Añadir una nueva ciudad
-					div(class="row")
-						.col-md-6
-							form(method='post', role="form", action="/cities/new")
-								div(class="form-group")
-									div(class="small-4 columns")
-										label Nombre
-										input(id="right-label", class="form-control", placeholder="Escribe aquí el nombre de una nueva ciudad", value='', name = 'city')
-										br
-										input(type='submit', class="btn btn-primary", value='Añadir') 				
-		
+			.row
+				select(class="form-control")					
+					for city in cities
+						option(value="#{city.postal_code}") #{city.name}
+
+
+			div.row
+				h3 Añadir una nueva ciudad
+				div(class="row")
+					.col-md-6
+						form(method='post', role="form", action="/cities/new")
+							div(class="form-group")
+								div(class="small-4 columns")
+									label Nombre
+									input(id="right-label", class="form-control", placeholder="Escribe aquí el nombre de una nueva ciudad", value='', name = 'city')
+									br
+									input(type='submit', class="btn btn-primary", value='Añadir') 					
 
 
 	// include includes/footer
