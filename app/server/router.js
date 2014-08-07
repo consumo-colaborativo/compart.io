@@ -94,7 +94,9 @@ module.exports = function(app, passport) {
 	});
 
 	// process the profile form 
-	app.post('/profile', saveProfile);
+	app.post('/profile', saveProfile, function(req, res) {
+		
+	});
 	// =====================================
 	// LOGOUT ==============================
 	// =====================================
