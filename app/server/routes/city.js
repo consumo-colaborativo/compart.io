@@ -5,7 +5,7 @@ module.exports = function(app) {
 
   //GET - Return all cities in the DB
   findAllCities = function(req, res) {
-    console.log("GET - /cities finding all");
+    //console.log("GET - /cities finding all");
     City.find(function(err, cities, count) {
         if(!err) {
             //console.log(cities);
@@ -18,7 +18,8 @@ module.exports = function(app) {
             //console.log('Error(%d): %s',res.statusCode,err.message);        
             console.log('Error' + err);        
         }
-    });
+    }).sort({'postal_code': 1});
+
   };
 
   //GET - Return a city with specified ID
@@ -56,23 +57,28 @@ module.exports = function(app) {
         console.log('POST');
         console.log(req.body);        
 
+        /*
         var city = new City({
             name:       req.body.name,
             postal_code: req.body.postal_code,
             country:   req.body.country            
         });
+        */
 
-        city.save(function(err) {
-        if(!err) {
-            console.log('Created');
-        } else {
-        console.log('ERROR: ' + err);
-        }
-    });
+        var city = req.body;
+        console.log('Adding city: ' + JSON.stringify(city));
+        db.collection('cities', function(err, collection) {
+            collection.insert(city, {safe:true}, function(err, result) {
+                if (err) {
+                    res.send({'error':'An error has occurred'});
+                } else {
+                    console.log('Success: ' + JSON.stringify(result[0]));
+                    res.send(result[0]);
+                }
+            });
+        });
+    }
 
-        res.send(city);
-    };
-    
   
     //PUT - Update a register already exists
     updateCity = function(req, res) {
@@ -81,15 +87,16 @@ module.exports = function(app) {
         city.postal_code    = req.body.postal_code;        
 
         city.save(function(err) {
+        
         if(!err) {
             console.log('Updated');
-        } else {
+        }
+        else {
             console.log('ERROR: ' + err);
         }
-
         res.send(city);
         });
-    });
+        });
     }
 
     //DELETE - Delete a City with specified ID
