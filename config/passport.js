@@ -5,7 +5,7 @@ var LocalStrategy   = require('passport-local').Strategy;
 
 // load up the user model
 var User            = require('../app/server/model/user');
-
+var City            = require('../app/server/model/city');
 // expose this function to our app using module.exports
 module.exports = function(passport) {
 
@@ -43,7 +43,7 @@ module.exports = function(passport) {
         // find a user whose email is the same as the forms email
         // we are checking to see if the user trying to login already exists
         //User.find({ local.emails : { email: email, is_public:true }, { email: email, is_public:false } } , function(err, user) {
-        User.findOne({ "local.emails.email" :  email }, function(err, user) {
+        User.findOne({ "local.email" :  email }, function(err, user) {
             // if there are any errors, return the error
             console.log("look for email: " + email);
             if (err)
@@ -56,23 +56,33 @@ module.exports = function(passport) {
 
                 // if there is no user with that email
                 // create the user
-                var newUser            = new User();
-
-                // set the user's local credentials
-                newUser.local.emails = {email: email, is_public: true };
-                newUser.local.addresses = [{is_pickup: 1, street:'sin definir',zip_code:'',city:null,country:null},
-                            {is_pickup: 0, street:'sin definir',zip_code:'',city:null,country:null}];    
-                newUser.local.password_hash = newUser.generateHash(password); // use the generateHash function in our user model
-                newUser.local.sign_up_stamp = new Date();
-                console.log(" nuevo usuario " + newUser.local);
-                // save the user
-                newUser.save(function(err) {
-                    if (err)
-                        throw err;
-                    return done(null, newUser);
+                var newUser     = new User();
+                var postal_code = 14;
+                City.findOne({ "postal_code":  postal_code}, function(err, city) {
+                if (err)
+                    return done(err);
+                if (!city) {
+                        return done(null, false, req.flash('signupMessage', 'That city does not exist'));
+                } else {
+                        console.log(" city" + city);
+                        // set the user's local credentials
+                        newUser.local.email = email;
+                        newUser.local.street   = 'sin definir';
+                        newUser.local.zip_code = '1400';
+                        newUser.local.city = [city];
+                        //
+                        newUser.local.password_hash = newUser.generateHash(password); // use the generateHash function in our user model
+                        //newUser.local.sign_up_stamp = Date.now;
+                        console.log(" nuevo usuario " + newUser.local);
+                        // save the user
+                        newUser.save(function(err) {
+                            if (err)
+                                throw err;
+                            return done(null, newUser);
+                        });
+                }
                 });
             }
-
         });
 
     }));
@@ -92,7 +102,7 @@ module.exports = function(passport) {
     function(req, email, password, done) { // callback with email and password from our form
         // find a user whose email is the same as the forms email
         // we are checking to see if the user trying to login already exists
-        User.findOne({ "local.emails.email" :  email }, function(err, user) {
+        User.findOne({ "local.email" :  email }, function(err, user) {
             // if there are any errors, return the error before anything else
             if (err)
                 return done(err);
@@ -123,7 +133,7 @@ module.exports = function(passport) {
     function(req, email, password, done) { // callback with email and password from our form
         // find a user whose email is the same as the forms email
         // we are checking to see if the user trying to login already exists
-        User.findOne({ "local.emails.email" :  email }, function(err, user) {
+        User.findOne({ "local.email" :  email }, function(err, user) {
             // if there are any errors, return the error before anything else
             if (err)
                 return done(err);
@@ -133,8 +143,7 @@ module.exports = function(passport) {
                 return done(null, false, req.flash('loginMessage', 'No user found.')); // req.flash is the way to set flashdata using connect-flash
 
             // all is well, return successful user      
-            user.local.last_sign_in_stamp = new Date();
-            console.log(new Date());
+            user.local.last_sign_in_stamp = Date.now;
             user.save(function(err) {
                 if (err)
                     throw err;
@@ -147,26 +156,45 @@ module.exports = function(passport) {
     Search for email address and update Profile's user information.
     */
     saveProfile = function(req, res) {
-        User.findOne({ "local.emails.email" :  req.body.email }, function(err, user) {
+        User.findOne({ "local.email" :  req.body.email }, function(err, user) {
                 // if there are any errors, return the error before anything else
                 if (err)
-                    return done(err);
+                     throw err;
                 // if no user is found, return the message
                 if (!user)
-                    return done(null, false, req.flash('loginMessage', 'No user found.')); // req.flash is the way to set flashdata using connect-flash
+                     throw err; // req.flash is the way to set flashdata using connect-flash
+                console.log(req.body.city_form);
 
-                // all is well, return successful user      
+                City.findOne({ "postal_code":  req.body.city_form }, function(err, city) {
+                // if there are any errors, return the error before anything else
+                if (err)
+                     throw err;
+                if (!city)
+                    return err; 
+
+              
                 user.local.username = req.body.username;
                 user.local.screen_name = req.body.screen_name;
-                user.local.addresses = [{is_pickup: 1, street:req.body.address_collect,zip_code:0,
-                                city:null,country:null},
-                                {is_pickup: 0, street:req.body.address_live,zip_code:0,
-                                city:null,country:null}];     
+                user.local.street   = req.body.address_collect;
+                user.local.zip_code = req.body.zip_code;
+                /*user.local.city[0].name = city.name;
+                user.local.city[0].postal_code = city.postal_code;
+                user.local.city[0].slug = city.slug;
+                user.local.city[0].country_id = city.country_id;*/
+                user.local.city = [city];
+                        
+                console.log("city CHANGED TO " + city);
                 user.save(function(err) {
                     if (err)
                         throw err;
+                    else{
+                        //var text = document.getElementById('last_update');
+                        //text.html("Última Actualización " + Date.now);
+                        console.log("successful");
+                    }
                     });
-                res.redirect('/profile');
-            }) // end function
+                }) // end find CITY
+            }) // end find USER
+            return; 
     }
 };

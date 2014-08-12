@@ -8,35 +8,28 @@
 var mongoose = require('mongoose');
 var bcrypt   = require('bcrypt-nodejs');
 var ObjectId = mongoose.Schema.Types.ObjectId;
-//
-var AddressSchema = mongoose.Schema({
-                            is_pickup: Boolean, // 1: pickup address, 0: live address,
-                            street:  { type: String, default: 'sin definir' },
-                            zip_code:  { type: Number, default: '0' },
-                            city: ObjectId,
-                            country: ObjectId
-                            });
-//
-var EmailSchema = mongoose.Schema({email:  String, is_public: Boolean }); // 1: public, 0: private, 
-                            
+var citySchema            = require('./city');
+//                            
 // define the schema for our user model
 var userSchema = mongoose.Schema({
     local      : {
         sign_up_stamp : { type: Date, default: Date.now },
         last_sign_in_stamp : { type: Date, default: Date.now }, // fecha logout
         _id          : Number,
-        emails       : [EmailSchema],
+        email        : { type: String, default: '' },
         password_hash: { type: String, default: '' },
         //
         username     : { type: String, default: 'compart.io' },
         screen_name  : { type: String, default: 'compart.io' },
         karma        : { type: Number, default: '0'},
-        addresses    : [AddressSchema],
+        //
+        street       : { type: String, default: 'sin definir' },
+        zip_code     : { type: Number, default: '14001' },
+        city         : [ObjectId],
         //
         activation_token : { type: Number, default: '0'},
         last_activation_request : { type: Number, default: '0'},
-        lost_password_request : { type: Number, default: '0'}
-       
+        lost_password_request : { type: Number, default: '0'}     
         } // end local
 }); // end userSchema
     /*, Depends on Social Connection, still not implemented

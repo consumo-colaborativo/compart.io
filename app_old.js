@@ -9,10 +9,7 @@ compart.io Express Web Server
   var stylus= require('stylus'); // Compilador de CSS
   var mongoose = require('mongoose'); // Object modeling for our MongoDB database
   var passport = require('passport'); // Authenticating with different method
-  var port     = process.env.PORT || 8000;
- 
-
-
+  var port     = process.env.PORT || 80;
 
   var configDB = require('./config/database.js');
 
