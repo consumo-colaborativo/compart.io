@@ -12,7 +12,7 @@ var citySchema = new Schema({
   slug     		    : { type: String},
   active          : { type: Boolean}, 
   creation_date	  : { type: Date, default: Date.now },
-  country_id      : { type: String}
+  country         : [ObjectId]
 });
 
 // create the model "City" for cities and expose it to our app
