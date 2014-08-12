@@ -54,7 +54,7 @@ require('./app/server/router')(app, passport); // load our routes and pass in ou
 
 require('./app/server/routes/city')(app) // load routes for cities and pass in our app
 
-//require('./app/server/routes/compartio')(app) 
+require('./app/server/routes/compartio')(app) 
 
 
 // launch ======================================================================
