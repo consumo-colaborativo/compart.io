@@ -7,33 +7,12 @@ var mongoose = require('mongoose'),
 
 // define the schema for our city model
 var citySchema = new Schema({
-<<<<<<< HEAD
-	  id 				      : { type: String},
-    name            : { type: String, required: true},	
-    postal_code     : { type: String, required: true, default:14},
-    slug     		    : { type: String},
-    creation_date	  : { type: Date, default: Date.now },
-    country_id      : { type: String}
-});
-
-/* EXAMPLE
-movieSchema.statics.findAllWithCreditCookies = function(callback) {
-  return this.find({ hasCreditCookie: true }, callback);
-};
-
-// Use the helper as a static function of the compiled Movie model.
-Movie.findAllWithCreditCookies(function(err, movies) {
-  if (err) return console.error(err);
-  console.dir(movies);
-=======
-  id 				: { type: String},
   name            : { type: String, required: true},	
   postal_code     : { type: String},
   slug     		    : { type: String},
   active          : { type: Boolean}, 
   creation_date	  : { type: Date, default: Date.now },
   country_id      : { type: String}
->>>>>>> asf-cities
 });
 
 // create the model "City" for cities and expose it to our app

@@ -56,11 +56,11 @@ head
                 label Ciudad
                 select.form-control(name='city_form')
                   for city in cities          
-                    if city == user.local.city
-                      option(value="#{city.postal_code}" selected)  #{city.postal_code}
+                    if city._id == user.local._city
+                      option(value="#{city.postal_code}", selected="selected")  #{city.name}
                     else 
-                      option(value="#{city.postal_code}") #{city.postal_code}
-              button.btn.btn-warning.btn-lg(type='submit') Actualizar
+                      option(value="#{city.postal_code}") #{city.name} #{user.local._city} == #{city._id}
+              button.btn.btn-warning.btn-lg(type='submit') Actualizar 
               p(id='last_update')   
         //   FACEBOOK INFORMATION 
         //.col-sm-6
