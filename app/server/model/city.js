@@ -7,9 +7,7 @@ var mongoose = require('mongoose'),
 
 // define the schema for our city model
 var citySchema = new Schema({
-  id 				: { type: String},
   name            : { type: String, required: true},	
-  //postal_code     : { type: String, required: true},
   postal_code     : { type: String},
   slug     		    : { type: String},
   active          : { type: Boolean}, 
