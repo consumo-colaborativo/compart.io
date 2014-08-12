@@ -69,7 +69,7 @@ module.exports = function(passport) {
                         newUser.local.email = email;
                         newUser.local.street   = 'sin definir';
                         newUser.local.zip_code = '1400';
-                        newUser.local.city = [city];
+                        newUser.local._city = city;
                         //
                         newUser.local.password_hash = newUser.generateHash(password); // use the generateHash function in our user model
                         //newUser.local.sign_up_stamp = Date.now;
@@ -171,26 +171,19 @@ module.exports = function(passport) {
                      throw err;
                 if (!city)
                     return err; 
-
               
                 user.local.username = req.body.username;
                 user.local.screen_name = req.body.screen_name;
                 user.local.street   = req.body.address_collect;
                 user.local.zip_code = req.body.zip_code;
-                /*user.local.city[0].name = city.name;
-                user.local.city[0].postal_code = city.postal_code;
-                user.local.city[0].slug = city.slug;
-                user.local.city[0].country_id = city.country_id;*/
-                user.local.city = [city];
-                        
-                console.log("city CHANGED TO " + city);
+                user.local._city = city;
                 user.save(function(err) {
                     if (err)
                         throw err;
                     else{
                         //var text = document.getElementById('last_update');
                         //text.html("Última Actualización " + Date.now);
-                        console.log("successful");
+                        res.send("successfully updated");
                     }
                     });
                 }) // end find CITY
