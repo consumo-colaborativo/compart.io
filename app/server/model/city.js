@@ -1,7 +1,7 @@
 // app/model/city.js
 // load the cities we need
 //
-//
+
 var mongoose = require('mongoose'),
     Schema = mongoose.Schema;
 
@@ -9,7 +9,7 @@ var mongoose = require('mongoose'),
 var citySchema = new Schema({
   id 				: { type: String},
   name            : { type: String, required: true},	
-  postal_code     : { type: String},
+  postal_code     : { type: String, required: true, default:14},
   slug     		    : { type: String},
   active          : { type: Boolean}, 
   creation_date	  : { type: Date, default: Date.now },

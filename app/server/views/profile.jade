@@ -39,7 +39,7 @@ head
             form(action='/profile',method='post')
               .form-group
                 label Email
-                input.form-control(name='email',type='text',value=user.local.emails[0].email)
+                input.form-control(name='email',type='text',value=user.local.email)
               .form-group  
                 label Nombre de Usuario 
                 input.form-control(name='username',type='text',value=user.local.username)
@@ -47,17 +47,21 @@ head
                 label Nombre Público 
                 input.form-control(name='screen_name',type='text',value=user.local.screen_name)
               .form-group
-                label Dirección de recogida 
-                input.form-control(name='address_collect',type='text',value=user.local.addresses[0].street)
+                label Dirección 
+                input.form-control(name='address_collect',type='text',value=user.local.street)
+              .form-group
+                label Código Postal 
+                input.form-control(name='zip_code',type='number',value=user.local.zip_code)
               .form-group
                 label Ciudad
-                select.form-control
-                  for city in cities
-                    option(value="#{city.postal_code}") #{city.name}
-              .form-group
-                label Dirección de residencia 
-                input.form-control(name='address_live',type='text',value=user.local.addresses[1].street)
+                select.form-control(name='city_form')
+                  for city in cities          
+                    if city == user.local.city
+                      option(value="#{city.postal_code}" selected)  #{city.postal_code}
+                    else 
+                      option(value="#{city.postal_code}") #{city.postal_code}
               button.btn.btn-warning.btn-lg(type='submit') Actualizar
+              p(id='last_update')   
         //   FACEBOOK INFORMATION 
         //.col-sm-6
         //  .well
