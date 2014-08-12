@@ -55,47 +55,42 @@ module.exports = function(app) {
   //POST - Insert a new City in the DB
     addCity = function(req, res) {
         console.log('POST');
-        console.log(req.body);        
+        console.log(req.body);
 
-        /*
         var city = new City({
             name:       req.body.name,
-            postal_code: req.body.postal_code,
-            country:   req.body.country            
+            postal_code: req.body.postal_code        
         });
-        */
 
-        var city = req.body;
-        console.log('Adding city: ' + JSON.stringify(city));
-        db.collection('cities', function(err, collection) {
-            collection.insert(city, {safe:true}, function(err, result) {
-                if (err) {
-                    res.send({'error':'An error has occurred'});
-                } else {
-                    console.log('Success: ' + JSON.stringify(result[0]));
-                    res.send(result[0]);
-                }
-            });
+        
+        city.save(function(err) {
+            if(!err) {
+              console.log('Created');
+            } else {
+              console.log('ERROR: ' + err);
+            }
         });
-    }
+
+        res.send(city);
+    };
 
   
     //PUT - Update a register already exists
     updateCity = function(req, res) {
         City.findById(req.params.id, function(err, city) {
-        city.name           = req.body.name;
-        city.postal_code    = req.body.postal_code;        
-
-        city.save(function(err) {
         
-        if(!err) {
-            console.log('Updated');
-        }
-        else {
-            console.log('ERROR: ' + err);
-        }
-        res.send(city);
-        });
+            city.name           = req.body.name;
+            city.postal_code    = req.body.postal_code;        
+
+            city.save(function(err) {
+                if(!err) {
+                    console.log('Updated');
+                }
+                else {
+                    console.log('ERROR: ' + err);
+                }
+                res.send(city);
+            });
         });
     }
 
@@ -136,7 +131,7 @@ module.exports = function(app) {
   app.get('/cities', findAllCities);
   //app.get('/cities/:id', findById);
 
-  app.post('/city/new', addCity);
+  app.post('/city', addCity);
   
   app.put('/city/:id', updateCity);
 
