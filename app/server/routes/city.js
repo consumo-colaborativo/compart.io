@@ -1,5 +1,5 @@
 var City = require('../model/city');
-
+var utils = require('../modules/utils');
 
 module.exports = function(app) {
 
@@ -56,22 +56,32 @@ module.exports = function(app) {
     addCity = function(req, res) {
         console.log('POST');
         console.log(req.body);
+        
+        var slug = utils.generateSlug(req.body.name);
 
         var city = new City({
-            name:       req.body.name,
-            postal_code: req.body.postal_code        
+            name:           req.body.name,
+            postal_code:    req.body.postal_code,
+            active:         false,
+            slug:           slug  
         });
 
         
         city.save(function(err) {
             if(!err) {
-              console.log('Created');
+              console.log(city.name +' created');
             } else {
               console.log('ERROR: ' + err);
             }
         });
 
-        res.send(city);
+        //res.send(city);
+        console.log(city);
+
+        res.render( 'cities/city.jade', {                
+                city : city
+            });
+
     };
 
   
