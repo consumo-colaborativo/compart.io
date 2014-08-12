@@ -33,3 +33,5 @@ var compartioSchema = mongoose.Schema({
 
 var city 	= mongoose.model('city', citySchema);
 var person	= mongoose.model('person', userSchema);
+
+module.exports = mongoose.model('compartio', compartioSchema);
