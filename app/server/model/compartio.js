@@ -10,10 +10,10 @@ var compartioSchema = mongoose.Schema({
 
 	status			: { type: String, default: '' },
 	date_publish	: { type: Date, default: Date.now },
-	giver			: { type: ObjectId, default: null, ref: 'Person' },
-	receiver		: { type: ObjectId, default: null, ref: 'Person' },
-	i_like_it		: [{ type: ObjectId, default: null, ref: 'Person' }],
-	i_want_it		: [{ type: ObjectId, default: null, ref: 'Person' }],
+	giver			: { type: ObjectId, default: null, ref: 'User' },
+	receiver		: { type: ObjectId, default: null, ref: 'User' },
+	i_like_it		: [{ type: ObjectId, default: null, ref: 'User' }],
+	i_want_it		: [{ type: ObjectId, default: null, ref: 'User' }],
 	name_of_item	: { type: String, default: ''},
 	desc_of_item	: { type: String, default: ''},
 	why_i_share_it	: { type: String, default: ''},
@@ -25,8 +25,8 @@ var compartioSchema = mongoose.Schema({
 		country			: { type: String, default: ''}
 	},
 	comments		: [{
-		user_that_comments	: { type: ObjectId, default: null, ref: 'Person' },
-		i_like_it_comment	: [{ type: ObjectId, default: null, ref: 'Person' }],
+		user_that_comments	: { type: ObjectId, default: null, ref: 'User' },
+		i_like_it_comment	: [{ type: ObjectId, default: null, ref: 'User' }],
 		comment_text		: { type: String, default: ''}
 	}] 
 });
