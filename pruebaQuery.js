@@ -5,9 +5,7 @@ mongoose.connect('mongodb://app:LdcnjlSplmaedl930yysApp@compartio.grayhats.es:27
 
 var Compartio = mongoose.model('compartio', compartioSchema);
 
-var compartio = new Compartio({ giver: '53ea6025615a5ce1300dd593', status: 'ofrecido', location:{city: '53c1233a6f3dc51c19b15f4f'} });
-
-compartio.save(function (err) {
+Compartio.findOne({ 'status': 'ofrecido' }, 'date_publish status',function (err, compartio) {
   if (err) console.log('caca');
-  console.log('insertado');
-});
+  console.log('Artículo publicado: %s, con status: %s. \n', compartio.date_publish, compartio.status) // Space Ghost is a talk show host.
+})
