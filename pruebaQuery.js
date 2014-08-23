@@ -1,11 +1,9 @@
 var mongoose = require('mongoose');
 var compartioSchema = require('./app/server/model/compartio.js');
-//var userSchema	= require('./app/server/model/user.js');
 
 mongoose.connect('mongodb://app:LdcnjlSplmaedl930yysApp@compartio.grayhats.es:27017/compartio');
 
 var Compartio = mongoose.model('compartio', compartioSchema);
-//var Person		= mongoose.model('User', userSchema);
 
 Compartio.findOne({ 'status': 'ofrecido' }, 'date_publish status',function (err, compartio) {
   if (err) console.log('caca');

@@ -1,7 +1,8 @@
 var mongoose = require('mongoose');
+var dbSettings = require('./app/server/modules/db-settings.js');
 var compartioSchema = require('./app/server/model/compartio.js');
 
-mongoose.connect('mongodb://app:LdcnjlSplmaedl930yysApp@compartio.grayhats.es:27017/compartio');
+mongoose.connect(dbSettings.uri);
 
 var Compartio = mongoose.model('compartio', compartioSchema);
 
