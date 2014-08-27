@@ -1,30 +1,32 @@
+var mongoose = require('mongoose');
 
-//var city = new City({ location:{city: '53c1233a6f3dc51c19b15f4f'} });
+// Database
+var configDB = require('./config/database.js');
+// configuration 
+var db = mongoose.connect(configDB.url, function(err) {
+    if (err) throw err;
+});
 
-var json = '{"result":true,"count":1}',
-    obj = JSON.parse(json);
+var utils = require('./app/server/modules/utils');
 
-console.log(obj.count + 1);
-console.log(obj.result);
-
+var City = require('./app/server/model/city');
 
 var cities_es = require('./app/server/modules/cities_es.js');
 
 for(i = 0; i < cities_es.length; i++){
 		console.log(cities_es[i].name);
-		if (!cities_es[i].active)
-			console.log(Boolean(0));
-		
-    // data is a JavaScript object now. Handle it as such
+
+		var isActive = (cities_es[i].active)?Boolean(1):Boolean(0);
+
+		var city = new City({ 
+				name: cities_es[i].name,
+				slug: utils.generateSlug(cities_es[i].name),
+				active: isActive,
+				postal_code: cities_es[i].postal_code
+			});
+
+		city.save(function (err) {
+			if (err) console.log('error city not saved');
+			console.log(cities_es[i].name + ' inserted');
+		});
 	}
-
-
-
-
-/*
-compartio.save(function (err) {
-	if (err) console.log('caca');
-		//console.log('insertado');
-		console.log();
-});
-*/
