@@ -12,6 +12,7 @@ var countrySchema = new Schema({
 	country_numcode			: { type: Number},
 	country_spanish_name	: { type: String, required: true},
 	active         			: { type: Boolean}, 
+	activation_date	  		: { type: Date },
 	creation_date	  		: { type: Date, default: Date.now }
 });
 
