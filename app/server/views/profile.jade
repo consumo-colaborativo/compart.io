@@ -13,9 +13,18 @@ head
           | Mi perfil compart.io
         a.btn.btn-default.btn-sm(href='/logout') Salir
       .row
-        //
-           READ ONLY LOCAL INFORMATION 
-        .col-sm-6
+        .col-md-8
+        if (message && !errors)
+          .alert.alert-success
+            p= message
+        if (errors)
+          .alert.alert-danger
+            p= message
+            ul
+              each error in errors
+                li= error.msg
+      .row
+        .col-md-8
           .well
             h3
               span.fa.fa-user
@@ -39,7 +48,7 @@ head
             form(action='/profile',method='post')
               .form-group
                 label Email
-                input.form-control(name='email',type='text',value=user.local.email)
+                input.form-control(name='email',type='text',value=user.local.email,readonly)
               .form-group  
                 label Nombre de Usuario 
                 input.form-control(name='username',type='text',value=user.local.username)
