@@ -7,10 +7,12 @@ mongoose.connect(dbSettings.uri);
 var compartios = mongoose.model('compartio', compartioSchema);
 
 /*
-	@Descripción: Esta función nos da los compartios que hay con status ofrecido en una ciudad dada
+	@Descripción: Esta función nos da los compartios que hay con status ofrecido en una ciudad dada.
+	Le pasamos un callback al que después podremos llamar desde ul controlador o el router y manipular el objeto (o) que le pasamos.
+	@parametros: la ciudad en la buscamos y el callback para pasarle el objeto
 	@Devuelve: un objeto con los compartios si hay compartios en la ciudad y un null si no los hay
 
-	Le pasamos un callback al que después podremos llamar desde ul controlador o el router
+
 
 	NO ESTA PROBADA
 
