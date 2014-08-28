@@ -11,14 +11,14 @@ module.exports = function(app) {
             //console.log(cities);
             res.render('cities/index.jade', {
                 title :'Compartio Cities',
-                cities : cities.sort({'name': 1})
+                cities : cities.sort({"name": 1, "slug": 1 })
             });
             // return res.send(cities);
         } else {
             //console.log('Error(%d): %s',res.statusCode,err.message);        
             console.log('Error' + err);        
         }
-    }).sort({'name': 1});    
+    });
   };
 
   //GET - Return a city with specified ID
