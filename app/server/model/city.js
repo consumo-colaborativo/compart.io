@@ -12,9 +12,12 @@ var citySchema = new Schema({
   name          	: { type: String, required: true},	
   postal_code	    : { type: Number},
   slug     		    : { type: String},
-  isActive          : { type: Boolean}, 
+  isActive          : { type: Boolean, default: false}, 
   creation_date	  	: { type: Date, default: Date.now },
-  _countryId      	: Schema.Types.ObjectId
+  country	      	: {
+  						type: Schema.ObjectId,
+  						ref: 'Country'
+  					}
 });
 
 // create the model "City" for cities and expose it to our app
