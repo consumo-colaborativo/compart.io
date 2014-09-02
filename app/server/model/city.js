@@ -13,7 +13,8 @@ var citySchema = new Schema({
   postal_code	    : { type: Number},
   slug     		    : { type: String},
   isActive          : { type: Boolean, default: false}, 
-  creation_date	  	: { type: Date, default: Date.now },
+  created		  	: { type: Date, default: Date.now },
+  updated			: { type: Date },
   country	      	: {
   						type: Schema.ObjectId,
   						ref: 'Country'

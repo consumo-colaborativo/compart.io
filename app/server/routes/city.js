@@ -6,14 +6,15 @@ module.exports = function(app) {
   //GET - Return all cities in the DB
   findAllCities = function(req, res) {
     //console.log("GET - /cities finding all");
+    
     City.find( function(err, cities, count) {
         if(!err) {            
             //console.log(cities);
             res.render('cities/index.jade', {
                 title :'Compartio Cities',
-                cities : cities.sort({"name": 1, "slug": 1 })
+                cities : cities.sort({"name": 1 })    
             });
-            // return res.send(cities);
+            
         } else {
             //console.log('Error(%d): %s',res.statusCode,err.message);        
             console.log('Error' + err);        
@@ -33,6 +34,20 @@ module.exports = function(app) {
         }
         });
     };
+
+    //GET - Return a city with specified name
+
+    findByName = function(req, res) {
+        console.log("findByName");
+        City.find({name: req.param.name}, function(err, city) {
+        if(!err) {
+          res.send(city);
+        } else {
+            console.log('ERROR: ' + err);
+        }
+        });
+    };
+
 
     //GET - Return a city with specified ID
 
