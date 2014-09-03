@@ -12,7 +12,7 @@ module.exports = function(app) {
             //console.log(cities);
             res.render('cities/index.jade', {
                 title :'Compartio Cities',
-                cities : cities.sort({"name": 1 })    
+                cities : cities.sort({"slug": 1 })    
             });
             
         } else {
