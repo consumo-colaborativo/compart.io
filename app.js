@@ -9,7 +9,6 @@ var mongoose = require('mongoose');
 var passport = require('passport');
 var flash    = require('connect-flash');
 var jade    = require('jade');
-var expressValidator = require('express-validator');
 
 //var routes 	 = require('./app/server/routes');
 
@@ -37,15 +36,14 @@ app.configure(function() {
 	app.use(express.logger('dev')); // log every request to the console
 	app.use(express.cookieParser()); // read cookies (needed for auth)
 	app.use(express.bodyParser()); // get information from html forms
-	app.use(express.urlencoded());
-	app.use(expressValidator()); 
 	app.use(express.static(__dirname + '/app/public'));
 	
 	// required for passport
 	app.use(express.session({ secret: 'ilovescotchscotchyscotchscotch' })); // session secret
 	app.use(passport.initialize());
-	app.use(passport.session()); // persistent Login Sessions
-	app.use(flash()); // use connect-flash for flash messages stored in Session
+	app.use(passport.session()); // persistent login sessions
+	app.use(flash()); // use connect-flash for flash messages stored in session
+
 });
 
 

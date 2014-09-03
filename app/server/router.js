@@ -107,6 +107,9 @@ module.exports = function(app, passport) {
 		failureFlash : true // allow flash messages
 	}));
 /* MGD: end */
+
+	
+	
 	// - Home
 	app.get('/home', function(req, res) {
 		// render the page and pass in any flash data if it exists
@@ -128,7 +131,7 @@ module.exports = function(app, passport) {
 	app.get('/ciudad/:city', function(req, res) {
 		res.send("Hola compartio estas en " + req.param('city'));
 	});
-  	  	
+  	
 	/* ASF: end */
 
 }
