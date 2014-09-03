@@ -120,7 +120,6 @@ module.exports = function(app, passport) {
 	// API ===============
 	app.get('/api', function (req, res) {
   		res.send('API is running');
-<<<<<<< HEAD
 	});
 
 
