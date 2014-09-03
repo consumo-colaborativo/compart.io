@@ -1,63 +1,79 @@
 doctype html
 html(lang="es")
-	head
-		title Compart.io &middot Consumo Colaborativo
+    head
+        title Compart.io &middot Consumo Colaborativo
 
-		meta(name='viewport', content='width=device-width, initial-scale=1.0')
-		meta(name='description', content='Compart.io A place to Get & Share ')
-		meta(name='author', content='Compart.io Developer Team')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(name='description', content='Compart.io A place to Get & Share ')
+        meta(name='author', content='Compart.io Developer Team')
 
-		link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css')
-		link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css')   
+        link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css')
+        link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css')   
 
-		style
-			body    { padding-top:80px; }  	
+        style.
+            body
+                { padding-top:80px; }   
 
+        script.
 
-	body
-		.container
-			div(class="row")
-				ol(class="breadcrumb")
-					li
-						a(href="/") Home
-					li(class="active")  Ciudades
+            function getCity(){ 
+                //var selectedValue = document.getElementById("select_city").value;
+                var select_box = document.getElementById("select_box_city");
+                var option_value = select_box_city[select_box_city.selectedIndex].value;
+                //var option_name = select_box_city[select_box_city.selectedIndex].name;
+                //alert(option_value+":"+option_name);                  
+                //alert(selectedValue);
+            }
 
-			div(class="row")  					
-				.col-md-6
-					h2 Ciudades
+            function goCity(){
+                var selectedValue = document.getElementById("select_box_city").value;                                   
+                location.href = '/cities/'+ selectedValue;
+            }
 
+    body
+        .container
+            div(class="row")
+                ol(class="breadcrumb")
+                    li
+                        a(href="/") Home
+                    li(class="active")  Ciudades
 
-			.row
-				select(class="form-control", id="select_box_city", onchange="getCity()")				
-					for city in cities
-						//option(value="#{city.postal_code}") #{city.name}
-						option(value="#{city.slug}") #{city.name}
-
-				br
-				button(class="btn btn-primary", onclick="goCity()") Go!
-
-
-			script
-
-			div.row
-				h3 Añadir una nueva ciudad
-				div(class="row")
-					.col-md-6
-						form(method='post', role="form", action="/city")
-							div(class="form-group")
-								div(class="small-4 columns")
-									label Nombre
-									input(id="right-label", class="form-control", placeholder="Escribe aquí el nombre de una nueva ciudad", value='', name = 'name')
-
-									br
-									label Código Postal
-									input(id="right-label", class="form-control", placeholder="Escribe aquí el código postal", value='', name = 'postal_code')
-									
-									br
-									
-
-									br
-									input(type='submit', class="btn btn-primary", value='Añadir') 					
+            div(class="row")                    
+                .col-md-6
+                    h2 Ciudades
 
 
-	// include includes/footer
+            .row
+                select(class="form-control", id="select_box_city", onchange="getCity()")                
+                    for city in cities
+                        //option(value="#{city.postal_code}") #{city.name}
+                        option(value="#{city.slug}") #{city.name}
+
+                br
+                button(class="btn btn-primary", onclick="goCity()") Go!
+
+
+            script
+
+            div.row
+                h3 Añadir una nueva ciudad
+                div(class="row")
+                    .col-md-6
+                        form(method='post', role="form", action="/city")
+                            div(class="form-group")
+                                div(class="small-4 columns")
+                                    label Nombre
+                                    input(id="right-label", class="form-control", placeholder="Escribe aquí el nombre de una nueva ciudad", value='', name = 'name')
+
+                                    br
+                                    label Código Postal
+                                    input(id="right-label", class="form-control", placeholder="Escribe aquí el código postal", value='', name = 'postal_code')
+                                    
+                                    br
+                                    
+
+                                    br
+                                    input(type='submit', class="btn btn-primary", value='Añadir')                   
+
+
+    // include includes/footer
