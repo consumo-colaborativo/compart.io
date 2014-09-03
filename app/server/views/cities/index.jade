@@ -65,7 +65,7 @@ html(lang="es")
                         th ¿Activa?                            
                 tbody
                     for city in cities
-                        tr
+                        tr(onclick="document.location = '/cities/#{city.slug}' ")
                             td
                             td #{city.name}
                             td #{city.slug}
