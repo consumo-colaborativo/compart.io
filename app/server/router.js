@@ -3,6 +3,7 @@
 
 // load up the city model
 var City = require('../server/model/city');
+var CM = require('./modules/compartios-mgmt');
 
 module.exports = function(app, passport) {
 
@@ -131,6 +132,27 @@ module.exports = function(app, passport) {
 	app.get('/ciudad/:city', function(req, res) {
 		res.send("Hola compartio estas en " + req.param('city'));
 	});
+
+
+app.get('/findCompartiosByCity/:city', function(req, res) {
+		
+	CM.findCompartiosByCity(req.param('city'), function (o){
+
+			if (o == null)
+			{
+				res.send("Hola, en " + req.param('city') + " no dan ná");
+			}
+			else
+			{
+				for (compartio in o){
+					res.send(compartio + '<br><br>');
+				}
+			}
+
+	});
+});	
+
+
   	
 	/* ASF: end */
 

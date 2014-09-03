@@ -1,5 +1,5 @@
 var mongoose 		= require('mongoose');
-var compartioSchema = require('./app/server/model/compartio.js');
+var compartioSchema = require('../model/compartio.js');
 var dbSettings 		= require('./db-settings');
 
 mongoose.connect(dbSettings.uri);
@@ -19,12 +19,19 @@ var compartios = mongoose.model('compartio', compartioSchema);
 */
 exports.findCompartiosByCity = function (city, callback)
 {
-	compartios.find({ location : {city : city} }, function(e, o){
-		if (e) console.log('An error has ocurred in findCompartiosByCity');
-		else if (o){
+
+	compartios
+		.find( {'location.city' : city })
+		.where ('status').equals('ofrecido')
+		.select('name_of_item desc_of_item')
+		.exec(function(e, o){
+
+			if (e) console.log('An error has ocurred in findCompartiosByCity');
+			else if (o){
 					callback(o);
-		}	else{
+			}	else{
 					callback(null);
-		}
-	});
+			}
+
+		});
 }
