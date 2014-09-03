@@ -39,30 +39,46 @@ module.exports = function(passport) {
         passReqToCallback : true // allows us to pass back the entire request to the callback
     },
     function(req, email, password, done) {
-
+        /*
+            Verify Callback
+            return done(null, user);// the verify callback invokes done to supply Passport with the user that authenticated.
+            return done(null, false);  // If the credentials are not valid (for example, if the password is incorrect), 
+                                       // done should be invoked with false instead of a user to indicate an authentication failure.
+            return done(null, false, { message: 'Incorrect password.' }); //An additional info message can be supplied to indicate the 
+                                        // reason for the failure. This is useful for displaying a flash message prompting the user to try again.
+            return done(err); // if an exception occurred 
+        */
+        req.assert('email', 'Email no válido').isEmail().notEmpty();
+        req.assert('password', 'Password de 6 a 20 caracteres').notEmpty().len(6, 20);
+        var errors = req.validationErrors();
+        if (errors) {
+           var message = 'Ops… algo ha ido mal';
+           for(var i=0; i< errors.length;i++)
+           {
+                   message = message + ". " + errors[i].msg;
+           } 
+           message = message + ". ";
+           return done(null, false, { message: message});
+        }
         // find a user whose email is the same as the forms email
         // we are checking to see if the user trying to login already exists
-        //User.find({ local.emails : { email: email, is_public:true }, { email: email, is_public:false } } , function(err, user) {
         User.findOne({ "local.email" :  email }, function(err, user) {
             // if there are any errors, return the error
-            console.log("look for email: " + email);
             if (err)
                 return done(err);
 
             // check to see if theres already a user with that email
             if (user) {
-                return done(null, false, req.flash('signupMessage', 'That email is already taken.'));
+                 return done(null, false, { message: 'Email ya existe.'});
             } else {
-
                 // if there is no user with that email
                 // create the user
                 var newUser     = new User();
-                var postal_code = 14;
-                City.findOne({ "postal_code":  postal_code}, function(err, city) {
+                City.findOne({ "postal_code":  14}, function(err, city) {
                 if (err)
                     return done(err);
                 if (!city) {
-                        return done(null, false, req.flash('signupMessage', 'That city does not exist'));
+                        return done(null, false, { message: 'Córdoba no existe'});
                 } else {
                         console.log(" city" + city);
                         // set the user's local credentials
@@ -72,8 +88,6 @@ module.exports = function(passport) {
                         newUser.local._city = city;
                         //
                         newUser.local.password_hash = newUser.generateHash(password); // use the generateHash function in our user model
-                        //newUser.local.sign_up_stamp = Date.now;
-                        console.log(" nuevo usuario " + newUser.local);
                         // save the user
                         newUser.save(function(err) {
                             if (err)
@@ -159,8 +173,10 @@ module.exports = function(passport) {
         /*
             Form Validation
         */
-        req.assert('username', 'Nombre de usuario obligatorio').notEmpty();
-        req.assert('zip_code','Código postal no válido').isInt();
+        req.assert('username', 'Nombre de usuario obligatorio, de 5 a 15 caracteres').notEmpty().len(5, 20);
+        req.assert('screen_name', 'Nombre público de 5 a 15 caracteres').len(5, 20);
+        req.assert('zip_code','Código postal no válido').isInt().len(4,4);
+        req.assert('address_collect','Dirección no válida, de 5 a 50 caracteres').len(5, 50);
         var errors = req.validationErrors();
         if (errors) {
             City.find(function(err, cities, count) {

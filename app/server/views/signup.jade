@@ -8,6 +8,10 @@ head
   body
     .container
       .col-sm-6.col-sm-offset-3
+        if (message!="")
+            .alert.alert-danger
+              p= message
+      .col-sm-6.col-sm-offset-3
         h1
           span.fa.fa-sign-in
           |  Dar de alta

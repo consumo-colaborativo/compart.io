@@ -2,7 +2,7 @@
 //var User            = require('../server/model/user');
 
 // load up the city model
-var City = require('../server/model/city');
+var City = require('./model/city');
 
 module.exports = function(app, passport) {
 
@@ -59,19 +59,17 @@ module.exports = function(app, passport) {
 	// =====================================
 	// SIGNUP ==============================
 	// =====================================
-	// show the signup form
+	// show the SIGNUP FORM - GET
 	app.get('/signup', function(req, res) {
 		// render the page and pass in any flash data if it exists
-		res.render('signup.jade', { message: req.flash('signupMessage') });
+		res.render('signup.jade', { message: req.flash('error')});
 	});
-
-	// process the signup form 
+	// Process the SIGNUP FORM - POST
 	app.post('/signup', passport.authenticate('local-signup', {
 		successRedirect : '/profile', // redirect to the secure profile section
-		failureRedirect : '/login', // redirect back to the signup page if there is an error
+		failureRedirect : '/signup', // redirect back to the signup page if there is an error
 		failureFlash : true // allow flash messages
 	}));
-
 	// =====================================
 	// PROFILE SECTION =====================
 	// =====================================
@@ -79,17 +77,14 @@ module.exports = function(app, passport) {
 	// we will use route middleware to verify this (the isLoggedIn function)
 	app.get('/profile', isLoggedIn, function(req, res) {
 		City.find(function(err, cities, count) {
-        if(!err) {
-            //console.log(cities);
-            res.render('profile.jade', {
-            	user : req.user, // get the user out of session and pass to template    
-                cities : cities
-            });
-            // return res.send(cities);
-        } else {
-            //console.log('Error(%d): %s',res.statusCode,err.message);        
-            console.log('Error' + err);        
-        }
+	        if(!err) {
+	            res.render('profile.jade', {
+	            	user : req.user, // get the user out of session and pass to template    
+	                cities : cities
+	            });
+	        } else {  
+	            console.log('Error' + err);        
+	        }
 		});
 	});
 
