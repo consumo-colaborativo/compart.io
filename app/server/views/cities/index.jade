@@ -11,8 +11,9 @@ html(lang="es")
 		link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css')   
 
 		style
-			body    { padding-top:80px; }  	
+			body{ padding-top:80px; }  	
 
+		
 
 	body
 		.container
@@ -36,21 +37,6 @@ html(lang="es")
 				br
 				button(class="btn btn-primary", onclick="goCity()") Go!
 
-
-			script
-				function getCity(){	
-					//var selectedValue = document.getElementById("select_city").value;
-					var select_box = document.getElementById("select_box_city");
-					var option_value = select_box_city[select_box_city.selectedIndex].value;
-					//var option_name = select_box_city[select_box_city.selectedIndex].name;
-					//alert(option_value+":"+option_name);					
-					//alert(selectedValue);
-				}
-
-				function goCity(){
-					var selectedValue = document.getElementById("select_box_city").value;									
-					location.href = '/cities/'+ selectedValue;
-				}
 
 			div.row
 				h3 Añadir una nueva ciudad
