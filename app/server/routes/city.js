@@ -1,25 +1,25 @@
 var City = require('../model/city');
-
+var utils = require('../modules/utils');
 
 module.exports = function(app) {
 
   //GET - Return all cities in the DB
   findAllCities = function(req, res) {
     //console.log("GET - /cities finding all");
-    City.find(function(err, cities, count) {
-        if(!err) {
+    
+    City.find( function(err, cities, count) {
+        if(!err) {            
             //console.log(cities);
             res.render('cities/index.jade', {
                 title :'Compartio Cities',
-                cities : cities
+                cities : cities.sort({"name": 1 })    
             });
-            // return res.send(cities);
+            
         } else {
             //console.log('Error(%d): %s',res.statusCode,err.message);        
             console.log('Error' + err);        
         }
-    }).sort({'postal_code': 1});
-
+    });
   };
 
   //GET - Return a city with specified ID
@@ -34,6 +34,20 @@ module.exports = function(app) {
         }
         });
     };
+
+    //GET - Return a city with specified name
+
+    findByName = function(req, res) {
+        console.log("findByName");
+        City.find({name: req.param.name}, function(err, city) {
+        if(!err) {
+          res.send(city);
+        } else {
+            console.log('ERROR: ' + err);
+        }
+        });
+    };
+
 
     //GET - Return a city with specified ID
 
@@ -55,47 +69,52 @@ module.exports = function(app) {
   //POST - Insert a new City in the DB
     addCity = function(req, res) {
         console.log('POST');
-        console.log(req.body);        
+        console.log(req.body);
+        
+        var slug = utils.generateSlug(req.body.name);
 
-        /*
         var city = new City({
-            name:       req.body.name,
-            postal_code: req.body.postal_code,
-            country:   req.body.country            
+            name:           req.body.name,
+            postal_code:    req.body.postal_code,
+            active:         false,
+            slug:           slug  
         });
-        */
 
-        var city = req.body;
-        console.log('Adding city: ' + JSON.stringify(city));
-        db.collection('cities', function(err, collection) {
-            collection.insert(city, {safe:true}, function(err, result) {
-                if (err) {
-                    res.send({'error':'An error has occurred'});
-                } else {
-                    console.log('Success: ' + JSON.stringify(result[0]));
-                    res.send(result[0]);
-                }
-            });
+        
+        city.save(function(err) {
+            if(!err) {
+              console.log(city.name +' created');
+            } else {
+              console.log('ERROR: ' + err);
+            }
         });
-    }
+
+        //res.send(city);
+        console.log(city);
+
+        res.render( 'cities/city.jade', {                
+                city : city
+            });
+
+    };
 
   
     //PUT - Update a register already exists
     updateCity = function(req, res) {
         City.findById(req.params.id, function(err, city) {
-        city.name           = req.body.name;
-        city.postal_code    = req.body.postal_code;        
-
-        city.save(function(err) {
         
-        if(!err) {
-            console.log('Updated');
-        }
-        else {
-            console.log('ERROR: ' + err);
-        }
-        res.send(city);
-        });
+            city.name           = req.body.name;
+            city.postal_code    = req.body.postal_code;        
+
+            city.save(function(err) {
+                if(!err) {
+                    console.log('Updated');
+                }
+                else {
+                    console.log('ERROR: ' + err);
+                }
+                res.send(city);
+            });
         });
     }
 
@@ -136,7 +155,7 @@ module.exports = function(app) {
   app.get('/cities', findAllCities);
   //app.get('/cities/:id', findById);
 
-  app.post('/city/new', addCity);
+  app.post('/city', addCity);
   
   app.put('/city/:id', updateCity);
 
