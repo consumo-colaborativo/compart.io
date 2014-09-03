@@ -8,7 +8,6 @@
 var mongoose = require('mongoose');
 var bcrypt   = require('bcrypt-nodejs');
 var ObjectId = mongoose.Schema.Types.ObjectId;
-var citySchema            = require('./city');
 //                            
 // define the schema for our user model
 var userSchema = mongoose.Schema({
@@ -25,7 +24,7 @@ var userSchema = mongoose.Schema({
         //
         street       : { type: String, default: 'sin definir' },
         zip_code     : { type: Number, default: '14001' },
-        city         : [ObjectId],
+        _city         : { type: ObjectId, ref: 'City' },
         //
         activation_token : { type: Number, default: '0'},
         last_activation_request : { type: Number, default: '0'},

@@ -13,9 +13,18 @@ head
           | Mi perfil compart.io
         a.btn.btn-default.btn-sm(href='/logout') Salir
       .row
-        //
-           READ ONLY LOCAL INFORMATION 
-        .col-sm-6
+        .col-md-8
+        if (message && !errors)
+          .alert.alert-success
+            p= message
+        if (errors)
+          .alert.alert-danger
+            p= message
+            ul
+              each error in errors
+                li= error.msg
+      .row
+        .col-md-8
           .well
             h3
               span.fa.fa-user
@@ -39,7 +48,7 @@ head
             form(action='/profile',method='post')
               .form-group
                 label Email
-                input.form-control(name='email',type='text',value=user.local.email)
+                input.form-control(name='email',type='text',value=user.local.email,readonly)
               .form-group  
                 label Nombre de Usuario 
                 input.form-control(name='username',type='text',value=user.local.username)
@@ -56,11 +65,11 @@ head
                 label Ciudad
                 select.form-control(name='city_form')
                   for city in cities          
-                    if city == user.local.city
-                      option(value="#{city.postal_code}" selected)  #{city.postal_code}
+                    if city._id == user.local._city
+                      option(value="#{city.postal_code}", selected="selected")  #{city.name}
                     else 
-                      option(value="#{city.postal_code}") #{city.postal_code}
-              button.btn.btn-warning.btn-lg(type='submit') Actualizar
+                      option(value="#{city.postal_code}") #{city.name} #{user.local._city} == #{city._id}
+              button.btn.btn-warning.btn-lg(type='submit') Actualizar 
               p(id='last_update')   
         //   FACEBOOK INFORMATION 
         //.col-sm-6

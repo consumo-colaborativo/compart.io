@@ -69,7 +69,7 @@ module.exports = function(passport) {
                         newUser.local.email = email;
                         newUser.local.street   = 'sin definir';
                         newUser.local.zip_code = '1400';
-                        newUser.local.city = [city];
+                        newUser.local._city = city;
                         //
                         newUser.local.password_hash = newUser.generateHash(password); // use the generateHash function in our user model
                         //newUser.local.sign_up_stamp = Date.now;
@@ -156,45 +156,72 @@ module.exports = function(passport) {
     Search for email address and update Profile's user information.
     */
     saveProfile = function(req, res) {
+        /*
+            Form Validation
+        */
+        req.assert('username', 'Nombre de usuario obligatorio').notEmpty();
+        req.assert('zip_code','Código postal no válido').isInt();
+        var errors = req.validationErrors();
+        if (errors) {
+            City.find(function(err, cities, count) {
+            res.render('profile.jade', {
+                    user : req.user, // get the user out of session and pass to template    
+                    cities : cities,
+                    message: 'Ops… algo ha ido mal!',
+                    errors: errors
+                });
+            });
+        } else {
+        /*
+            El email no puede cambiarse en principio
+        */
         User.findOne({ "local.email" :  req.body.email }, function(err, user) {
                 // if there are any errors, return the error before anything else
-                if (err)
-                     throw err;
                 // if no user is found, return the message
-                if (!user)
-                     throw err; // req.flash is the way to set flashdata using connect-flash
-                console.log(req.body.city_form);
-
-                City.findOne({ "postal_code":  req.body.city_form }, function(err, city) {
-                // if there are any errors, return the error before anything else
-                if (err)
-                     throw err;
-                if (!city)
-                    return err; 
-
-              
-                user.local.username = req.body.username;
-                user.local.screen_name = req.body.screen_name;
-                user.local.street   = req.body.address_collect;
-                user.local.zip_code = req.body.zip_code;
-                /*user.local.city[0].name = city.name;
-                user.local.city[0].postal_code = city.postal_code;
-                user.local.city[0].slug = city.slug;
-                user.local.city[0].country_id = city.country_id;*/
-                user.local.city = [city];
-                        
-                console.log("city CHANGED TO " + city);
-                user.save(function(err) {
-                    if (err)
-                        throw err;
-                    else{
-                        //var text = document.getElementById('last_update');
-                        //text.html("Última Actualización " + Date.now);
-                        console.log("successful");
-                    }
+                if (err || !user){
+                    City.find(function(err, cities, count) {
+                        res.render('profile.jade', {
+                        user : req.user, // get the user out of session and pass to template    
+                        cities : cities,
+                        message: 'Ops… algo ha ido mal!',
+                        errors: errors
+                        });
                     });
-                }) // end find CITY
-            }) // end find USER
-            return; 
-    }
-};
+                }else{
+                    City.findOne({ "postal_code":  req.body.city_form }, function(err, city) {
+                    // if there are any errors, return the error before anything else
+                    if (err || !city){
+
+                    }
+                    user.local.username = req.body.username;
+                    user.local.screen_name = req.body.screen_name;
+                    user.local.street   = req.body.address_collect;
+                    user.local.zip_code = req.body.zip_code;
+                    user.local._city = city;
+                    user.save(function(err) {
+                        if (err){ // ERROR
+                            City.find(function(err, cities, count) {
+                            res.render('profile.jade', {
+                                user : user, // get the user out of session and pass to template    
+                                cities : cities,
+                                message: 'Ops… algo ha ido mal',
+                                errors:  ''
+                                });
+                            });
+                        }else{ // GOOD
+                            City.find(function(err, cities, count) {
+                            res.render('profile.jade', {
+                                user : user, // get the user out of session and pass to template    
+                                cities : cities,
+                                message: 'Bien! Todo correcto!',
+                                errors: ''
+                                });
+                            });
+                        }
+                        });
+                    }); // end find CITY
+            } // end else
+            }); // end find USER
+        }
+    } // end function SaveProfile
+}
