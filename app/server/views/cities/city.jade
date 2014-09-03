@@ -26,11 +26,12 @@ html(lang="es")
 			div(class="row")
 				h2 #{city.name}
 				p slug: #{city.slug}
-				p postal_code: #{city.postal_code}
-				p countryid: #{city.country_id}
+				p postal_code: #{city.postal_code}				
 				p creation_date: #{city.creation_date} 
+				p active: #{city.active}
+				p countryid: #{city.country_id}
 
-				a(href="/cities", class="button") Voler a ciudades
+				a(href="/cities", class="btn btn-default") Volver a ciudades
 				
 				
 				

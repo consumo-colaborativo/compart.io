@@ -19,7 +19,7 @@ var citySchema = new Schema({
               type: Schema.ObjectId,
   		      ref: 'Country'
   }
-});
+
 
 // create the model "City" for cities and expose it to our app
 module.exports = mongoose.model('City', citySchema);

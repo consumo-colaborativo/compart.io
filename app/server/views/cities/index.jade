@@ -11,58 +11,64 @@ html(lang="es")
 		link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css')   
 
 		style
-			body    { padding-top:80px; }
-  
-	body		
+			body    { padding-top:80px; }  	
+
+
+	body
 		.container
 			div(class="row")
 				ol(class="breadcrumb")
 					li
-						a(href="#") Home
+						a(href="/") Home
 					li(class="active")  Ciudades
 
 			div(class="row")  					
-				.col-md-6					
-						h2 Ciudades					
-						br										
-						- if (cities)					
-								thead
-									tr							
-										th Nombre
-										th Slug
-										th Código Postal
-								tbody
-									tr
-										td
-											a(href="/cities/cordoba", class="") Córdoba
-												td cordoba
-												td 14								          
+				.col-md-6
+					h2 Ciudades
 
-								- each city in cities
-										tr
-											td
-												a(class="", href="/cities/#{city.slug}") #{city.name}
-											td #{city.slug}
-											td #{city.postal_code} 
-														
-				
-					br
 
 			.row
-				select(class="form-control")					
+				select(class="form-control", id="select_box_city", onchange="getCity()")				
 					for city in cities
-						option(value="#{city.postal_code}") #{city.name}
+						//option(value="#{city.postal_code}") #{city.name}
+						option(value="#{city.slug}") #{city.name}
 
+				br
+				button(class="btn btn-primary", onclick="goCity()") Go!
+
+
+			script
+				function getCity(){	
+					//var selectedValue = document.getElementById("select_city").value;
+					var select_box = document.getElementById("select_box_city");
+					var option_value = select_box_city[select_box_city.selectedIndex].value;
+					//var option_name = select_box_city[select_box_city.selectedIndex].name;
+					//alert(option_value+":"+option_name);					
+					//alert(selectedValue);
+				}
+
+				function goCity(){
+					var selectedValue = document.getElementById("select_box_city").value;									
+					location.href = '/cities/'+ selectedValue;
+				}
 
 			div.row
 				h3 Añadir una nueva ciudad
 				div(class="row")
 					.col-md-6
-						form(method='post', role="form", action="/cities/new")
+						form(method='post', role="form", action="/city")
 							div(class="form-group")
 								div(class="small-4 columns")
 									label Nombre
-									input(id="right-label", class="form-control", placeholder="Escribe aquí el nombre de una nueva ciudad", value='', name = 'city')
+									input(id="right-label", class="form-control", placeholder="Escribe aquí el nombre de una nueva ciudad", value='', name = 'name')
+
+									br
+									label Código Postal
+									input(id="right-label", class="form-control", placeholder="Escribe aquí el código postal", value='', name = 'postal_code')
+									
+									br
+									
+
 									br
 									input(type='submit', class="btn btn-primary", value='Añadir') 					
 
