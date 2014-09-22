@@ -132,6 +132,17 @@ module.exports = function(app, passport) {
 		res.send("Hola compartio estas en " + req.param('city'));
 	});
   	
+	// - Home
+	// Allow access only for admin users
+	app.get('/admin', function(req, res) {
+		// render the page and pass in any flash data if it exists
+		res.render('admin/index.jade',
+				{
+            		title : 'Admin compartio | Dashboard'
+            	}); 
+	});
+
+
 	/* ASF: end */
 
 }
