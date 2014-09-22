@@ -4,7 +4,7 @@
 // load up the city model
 var City = require('./model/city');
 
-module.exports = function(app, passport) {
+module.exports = function(app, passport, nodemailer) {
 
  /* MGD: Enabling Automatic Deployment */
 	app.post('/deploy/', function (req, res) {  
@@ -125,6 +125,68 @@ module.exports = function(app, passport) {
 	});
   	  	
 	/* ASF: end */
+
+	/* MSD: start email verification */
+	/*
+    Here we are configuring our SMTP Server details.
+    STMP is mail server which is responsible for sending and recieving email.
+	*/
+	var smtpTransport = nodemailer.createTransport("SMTP",{
+	   service: "mail.compart.io",
+	    auth: {
+	        user: "info@compart.io",
+	        pass: "fDsEyBN8pO5YYL"
+	    }
+	     /*service: "Gmail",
+	    auth: {
+	        user: "magdasanchez@colaborativa.eu",
+	        pass: "c@zxnwDpe7Q"
+	    }*/
+	});
+	var rand,mailOptions,host,link;
+	/*------------------SMTP Over-----------------------------*/
+	app.get('/send',function(req,res){
+	    rand=Math.floor((Math.random() * 100) + 54);
+	    host=req.get('host');
+	    link="http://"+req.get('host')+"/verify?id="+rand;
+	    mailOptions={
+	        to : req.query.to,
+	        subject : "Compartio: Por favor confirma tu email",
+	        html : "¡Hola! <br> Haz click en el link para confirmar tu email.<br><a href="+link+">Verificar email!</a>" 
+	    }
+	    console.log(mailOptions);
+	    smtpTransport.sendMail(mailOptions, function(error, response){
+	     if(error){
+	            console.log(error);
+	        res.end("error");
+	     }else{
+	            console.log("Mensaje enviado: " + response.message);
+	        res.end("sent");
+	         }
+		});
+	});
+	app.get('/verify',function(req,res){
+	console.log(req.protocol+":/"+req.get('host'));
+	if((req.protocol+"://"+req.get('host'))==("http://"+host))
+	{
+	    console.log("Domain is matched. Information is from Authentic email");
+	    if(req.query.id==rand)
+	    {
+	        console.log("email is verified");
+	        res.end("<h1>Email "+mailOptions.to+" verificado!");
+	    }
+	    else
+	    {
+	        console.log("email is not verified");
+	        res.end("<h1>Bad Request</h1>");
+	    }
+	}
+	else
+	{
+	    res.end("<h1>Request is from unknown source");
+	}
+	});
+/*--------------------Routing Over----------------------------*/
 
 }
 // Route Middleware to make sure a user is logged in. 
