@@ -137,11 +137,6 @@ module.exports = function(app, passport, nodemailer) {
 	        user: "info@compart.io",
 	        pass: "fDsEyBN8pO5YYL"
 	    }
-	     /*service: "Gmail",
-	    auth: {
-	        user: "magdasanchez@colaborativa.eu",
-	        pass: "c@zxnwDpe7Q"
-	    }*/
 	});
 	var rand,mailOptions,host,link;
 	/*------------------SMTP Over-----------------------------*/
