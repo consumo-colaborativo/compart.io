@@ -133,7 +133,7 @@ module.exports = function(app, passport) {
 	});
   	
 	// - Home
-	// Allow access only for admin users
+	// TODO Allow access only for admin users
 	app.get('/admin', function(req, res) {
 		// render the page and pass in any flash data if it exists
 		res.render('admin/index.jade',
@@ -142,6 +142,13 @@ module.exports = function(app, passport) {
             	}); 
 	});
 
+	// - Layout test	
+	app.get('/admin/test', function(req, res) {		
+		res.render('admin/test.jade',
+				{
+            		title : 'Admin compartio | Test'
+            	}); 
+	});
 
 	/* ASF: end */
 

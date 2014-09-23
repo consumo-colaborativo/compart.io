@@ -150,9 +150,9 @@ module.exports = function(app) {
         });                
     }
 
-
   //Link routes and functions
   app.get('/admin/cities', findAllCities);
+
   //app.get('/cities/:id', findById);
 
   app.post('/city', addCity);
