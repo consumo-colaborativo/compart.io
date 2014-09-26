@@ -9,7 +9,7 @@ module.exports = function(app) {
     Country.find( function(err, countries, count) {
         if(!err) {            
             //console.log(cities);
-            res.render('admin/countries/index.jade', {
+            res.render('admin/countries.jade', {
                 title :'Compartio',
                 countries : countries.sort({"slug": 1 })    
             });
