@@ -10,7 +10,7 @@ module.exports = function(app) {
     City.find( function(err, cities, count) {
         if(!err) {            
             //console.log(cities);
-            res.render('cities/index.jade', {
+            res.render('admin/cities.jade', {
                 title :'Compartio Cities',
                 cities : cities.sort({"slug": 1 })    
             });
