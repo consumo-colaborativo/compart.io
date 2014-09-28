@@ -51,9 +51,11 @@ app.configure(function() {
 
 // Routes ======================================================================
 require('./app/server/router')(app, passport); // load our routes and pass in our app and fully configured passport
-
 require('./app/server/routes/city')(app) // load routes for cities and pass in our app
 require('./app/server/routes/country')(app) // load routes for countries and pass in our app
+
+// New routes
+require('./routes')(app, passport);
 
 
 // launch ======================================================================
