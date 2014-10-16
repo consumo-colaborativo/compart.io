@@ -12,7 +12,7 @@ $(document).ready(function(){
 		if(data=="sent"){
 			$("#message").empty().html("<p>Hemos enviado un email a "+to+" ¡Mira tu bandeja de entrada!</p>");
 		}else{
-			$("#message").empty().html("<p>Ops.. ha ocurrido un error ¡Inténtalo más tarde por favor!</p>");
+			$("#message").empty().html("<p>Ops.. ha ocurrido un error al enviarte el email de verificación ¡Inténtalo más tarde por favor!</p>");
 		}
 		});
 	});

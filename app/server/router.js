@@ -153,10 +153,10 @@ module.exports = function(app, passport, nodemailer) {
 	    smtpTransport.sendMail(mailOptions, function(error, response){
 	     if(error){
 	            console.log(error);
-	        res.end("error");
+	        	res.end("error");
 	     }else{
 	            console.log("Mensaje enviado: " + response.message);
-	        res.end("sent");
+	        	res.end("sent");
 	         }
 		});
 	});
@@ -173,7 +173,7 @@ module.exports = function(app, passport, nodemailer) {
 	    else
 	    {
 	        console.log("email is not verified");
-	        res.end("<h1>Bad Request</h1>");
+	        res.end("<h1>Email "+mailOptions.to+" no verificado! Inténtalo de nuevo.");
 	    }
 	}
 	else
