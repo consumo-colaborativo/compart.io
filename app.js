@@ -1,4 +1,7 @@
 // server.js
+
+'use strict';
+
 // set up ======================================================================
 
 // get all the tools we need
