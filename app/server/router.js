@@ -107,6 +107,9 @@ module.exports = function(app, passport) {
 		failureFlash : true // allow flash messages
 	}));
 /* MGD: end */
+
+	
+	
 	// - Home
 	app.get('/home', function(req, res) {
 		// render the page and pass in any flash data if it exists
@@ -120,7 +123,6 @@ module.exports = function(app, passport) {
 	// API ===============
 	app.get('/api', function (req, res) {
   		res.send('API is running');
-<<<<<<< HEAD
 	});
 
 
@@ -129,7 +131,25 @@ module.exports = function(app, passport) {
 	app.get('/ciudad/:city', function(req, res) {
 		res.send("Hola compartio estas en " + req.param('city'));
 	});
-  	  	
+  	
+	// - Home
+	// TODO Allow access only for admin users
+	app.get('/admin', function(req, res) {
+		// render the page and pass in any flash data if it exists
+		res.render('admin/index.jade',
+				{
+            		title : 'Admin compartio | Dashboard'
+            	}); 
+	});
+
+	// - Layout test	
+	app.get('/admin/test', function(req, res) {		
+		res.render('admin/test.jade',
+				{
+            		title : 'Admin compartio | Test'
+            	}); 
+	});
+
 	/* ASF: end */
 
 }

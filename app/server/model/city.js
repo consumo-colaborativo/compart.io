@@ -9,7 +9,7 @@ var mongoose = require('mongoose'),
 
 // define the schema for our city model
 var citySchema = new Schema({
-  name          : { type: String, required: true},	
+  name          : { type: String, required: true},  
   postal_code   : { type: Number},
   slug          : { type: String},
   isActive      : { type: Boolean, default: false}, 
@@ -17,8 +17,8 @@ var citySchema = new Schema({
   updated       : { type: Date },
   Country       : {
                     type: Schema.ObjectId,
-  						      ref: 'Country'
-  					     }
+                    ref: 'Country'
+                 }
 });
 
 // create the model "City" for cities and expose it to our app

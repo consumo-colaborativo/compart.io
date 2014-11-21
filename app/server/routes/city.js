@@ -10,9 +10,9 @@ module.exports = function(app) {
     City.find( function(err, cities, count) {
         if(!err) {            
             //console.log(cities);
-            res.render('cities/index.jade', {
+            res.render('admin/cities.jade', {
                 title :'Compartio Cities',
-                cities : cities.sort({"name": 1 })    
+                cities : cities.sort({"slug": 1 })    
             });
             
         } else {
@@ -150,9 +150,9 @@ module.exports = function(app) {
         });                
     }
 
-
   //Link routes and functions
-  app.get('/cities', findAllCities);
+  app.get('/admin/cities', findAllCities);
+
   //app.get('/cities/:id', findById);
 
   app.post('/city', addCity);
