@@ -12,6 +12,8 @@ var mongoose = require('mongoose');
 var passport = require('passport');
 var flash    = require('connect-flash');
 var jade    = require('jade');
+var expressValidator = require('express-validator');
+var nodemailer = require("nodemailer");
 
 //var routes 	 = require('./app/server/routes');
 
@@ -53,7 +55,7 @@ app.configure(function() {
 // Models =================================================================
 
 // Routes ======================================================================
-require('./app/server/router')(app, passport); // load our routes and pass in our app and fully configured passport
+require('./app/server/router')(app, passport, nodemailer); // load our routes and pass in our app and fully configured passport
 require('./app/server/routes/city')(app) // load routes for cities and pass in our app
 require('./app/server/routes/country')(app) // load routes for countries and pass in our app
 

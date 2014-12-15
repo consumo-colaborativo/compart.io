@@ -2,9 +2,9 @@
 //var User            = require('../server/model/user');
 
 // load up the city model
-var City = require('../server/model/city');
+var City = require('./model/city');
 
-module.exports = function(app, passport) {
+module.exports = function(app, passport, nodemailer) {
 
  /* MGD: Enabling Automatic Deployment */
 	app.post('/deploy/', function (req, res) {  
@@ -59,19 +59,17 @@ module.exports = function(app, passport) {
 	// =====================================
 	// SIGNUP ==============================
 	// =====================================
-	// show the signup form
+	// show the SIGNUP FORM - GET
 	app.get('/signup', function(req, res) {
 		// render the page and pass in any flash data if it exists
-		res.render('signup.jade', { message: req.flash('signupMessage') });
+		res.render('signup.jade', { message: req.flash('error')});
 	});
-
-	// process the signup form 
+	// Process the SIGNUP FORM - POST
 	app.post('/signup', passport.authenticate('local-signup', {
 		successRedirect : '/profile', // redirect to the secure profile section
-		failureRedirect : '/login', // redirect back to the signup page if there is an error
+		failureRedirect : '/signup', // redirect back to the signup page if there is an error
 		failureFlash : true // allow flash messages
 	}));
-
 	// =====================================
 	// PROFILE SECTION =====================
 	// =====================================
@@ -79,17 +77,14 @@ module.exports = function(app, passport) {
 	// we will use route middleware to verify this (the isLoggedIn function)
 	app.get('/profile', isLoggedIn, function(req, res) {
 		City.find(function(err, cities, count) {
-        if(!err) {
-            //console.log(cities);
-            res.render('profile.jade', {
-            	user : req.user, // get the user out of session and pass to template    
-                cities : cities
-            });
-            // return res.send(cities);
-        } else {
-            //console.log('Error(%d): %s',res.statusCode,err.message);        
-            console.log('Error' + err);        
-        }
+	        if(!err) {
+	            res.render('profile.jade', {
+	            	user : req.user, // get the user out of session and pass to template    
+	                cities : cities
+	            });
+	        } else {  
+	            console.log('Error' + err);        
+	        }
 		});
 	});
 
@@ -151,6 +146,63 @@ module.exports = function(app, passport) {
 	});
 
 	/* ASF: end */
+
+	/* MSD: start email verification */
+	/*
+    Here we are configuring our SMTP Server details.
+    STMP is mail server which is responsible for sending and recieving email.
+	*/
+	var smtpTransport = nodemailer.createTransport("SMTP",{
+	   service: "mail.compart.io",
+	    auth: {
+	        user: "info@compart.io",
+	        pass: "fDsEyBN8pO5YYL"
+	    }
+	});
+	var rand,mailOptions,host,link;
+	/*------------------SMTP Over-----------------------------*/
+	app.get('/send',function(req,res){
+	    rand=Math.floor((Math.random() * 100) + 54);
+	    host=req.get('host');
+	    link="http://"+req.get('host')+"/verify?id="+rand;
+	    mailOptions={
+	        to : req.query.to,
+	        subject : "Compartio: Por favor confirma tu email",
+	        html : "¡Hola! <br> Haz click en el link para confirmar tu email.<br><a href="+link+">Verificar email!</a>" 
+	    }
+	    console.log(mailOptions);
+	    smtpTransport.sendMail(mailOptions, function(error, response){
+	     if(error){
+	            console.log(error);
+	        	res.end("error");
+	     }else{
+	            console.log("Mensaje enviado: " + response.message);
+	        	res.end("sent");
+	         }
+		});
+	});
+	app.get('/verify',function(req,res){
+	console.log(req.protocol+":/"+req.get('host'));
+	if((req.protocol+"://"+req.get('host'))==("http://"+host))
+	{
+	    console.log("Domain is matched. Information is from Authentic email");
+	    if(req.query.id==rand)
+	    {
+	        console.log("email is verified");
+	        res.end("<h1>Email "+mailOptions.to+" verificado!");
+	    }
+	    else
+	    {
+	        console.log("email is not verified");
+	        res.end("<h1>Email "+mailOptions.to+" no verificado! Inténtalo de nuevo.");
+	    }
+	}
+	else
+	{
+	    res.end("<h1>Request is from unknown source");
+	}
+	});
+/*--------------------Routing Over----------------------------*/
 
 }
 // Route Middleware to make sure a user is logged in. 
