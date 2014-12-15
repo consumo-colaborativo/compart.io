@@ -26,7 +26,8 @@
     "connect-flash" : "~0.1.1",   
     "bcrypt-nodejs" : "latest",   
     "jade" : "latest",
-    "express-validator": "latest"
+    "express-validator": "latest",
+     "nodemailer": "~0.7.1"
   },
   "engines": {
     "node": "0.8.14",
