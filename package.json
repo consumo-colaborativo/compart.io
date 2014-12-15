@@ -25,7 +25,7 @@
     "passport-google-oauth" : "~0.1.5",
     "connect-flash" : "~0.1.1",   
     "bcrypt-nodejs" : "latest",   
-    "jade" : "latest"  
+    "jade" : "latest", 
     "express-validator": "latest",
     "nodemailer": "~0.7.1"
   },
