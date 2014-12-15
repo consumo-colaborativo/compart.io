@@ -3,7 +3,7 @@
 //
 
 var mongoose = require('mongoose'),
-    Schema = mongoose.Schema;
+Schema = mongoose.Schema;
 
 // define the schema for our city model
 var citySchema = new Schema({

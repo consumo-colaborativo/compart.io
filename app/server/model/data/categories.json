@@ -1,0 +1,54 @@
+{ "categories":[
+	{"title": "AUDIOVISUAL",
+		"description": "Cámaras, carretes, tarjetas de memoria, accesorios, flashes..."
+	},
+	{"title": "PARA LA CASA",
+		"description": "Muebles, alfombras, sabanas, enchufes, adornos, espejos..."
+	},
+	{"title": "ELECTRODOMÉSTICOS",
+		"description": "Ventiladores, batidoras, televisores, reproductores, frigos..."
+	},
+	{"title": "ROPA Y CALZADOS",
+		"description": "De invierno o de verano, para adultos o niños, complementos y disfraces..."
+	},
+	{"title": "JARDINERÍA",
+		"description": "Plantas, macetas, herramientas, riego, accesorios para el huerto..."
+	},
+	{"title": "MANITAS Y BRICOLEROS",
+		"description": "Herramientas, escaleras, material de construcción y de pintura..."
+	},
+	{"title": "VAMOS QUE NOS VAMOS",
+		"description": "Todo para el viaje: maletas, bolsos, neveras, accesorios, mapas..."
+	},
+	{"title": "MANUALIDADES Y COSTURA",
+		"description": "Herramientas y máquinas específicas, materiales: papel, tela, lana, perlas..."
+	},
+	{"title": "BIBLIOTECA",
+		"description": "Libros de literatura, infantiles, escolares, artísticos, revistas..."
+	},
+	{"title": "DEPORTE Y BIENESTAR",
+		"description": "Raquetas, pelotas, pesas, maquinaria, materiales y calzados específicos..."
+	},
+	{"title": "JUGUETES",
+		"description": "Peluches, muñecos, casitas, juegos de montar, de mesa, mecánicos..."
+	},
+	{"title": "MÚSICA",
+		"description": "Discos, auriculares, reproductores, instrumentos, piezas, particiones..."
+	},
+	{"title": "CON RUEDAS Y MOTOR",
+		"description": "Coches, scooter, piezas de recambio, sillas para niños, accesorios,..."
+	},
+	{"title": "BICICLETAS Y PATINETES",
+		"description": "Bicis, patinetes, monopatines, piezas de recambio, accesorios..."
+	},
+	{"title": "INFORMATICA",
+		"description": "Mesas/sillas de despacho, carpetas, clips, grapadoras..."
+	},
+	{"title": "MASCOTAS",
+		"description": "Perros, gatos, peces... Pienso, arena, semillas... correas, jaulas..."
+	},
+	{"title": "CAJÓN DESASTRE",
+		"description": "Estatuas, figuras, objetos varios, souvenirs..."
+	}
+]
+}
