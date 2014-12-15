@@ -5,8 +5,6 @@
 var mongoose = require('mongoose'),
     Schema = mongoose.Schema;
 
-//var ObjectId = mongoose.Schema.Types.ObjectId;
-
 // define the schema for our city model
 var citySchema = new Schema({
   name          : { type: String, required: true},  
