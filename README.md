@@ -5,7 +5,7 @@ compart.io es un proyecto llevado por voluntarios - gratuitamente y de código l
 # Introducción
 Este documento sirve de guía de desarrollo para la plataforma digital del proyecto social de consumo colaborativo.
 
-La idea se inició alrededor de Junio de 2012 mediante la creación de un [grupo de Consumo Colaborativo en Facebook](https://www.facebook.com/groups/310342205721740/) bajo el lema "No compres; pide. No tires; regala", como un proyecto web piloto de consumo colaborativo abierto, libre y gratuito. Hasta la fecha, el grupo cuenta con más de 8500 miembros.
+La idea se inició alrededor de Junio de 2012 mediante la creación de un [grupo de Consumo Colaborativo en Facebook](https://www.facebook.com/groups/310342205721740/) bajo el lema "No compres; pide. No tires; regala", como un proyecto web piloto de consumo colaborativo abierto, libre y gratuito. Hasta la fecha, el grupo cuenta con más de 10.000 miembros.
 
 Este desarrollo quiere ofrecer una plataforma digital ágil y sencilla enfocada a la comunicación, donación y petición de bienes y necesidades en el marco del consumo colaborativo.
 
