@@ -1,9 +1,5 @@
 'use strict';
 
-// app/model/city.js
-// load the cities we need
-//
-
 /*
 * Module dependencies
 */
