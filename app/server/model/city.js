@@ -28,4 +28,4 @@ var CitySchema = new Schema({
 });
 
 // create the model "City" for cities and expose it to our app
-module.exports = mongoose.model('City', citySchema);
+module.exports = mongoose.model('City', CitySchema);
