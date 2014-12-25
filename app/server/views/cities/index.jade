@@ -47,7 +47,7 @@ html(lang="es")
             div.row
                 select(class="form-control", id="select_box_city", onchange="getCity()")                
                     for city in cities
-                        //option(value="#{city.postal_code}") #{city.name}
+                        //option(value="#{city.postalCode}") #{city.name}
                         option(value="#{city.slug}") #{city.name}
 
                 br
@@ -70,7 +70,7 @@ html(lang="es")
                             td
                             td #{city.name}
                             td #{city.slug}
-                            td #{city.postal_code}
+                            td #{city.postalCode}
                             td #{city.isActive}
 
             div.row

@@ -216,16 +216,18 @@ block body
                                                 th Nombre
                                                 th slug
                                                 th Código Postal
+                                                th País
                                                 th ¿Activa?                                                
                                                                                     
                                         
                                         tbody
                                             for city in cities
                                                 tr(onclick="document.location = '/cities/#{city.slug}' ")
-                                                    td
+                                                    td <!-- #{city.id} -->
                                                     td #{city.name}
                                                     td #{city.slug}
-                                                    td #{city.postal_code}
+                                                    td #{city.postalCode}
+                                                    td #{city.country_id}
                                                     td #{city.isActive}
                                         
                                     //                                                
