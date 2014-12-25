@@ -1,12 +1,19 @@
-// app/model/country.js
-// load the countries
-//
+'use strict';
+
+/*
+* Module dependencies
+*/
 
 var mongoose = require('mongoose'),
     Schema = mongoose.Schema;
 
-// define the schema for our city model
-var countrySchema = new Schema({
+/*
+* Country Schema
+*/
+// define the schema for country model
+
+var CountrySchema = new Schema({
+	name					: { type: String},
 	country_short_name		: { type: String},
 	country_long_name		: { type: String},
 	country_numcode			: { type: Number},
@@ -17,4 +24,4 @@ var countrySchema = new Schema({
 });
 
 // create the model "Country" for countries and expose it to our app
-module.exports = mongoose.model('Country', countrySchema);
+module.exports = mongoose.model('Country', CountrySchema);

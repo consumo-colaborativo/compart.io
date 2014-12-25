@@ -62,7 +62,7 @@ html(lang="es")
                         th #
                         th Nombre
                         th slug
-                        th Código Postal
+                        th CP
                         th ¿Activa?                            
                 tbody
                     for city in cities
@@ -70,8 +70,8 @@ html(lang="es")
                             td
                             td #{city.name}
                             td #{city.slug}
-                            td #{city.postalCode}
-                            td #{city.isActive}
+                            td #{city.postal_code}
+                            td #{city.is_active}
 
             div.row
                 h3 Añadir una nueva ciudad

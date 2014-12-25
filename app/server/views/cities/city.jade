@@ -25,9 +25,9 @@ html(lang="es")
 			div(class="row")
 				h2 #{city.name}
 				p slug: #{city.slug}
-				p postalCode: #{city.postalCode}				
+				p postalCode: #{city.postal_code}				
 				p created: #{city.created} 
-				p active: #{city.active}
+				p active: #{city.is_active}
 				p countryid: #{city.country_id}
 
 				a(href="/cities", class="btn btn-default") Volver a ciudades

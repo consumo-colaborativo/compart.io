@@ -12,9 +12,9 @@ Schema = mongoose.Schema;
 
 var CitySchema = new Schema({
   name          : { type: String, required: true},  
-  postalCode    : { type: Number},
+  postal_code   : { type: Number},
   slug          : { type: String},
-  isActive      : { type: Boolean, default: false}, 
+  is_active     : { type: Boolean, default: false}, 
   created       : { type: Date, default: Date.now },
   updated       : { type: Date },
   Country       : {
