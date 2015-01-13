@@ -60,6 +60,7 @@ Podemos aprender mucho de proyectos que ya existen en otros países y que promue
 - [imixme](http://imixme.com) Por lo que sé, es un proyecto que se ha desarrollado recientemente desde Málaga. Se definen como una red comercial para regalar objetos, cambiar o recibir dinero ya sea por venderlo o por alquilarlo durante un tiempo. Además los usuarios podrán decir qué cosas necesitan, qué cosas les hace falta y imixme buscará usuarios que tengan cosas que ambos necesiten para que los 2 puedan salir beneficiados.
 - [Favorece](http://favorece.net/) Es un proyecto que parece ya abandonado. Para pedir y ofrecer cosas y servicios o favores.
 - [Gitflow](https://github.com/GiftFlow/giftflow) La web del proyecto no va, pero está el código publicado en github. "*GiftFlow is an open-source web platform that makes it easy for communities to give and share their extra resources*".
+- [Relendo](https://www.relendo.com/) Relendo es una plataforma de Consumo Colaborativo que permite el alquiler de productos entre personas con dinero.
 
 # Evaluación de ShareTribe
 
