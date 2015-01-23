@@ -47,7 +47,7 @@ html(lang="es")
             div.row
                 select(class="form-control", id="select_box_city", onchange="getCity()")                
                     for city in cities
-                        //option(value="#{city.postal_code}") #{city.name}
+                        //option(value="#{city.postalCode}") #{city.name}
                         option(value="#{city.slug}") #{city.name}
 
                 br
@@ -62,7 +62,7 @@ html(lang="es")
                         th #
                         th Nombre
                         th slug
-                        th Código Postal
+                        th CP
                         th ¿Activa?                            
                 tbody
                     for city in cities
@@ -71,7 +71,7 @@ html(lang="es")
                             td #{city.name}
                             td #{city.slug}
                             td #{city.postal_code}
-                            td #{city.isActive}
+                            td #{city.is_active}
 
             div.row
                 h3 Añadir una nueva ciudad

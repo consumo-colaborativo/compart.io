@@ -1,14 +1,18 @@
-// app/model/city.js
-// load the cities we need
-//
+'use strict';
 
+/*
+* Module dependencies
+*/
 var mongoose = require('mongoose'),
 Schema = mongoose.Schema;
 
-// define the schema for our city model
-var citySchema = new Schema({
+/*
+* City Schema
+*/
+
+var CitySchema = new Schema({
   name          : { type: String, required: true},  
-  postal_code   : { type: Number},
+  postalCode    : { type: Number},
   slug          : { type: String},
   isActive      : { type: Boolean, default: false}, 
   created       : { type: Date, default: Date.now },
@@ -20,4 +24,4 @@ var citySchema = new Schema({
 });
 
 // create the model "City" for cities and expose it to our app
-module.exports = mongoose.model('City', citySchema);
+module.exports = mongoose.model('City', CitySchema);
